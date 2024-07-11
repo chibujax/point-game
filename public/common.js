@@ -13,7 +13,7 @@ function hideElement(id) {
     document.getElementById(id).style.display = 'none';
 }
 
-function getElementElementValue(id) {
+function getElementValue(id) {
     const element = document.getElementById(id);
     if(element) return element.value;
     return null;
@@ -32,4 +32,3 @@ function showNotification(message, isError = false) {
         notification.classList.remove('show');
     }, 3000);
 }
-

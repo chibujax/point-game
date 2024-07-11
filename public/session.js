@@ -2,7 +2,7 @@ const socket = io();
 const sessionId = window.location.pathname.split('/')[1];
 
 function joinSession() {
-    const name = document.getElementById('name').value;
+    const name = getElementValue('name');
     if (name) {
         const userId = getCookie('userId');
         document.cookie = `sessionId=${sessionId}; path=/; Secure`;
@@ -133,6 +133,15 @@ socket.on('sessionError', (message) => {
 
 socket.on('sessionName', (name) => {
     document.getElementById('sessionName').innerText = `Session: ${name}`;
+});
+
+socket.on('currentVotes', (votes) => {
+    for (const [userId, vote] of Object.entries(votes)) {
+        const userElement = document.getElementById(userId);
+        if (userElement) {
+            userElement.style.backgroundColor = 'lightgreen';
+        }
+    }
 });
 
 socket.on('updateOwner', (sessionOwner) => {

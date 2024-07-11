@@ -22,9 +22,9 @@
     <script src="common.js"></script>
     <script>
         function createSession() {
-            const sessionName = document.getElementById('sessionName').value;
-            const displayName = document.getElementById('displayName').value;
-            const points = document.getElementById('points').value.split(',').map(Number).filter(Boolean);
+            const sessionName = getElementValue('sessionName');
+            const displayName = getElementValue('displayName');
+            const points = getElementValue('points').split(',').map(Number).filter(Boolean);
             
             if (sessionName && points.length > 0 && displayName) {
                 fetch('/create-session', {

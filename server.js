@@ -26,6 +26,18 @@ const loadSessions = () => {
   }
 };
 
+const sendCurrentVotesToUser = (sessionId, socket) =>{
+  const votes = sessions[sessionId].votes;
+  const votedUsers = Object.entries(votes).reduce((result, [userId, vote]) => {
+      if (vote !== undefined) {
+          result[userId] = vote;
+      }
+      return result;
+  }, {});
+  socket.emit('currentVotes', votedUsers);
+}
+
+
 // Save sessions to file
 const saveSessionsToFile = () => {
   fs.writeFileSync(sessionsFilePath, JSON.stringify(sessions, null, 2), "utf8");
@@ -109,6 +121,7 @@ io.on("connection", (socket) => {
       io.to(sessionId).emit("updatePoints", sessions[sessionId].points);
       io.to(sessionId).emit("sessionName", sessions[sessionId].name);
       io.to(sessionId).emit("updateOwner", sessions[sessionId].owner);
+      sendCurrentVotesToUser(sessionId, socket);
     } else {
       socket.emit("sessionError", "Session not found");
     }
