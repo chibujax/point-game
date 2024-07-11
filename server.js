@@ -1,54 +1,156 @@
-const path = require("path");
+const express = require('express');
+const http = require('http');
+const socketIo = require('socket.io');
+const cookieParser = require('cookie-parser');
+const fs = require('fs');
+const path = require('path');
+const { v4: uuidv4 } = require('uuid');
 
-// Require the fastify framework and instantiate it
-const fastify = require("fastify")({
-  // set this to true for detailed logging:
-  logger: false,
-});
+const app = express();
+const server = http.createServer(app);
+const io = socketIo(server);
 
-// Setup our static files
-fastify.register(require("@fastify/static"), {
-  root: path.join(__dirname, "public"),
-  prefix: "/", // optional: default '/'
-});
+app.use(express.static('public'));
+app.use(cookieParser());
+app.use(express.json());
 
-// fastify-formbody lets us parse incoming forms
-fastify.register(require("@fastify/formbody"));
+let sessions = {}; // To keep track of sessions in memory
+const sessionsFilePath = path.join(__dirname, 'sessions.json');
 
-// point-of-view is a templating manager for fastify
-fastify.register(require("@fastify/view"), {
-  engine: {
-    handlebars: require("handlebars"),
-  },
-});
-
-// Our main GET home page route, pulls from src/pages/index.hbs
-fastify.get("/", function (request, reply) {
-  // params is an object we'll pass to our handlebars template
-  let params = {
-    greeting: "Hello Node!",
-  };
-  // request.query.paramName <-- a querystring example
-  return reply.view("/src/pages/index.hbs", params);
-});
-
-// A POST route to handle form submissions
-fastify.post("/", function (request, reply) {
-  let params = {
-    greeting: "Hello Form!",
-  };
-  // request.body.paramName <-- a form post example
-  return reply.view("/src/pages/index.hbs", params);
-});
-
-// Run the server and report out to the logs
-fastify.listen(
-  { port: process.env.PORT, host: "0.0.0.0" },
-  function (err, address) {
-    if (err) {
-      console.error(err);
-      process.exit(1);
+// Load sessions from file if it exists
+const loadSessions = () => {
+    if (fs.existsSync(sessionsFilePath)) {
+        sessions = JSON.parse(fs.readFileSync(sessionsFilePath, 'utf8'));
+    } else {
+        sessions = {};
     }
-    console.log(`Your app is listening on ${address}`);
-  }
-);
+};
+
+// Save sessions to file
+const saveSessionsToFile = () => {
+    fs.writeFileSync(sessionsFilePath, JSON.stringify(sessions, null, 2), 'utf8');
+};
+
+loadSessions();
+
+app.post('/create-session', (req, res) => {
+    const sessionId = `session_${Date.now()}`;
+    const { sessionName, displayName, points } = req.body;
+    const userId = uuidv4();
+    sessions[sessionId] = { name: sessionName, users: {[userId]: displayName}, votes: {}, points, owner: userId };
+    saveSessionsToFile();
+    res.cookie('sessionId', sessionId, { secure: true });
+    res.cookie('userId', userId, { secure: true });
+    res.cookie('owner', userId, { secure: true });
+    res.cookie('name', displayName, { secure: true });
+    res.json({ sessionId, userId });
+});
+
+app.get('/:sessionId', (req, res) => {
+    const sessionId = req.params.sessionId;
+    if (sessions[sessionId]) {
+        res.sendFile(path.join(__dirname, 'public', 'session.html'));
+    } else {
+        res.status(404).send('Session not found');
+    }
+});
+
+app.post('/leave-session', (req, res) => {
+    const { sessionId, userId } = req.cookies;
+    if (sessions[sessionId] && sessions[sessionId].users[userId]) {
+        delete sessions[sessionId].users[userId];
+        saveSessionsToFile();
+        res.clearCookie('sessionId');
+        res.clearCookie('userId');
+        res.clearCookie('owner');
+        res.clearCookie('name');
+        res.json({ message: 'Left session successfully' });
+    } else {
+        res.status(400).json({ message: 'Session or user not found' });
+    }
+});
+
+io.on('connection', (socket) => {
+    let currentSessionId = null;
+    let userId;
+
+    const cookies = socket.handshake.headers.cookie ? socket.handshake.headers.cookie.split('; ') : [];
+    const userIdCookie = cookies.find(row => row.startsWith('userId='));
+    
+    if (userIdCookie) {
+        userId = userIdCookie.split('=')[1];
+    } else {
+        userId = uuidv4();
+        socket.emit('setUserId', userId);
+    }
+
+    socket.on('joinSession', ({ sessionId, name }) => {
+        if (sessions[sessionId]) {
+            currentSessionId = sessionId;
+            sessions[sessionId].users[userId] = name;
+            saveSessionsToFile();
+            socket.join(sessionId);
+            io.to(sessionId).emit('userList', Object.entries(sessions[sessionId].users));
+            io.to(sessionId).emit('updatePoints', sessions[sessionId].points);
+            io.to(sessionId).emit('sessionName', sessions[sessionId].name);
+            io.to(sessionId).emit('updateOwner', sessions[sessionId].owner);
+        } else {
+            socket.emit('sessionError', 'Session not found');
+        }
+    });
+
+    socket.on('vote', (data) => {
+        if (currentSessionId) {
+            sessions[currentSessionId].votes[userId] = data.vote;
+            saveSessionsToFile();
+            io.to(currentSessionId).emit('voteReceived', userId);
+        }
+    });
+
+    socket.on('revealVotes', () => {
+        if (currentSessionId && sessions[currentSessionId].owner === userId) {
+            const totalVotes = Object.values(sessions[currentSessionId].votes);
+            const average = totalVotes.reduce((a, b) => a + b, 0) / totalVotes.length;
+            io.to(currentSessionId).emit('revealVotes', { votes: sessions[currentSessionId].votes, average });
+        } else {
+            socket.emit('sessionError', 'Only the session owner can reveal votes');
+        }
+    });
+
+    socket.on('restartVoting', () => {
+        if (currentSessionId && sessions[currentSessionId].owner === userId) {
+            sessions[currentSessionId].votes = {};
+            saveSessionsToFile();
+            io.to(currentSessionId).emit('restartVoting');
+        } else {
+            socket.emit('sessionError', 'Only the session owner can restart voting');
+        }
+    });
+
+    socket.on('endSession', () => {
+        if (currentSessionId && sessions[currentSessionId].owner === userId) {
+            delete sessions[currentSessionId];
+            saveSessionsToFile();
+            io.to(currentSessionId).emit('sessionEnded');
+        }
+    });
+
+    socket.on('disconnect', () => {
+        if (currentSessionId && sessions[currentSessionId]) {
+            delete sessions[currentSessionId].users[userId];
+            saveSessionsToFile();
+            io.to(currentSessionId).emit('userList', Object.entries(sessions[currentSessionId].users));
+        }
+    });
+
+    socket.on('getSessionOwner', ({ sessionId }) => {
+        const session = sessions[sessionId];
+        if (session) {
+            socket.emit('setSessionOwner', session.owner);
+        }
+    });
+});
+
+server.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
