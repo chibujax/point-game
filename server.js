@@ -21,8 +21,9 @@ const sessionsFilePath = path.join(__dirname, "sessions.json");
 const loadSessions = () => {
   if (fs.existsSync(sessionsFilePath)) {
     sessions = JSON.parse(fs.readFileSync(sessionsFilePath, "utf8"));
+    console.log("session loaded",sessions)
   } else {
-    sessions = {};
+    sessions = {}; 
   }
 };
 

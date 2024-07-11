@@ -1,1 +1,41 @@
-{}
+{
+  "session_1720704633819": {
+    "name": "Bitesize",
+    "users": {
+      "d7e1f1d1-c9b7-4f31-9c22-4f64967c945a": "Admin",
+      "d5c578bb-f404-42cb-92e2-2aebccc8e7f9": "Admin"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      13
+    ],
+    "owner": "d7e1f1d1-c9b7-4f31-9c22-4f64967c945a"
+  },
+  "session_1720704655248": {
+    "name": "Ad's Test Voting",
+    "users": {
+      "6747d736-0157-40a3-8552-a60764918e6f": "Chibu"
+    },
+    "votes": {
+      "09ccd7ed-41ca-4943-9d41-26938c340cd6": 5,
+      "3b3a7f59-c47e-42e1-ae67-fe070f1c8aa3": 5,
+      "6e8f66a6-67e4-4a63-9b55-93a98ea5b588": 1,
+      "830c2a63-a39a-4b0f-84b1-b4afc07b8872": 3
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "09ccd7ed-41ca-4943-9d41-26938c340cd6"
+  }
+}
