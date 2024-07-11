@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Session</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Create a New Session</h1>
+        <div id="create-session" class="form-container">
+            <input type="text" id="sessionName" placeholder="Enter session name" class="input-field">
+            <input type="text" id="displayName" placeholder="Enter your name" class="input-field">
+            <input type="text" id="points" placeholder="Enter voting points (comma separated)" class="input-field">
+            <button onclick="createSession()" class="button">Create Session</button>
+        </div>
+        <div id="notification" class="notification"></div>
+    </div>
+
+    <script src="notification.js"></script>
+    <script src="common.js"></script>
+    <script>
+        function createSession() {
+            const sessionName = document.getElementById('sessionName').value;
+            const displayName = document.getElementById('displayName').value;
+            const points = document.getElementById('points').value.split(',').map(Number).filter(Boolean);
+            
+            if (sessionName && points.length > 0 && displayName) {
+                fetch('/create-session', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ sessionName, points, displayName })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    document.cookie = `userId=${data.userId}; path=/; Secure; HttpOnly`;
+                    window.location.href = `/${data.sessionId}`;
+                })
+                .catch(error => {
+                    console.error('Error creating session:', error);
+                    showNotification('Error creating session. Please try again.', true);
+                });
+            } else {
+                showNotification('Please enter a valid session name, display name, and voting points.', true);
+            }
+        }
+    </script>
+</body>
+</html>

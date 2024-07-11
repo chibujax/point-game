@@ -1,0 +1,20 @@
+{
+  "session_1720699006875": {
+    "name": "Bitesize",
+    "users": {
+      "0f10e195-4408-4305-a9da-c0b2a698219a": "Admin",
+      "3b3a7f59-c47e-42e1-ae67-fe070f1c8aa3": "Lydia"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      13
+    ],
+    "owner": "0f10e195-4408-4305-a9da-c0b2a698219a"
+  }
+}
