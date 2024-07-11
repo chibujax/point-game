@@ -12,17 +12,14 @@
     ],
     "owner": "3dc88162-1ecf-4ce4-8b27-5b1507091ade"
   },
-  "session_1720701067242": {
+  "session_1720701720491": {
     "name": "Bitesize",
     "users": {
-      "5e286c14-0e8e-4c03-93da-5ea9726eb8e7": "Admin",
-      "0639d62e-7502-4c9d-a321-bdff37c0676d": "bala",
-      "3b3a7f59-c47e-42e1-ae67-fe070f1c8aa3": "bumi"
+      "8951050a-6737-4edf-9bcf-d06991db7fe0": "Admin",
+      "3b3a7f59-c47e-42e1-ae67-fe070f1c8aa3": "vvvv"
     },
     "votes": {
-      "5e286c14-0e8e-4c03-93da-5ea9726eb8e7": 6,
-      "3b3a7f59-c47e-42e1-ae67-fe070f1c8aa3": 8,
-      "0639d62e-7502-4c9d-a321-bdff37c0676d": 4
+      "3b3a7f59-c47e-42e1-ae67-fe070f1c8aa3": 8
     },
     "points": [
       2,
@@ -32,6 +29,6 @@
       9,
       13
     ],
-    "owner": "5e286c14-0e8e-4c03-93da-5ea9726eb8e7"
+    "owner": "8951050a-6737-4edf-9bcf-d06991db7fe0"
   }
 }

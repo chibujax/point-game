@@ -34,6 +34,7 @@ const sendCurrentVotesToUser = (sessionId, socket) =>{
       }
       return result;
   }, {});
+  console.log("votedUsers", votedUsers);
   socket.emit('currentVotes', votedUsers);
 }
 
