@@ -8,6 +8,7 @@ function joinSession() {
         document.cookie = `sessionId=${sessionId}; path=/; Secure`;
         document.cookie = `name=${name}; path=/; Secure`;
         socket.emit('joinSession', { sessionId, name, userId });
+        socket.emit('getTitle', { sessionId });
         hideElement('join');
         showElement('app');
         showElement('bottom-bar', 'flex');
@@ -51,6 +52,30 @@ function leaveSession() {
         showNotification('Error leaving session. Please try again.', true);
     });
 }
+
+function setVoteTitle() {
+    const voteTitle = getElementValue('voteTitle');
+    fetch('/set-vote-title', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ sessionId, voteTitle })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showNotification('Vote title updated.');
+        } else {
+            showNotification('Error updating vote title.', true);
+        }
+    })
+    .catch(error => {
+        console.error('Error setting vote title:', error);
+        showNotification('Error setting vote title. Please try again.', true);
+    });
+}
+
 
 socket.on('setUserId', (userId) => {
     document.cookie = `userId=${userId}; path=/; Secure`;
@@ -105,7 +130,13 @@ socket.on('setSessionOwner', (ownerId) => {
         showElement('restart');
         showElement('end');
         showElement('reveal');
+        showElement('voteTitleContainer');
     }
+});
+
+socket.on('updateVoteTitle', (voteTitle) => {
+    const title = voteTitle || "";
+    document.getElementById('voteTitleDisplay').innerText = "Vote Title: " + title;
 });
 
 socket.on('restartVoting', () => {
@@ -149,23 +180,27 @@ socket.on('updateOwner', (sessionOwner) => {
      if (userId === sessionOwner) {
         showElement('reveal');
         showElement('restart');
-        showElement('end')
+        showElement('end');
+        showElement('voteTitleContainer');
      } else {
         hideElement('reveal');
         hideElement('restart');
         hideElement('end');
+        hideElement('voteTitleContainer');
      }
 });
-
 
 window.onload = () => {
     const userId = getCookie('userId');
     const name = getCookie('name');
     if (userId && name && getCookie('sessionId') === sessionId) {
         socket.emit('joinSession', { sessionId, name, userId });
+        socket.emit('getTitle', { sessionId });
         hideElement('join');
         showElement('app');
         showElement('bottom-bar', 'flex');
         hideElement('average');
+    } else {
+        hideElement('bottom-bar');
     }
 };

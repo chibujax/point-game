@@ -21,9 +21,8 @@ const sessionsFilePath = path.join(__dirname, "sessions.json");
 const loadSessions = () => {
   if (fs.existsSync(sessionsFilePath)) {
     sessions = JSON.parse(fs.readFileSync(sessionsFilePath, "utf8"));
-    console.log("session loaded",sessions)
   } else {
-    sessions = {}; 
+    sessions = {};
   }
 };
 
@@ -41,7 +40,6 @@ const sendCurrentVotesToUsers = (sessionId) =>{
 
 // Save sessions to file
 const saveSessionsToFile = () => {
-  console.log("trying to save session",sessionsFilePath)
   fs.writeFileSync(sessionsFilePath, JSON.stringify(sessions, null, 2), "utf8");
 };
 
@@ -52,7 +50,6 @@ app.get('/', (req, res) => {
 });
 
 app.post("/create-session", (req, res) => {
-  console.log("creating session")
   const sessionId = `session_${Date.now()}`;
   const { sessionName, displayName, points } = req.body;
   const userId = uuidv4();
@@ -77,6 +74,18 @@ app.get("/:sessionId", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "session.html"));
   } else {
     res.status(404).send("Session not found");
+  }
+});
+
+app.post("/set-vote-title", (req, res) => {
+  const { sessionId, voteTitle } = req.body;
+  if (sessions[sessionId]) {
+    sessions[sessionId].voteTitle = voteTitle;
+    saveSessionsToFile();
+    io.to(sessionId).emit("updateVoteTitle", voteTitle);
+    res.json({ success: true });
+  } else {
+    res.status(404).json({ success: false, message: "Session not found" });
   }
 });
 
@@ -112,7 +121,6 @@ io.on("connection", (socket) => {
   }
 
   socket.on("joinSession", ({ sessionId, name }) => {
-    console.log("joining sessionId",sessionId, name, sessions)
     if (sessions[sessionId]) {
       currentSessionId = sessionId;
       sessions[sessionId].users[userId] = name;
@@ -125,14 +133,13 @@ io.on("connection", (socket) => {
       io.to(sessionId).emit("updatePoints", sessions[sessionId].points);
       io.to(sessionId).emit("sessionName", sessions[sessionId].name);
       io.to(sessionId).emit("updateOwner", sessions[sessionId].owner);
-      sendCurrentVotesToUsers(sessionId, socket);
+      sendCurrentVotesToUsers(sessionId);
     } else {
       socket.emit("sessionError", "Session not found");
     }
   });
 
   socket.on("vote", (data) => {
-    console.log("voted", data)
     if (currentSessionId) {
       sessions[currentSessionId].votes[userId] = data.vote;
       saveSessionsToFile();
@@ -186,6 +193,14 @@ io.on("connection", (socket) => {
     const session = sessions[sessionId];
     if (session) {
       socket.emit("setSessionOwner", session.owner);
+    }
+  });
+
+  socket.on("getTitle", ({ sessionId }) => {
+    const session = sessions[sessionId];
+    if (session) {
+      const voteTitle = sessions[sessionId].voteTitle;
+      socket.emit("updateVoteTitle", voteTitle);
     }
   });
 });

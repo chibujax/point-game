@@ -14,6 +14,11 @@
         </div>
         <div id="app" style="display:none;" class="content">
             <div id="sessionName" class="session-name"></div>
+            <div id="voteTitleContainer" style="display:none;">
+                <input type="text" id="voteTitle" placeholder="Enter vote title" style="width: 200px;" class="input-field">
+                <button onclick="setVoteTitle()" class="title-button">Set Vote Title</button>
+            </div>
+            <div id="voteTitleDisplay" class="vote-title-display">Title: </div>
             <div id="users" class="users-container"></div>
             <div id="votes" class="votes-container"></div>
         </div>

@@ -218,6 +218,28 @@ h1 {
     flex-wrap: wrap;
 }
 
+.title-button {
+    width: auto;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+.title-button:hover {
+    background-color: #727572;
+}
+
+.vote-title-display {
+    margin-bottom: 15px;
+    text-align: center;
+}
 .average {
     background: white;
     border: 1px solid #ddd;
