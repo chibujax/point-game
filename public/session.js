@@ -79,7 +79,6 @@ socket.on('updatePoints', (points) => {
 });
 
 socket.on('voteReceived', (userId) => {
-  console.log("voteReceived");
     document.getElementById(userId).style.backgroundColor = 'lightgreen';
 });
 
@@ -110,7 +109,6 @@ socket.on('setSessionOwner', (ownerId) => {
 });
 
 socket.on('restartVoting', () => {
-  console.log("restartVoting");
     document.getElementById('average').innerText = '';
     hideElement('restart');
     //hideElement('end');
@@ -138,7 +136,6 @@ socket.on('sessionName', (name) => {
 });
 
 socket.on('currentVotes', (votes) => {
-  console.log("currentVotes",votes);
     for (const [userId, vote] of Object.entries(votes)) {
         const userElement = document.getElementById(userId);
         if (userElement) {
@@ -148,7 +145,6 @@ socket.on('currentVotes', (votes) => {
 });
 
 socket.on('updateOwner', (sessionOwner) => {
-  console.log("updateOwner");
     const userId = getCookie('userId');
      if (userId === sessionOwner) {
         showElement('reveal');
@@ -163,7 +159,6 @@ socket.on('updateOwner', (sessionOwner) => {
 
 
 window.onload = () => {
-  console.log("loaded");
     const userId = getCookie('userId');
     const name = getCookie('name');
     if (userId && name && getCookie('sessionId') === sessionId) {
