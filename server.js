@@ -40,6 +40,7 @@ const sendCurrentVotesToUsers = (sessionId) =>{
 
 // Save sessions to file
 const saveSessionsToFile = () => {
+  console.log("trying to save session",sessionsFilePath)
   fs.writeFileSync(sessionsFilePath, JSON.stringify(sessions, null, 2), "utf8");
 };
 
@@ -50,6 +51,7 @@ app.get('/', (req, res) => {
 });
 
 app.post("/create-session", (req, res) => {
+  console.log("creating session")
   const sessionId = `session_${Date.now()}`;
   const { sessionName, displayName, points } = req.body;
   const userId = uuidv4();
@@ -109,6 +111,7 @@ io.on("connection", (socket) => {
   }
 
   socket.on("joinSession", ({ sessionId, name }) => {
+    console.log("joining sessionId",sessionId, name, sessions)
     if (sessions[sessionId]) {
       currentSessionId = sessionId;
       sessions[sessionId].users[userId] = name;
@@ -128,6 +131,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("vote", (data) => {
+    console.log("voted", data)
     if (currentSessionId) {
       sessions[currentSessionId].votes[userId] = data.vote;
       saveSessionsToFile();
