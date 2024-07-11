@@ -19,9 +19,7 @@
   },
   "session_1720704655248": {
     "name": "Ad's Test Voting",
-    "users": {
-      "6747d736-0157-40a3-8552-a60764918e6f": "Chibu"
-    },
+    "users": {},
     "votes": {
       "09ccd7ed-41ca-4943-9d41-26938c340cd6": 5,
       "3b3a7f59-c47e-42e1-ae67-fe070f1c8aa3": 5,
@@ -57,5 +55,21 @@
       13
     ],
     "owner": "741e4965-7d07-4d2a-8f66-3186d0d81b36"
+  },
+  "session_1720709765349": {
+    "name": "Bitesize",
+    "users": {
+      "1bed3c9f-034a-492a-901f-7b16614382ae": "Adam"
+    },
+    "votes": {},
+    "points": [
+      2,
+      4,
+      6,
+      8,
+      9,
+      13
+    ],
+    "owner": "1bed3c9f-034a-492a-901f-7b16614382ae"
   }
 }
