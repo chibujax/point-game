@@ -26,7 +26,7 @@ const loadSessions = () => {
   }
 };
 
-const sendCurrentVotesToUser = (sessionId, socket) =>{
+const sendCurrentVotesToUsers = (sessionId) =>{
   const votes = sessions[sessionId].votes;
   const votedUsers = Object.entries(votes).reduce((result, [userId, vote]) => {
       if (vote !== undefined) {
@@ -34,8 +34,7 @@ const sendCurrentVotesToUser = (sessionId, socket) =>{
       }
       return result;
   }, {});
-  console.log("votedUsers", votedUsers);
-  socket.emit('currentVotes', votedUsers);
+  io.to(sessionId).emit('currentVotes', votedUsers);
 }
 
 
@@ -122,7 +121,7 @@ io.on("connection", (socket) => {
       io.to(sessionId).emit("updatePoints", sessions[sessionId].points);
       io.to(sessionId).emit("sessionName", sessions[sessionId].name);
       io.to(sessionId).emit("updateOwner", sessions[sessionId].owner);
-      sendCurrentVotesToUser(sessionId, socket);
+      sendCurrentVotesToUsers(sessionId, socket);
     } else {
       socket.emit("sessionError", "Session not found");
     }
