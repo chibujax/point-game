@@ -1,5 +1,10 @@
 const socket = io();
 const sessionId = window.location.pathname.split('/')[1];
+function sanitizeInput(input) {
+    const temp = document.createElement('div');
+    temp.textContent = input;
+    return temp.innerHTML;
+}
 
 function joinSession() {
     const name = getElementValue('name');
@@ -10,17 +15,30 @@ function joinSession() {
         socket.emit('joinSession', { sessionId, name, userId });
         socket.emit('getTitle', { sessionId });
         hideElement('join');
-        showElement('app');
-        showElement('bottom-bar', 'flex');
-        hideElement('average');
+        showElement('mainContent');
     } else {
         showNotification('Please enter your name first.', true);
         return;
     }
 }
 
+function hideAdmin() {
+    hideElement('end');
+    hideElement('revealBtn');
+    hideElement('restart');
+    hideElement('titleChange');
+}
+
+function showAdmin() {
+    showElement('scoreAdmin');
+    hideElement('revealBtn');
+    showElement('end');
+    showElement('titleChange', 'flex');
+}
+
 function vote(point) {
     socket.emit('vote', { vote: point });
+    console.log("pribt")
 }
 
 function reveal() {
@@ -42,10 +60,17 @@ function leaveSession() {
             'Content-Type': 'application/json'
         }
     })
-    .then(response => response.json())
-    .then(data => {
-        showNotification(data.message);
-        window.location.href = '/';
+    .then(response => {
+        if (response.ok) {
+            return response.json().then(data => {
+                showNotification(data.message);
+                window.location.href = '/';
+            });
+        } else {
+            return response.json().then(data => {
+                showNotification(data.message || 'Error leaving session.', true);
+            });
+        }
     })
     .catch(error => {
         console.error('Error leaving session:', error);
@@ -55,12 +80,14 @@ function leaveSession() {
 
 function setVoteTitle() {
     const voteTitle = getElementValue('voteTitle');
+    if(voteTitle.length < 3) return false;
+    const sanitizedVoteTitle = sanitizeInput(voteTitle);
     fetch('/set-vote-title', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ sessionId, voteTitle })
+        body: JSON.stringify({ sessionId, voteTitle: sanitizedVoteTitle })
     })
     .then(response => response.json())
     .then(data => {
@@ -85,39 +112,77 @@ socket.on('userList', (users) => {
     const userList = document.getElementById('users');
     userList.innerHTML = '';
     users.forEach(([id, name]) => {
-        const div = document.createElement('div');
-        div.innerText = name;
-        div.id = id;
-        userList.appendChild(div);
+        var outerDiv = document.createElement('div');
+        outerDiv.setAttribute('class', 'col-xl-3 col-sm-6 mb-xl-0 mb-4');
+        var cardDiv = document.createElement('div');
+        cardDiv.setAttribute('class', 'card bg-gradient-info move-on-hover');
+        cardDiv.id = id;
+        var cardBodyDiv = document.createElement('div');
+        cardBodyDiv.setAttribute('class', 'card-body');
+        var dFlexDiv = document.createElement('div');
+        dFlexDiv.setAttribute('class', 'd-flex');
+        var h5 = document.createElement('h5');
+        h5.setAttribute('class', 'mb-0 text-white');
+        h5.innerText = name;
+        var msAutoDiv = document.createElement('div');
+        msAutoDiv.setAttribute('class', 'ms-auto');
+        var h6 = document.createElement('h6');
+        h6.setAttribute('class', 'text-white text-end mb-0 mt-n2');
+        
+
+        msAutoDiv.appendChild(h6);
+        dFlexDiv.appendChild(h5);
+        dFlexDiv.appendChild(msAutoDiv);
+        var p = document.createElement('p');
+        p.setAttribute('class', 'text-white mb-0');
+        h5.id = id + "name"
+        p.innerText = '';
+        p.id = id + "score"
+        cardBodyDiv.appendChild(dFlexDiv);
+        cardBodyDiv.appendChild(p);
+        cardDiv.appendChild(cardBodyDiv);
+        outerDiv.appendChild(cardDiv);
+
+        userList.appendChild(outerDiv);
     });
 });
+
 
 socket.on('updatePoints', (points) => {
     const votesDiv = document.getElementById('votes');
     votesDiv.innerHTML = '';
     points.forEach(point => {
         const button = document.createElement('button');
+        votesDiv.appendChild(button);
+        button.id = point + "name";
+        button.setAttribute('type', 'button');
+        button.setAttribute('class', 'btn bg-gradient-secondary btn-sm');
         button.innerText = point;
         button.onclick = () => vote(point);
-        votesDiv.appendChild(button);
     });
 });
 
 socket.on('voteReceived', (userId) => {
-    document.getElementById(userId).style.backgroundColor = 'lightgreen';
+    console.log("vote recieved", userId)
+    showElement('revealBtn');
+    const userElement = document.getElementById(userId);
+    if (userElement) {
+        userElement.classList.add('bg-gradient-success');
+        userElement.classList.remove('bg-gradient-info');
+    }
 });
 
 socket.on('revealVotes', (data) => {
     const { votes, average } = data;
     if (average) {
         for (const [userId, vote] of Object.entries(votes)) {
-            const userElement = document.getElementById(userId);
+            const userElement = document.getElementById(userId + "score");
             if (userElement) {
-                userElement.innerText += `: ${vote}`;
+                userElement.innerText = vote;
             }
         }
         document.getElementById('average').innerText = `Average: ${average.toFixed(2)}`;
-        hideElement('reveal');
+        hideElement('revealBtn', true);
         showElement('average');
         const sessionOwner = getCookie('userId');
         socket.emit('getSessionOwner', { sessionId });
@@ -127,10 +192,7 @@ socket.on('revealVotes', (data) => {
 socket.on('setSessionOwner', (ownerId) => {
     const userId = getCookie('userId');
     if (userId === ownerId) {
-        showElement('restart');
-        showElement('end');
-        showElement('reveal');
-        showElement('voteTitleContainer');
+        showAdmin()
     }
 });
 
@@ -140,15 +202,14 @@ socket.on('updateVoteTitle', (voteTitle) => {
 });
 
 socket.on('restartVoting', () => {
-    document.getElementById('average').innerText = '';
-    hideElement('restart');
-    //hideElement('end');
-    hideElement('average');
+    document.getElementById('average').innerText = 'Average: 0';
+    hideElement('revealBtn');
     const userList = document.getElementById('users');
     userList.childNodes.forEach(div => {
-        div.style.backgroundColor = '';
-        const name = div.innerText.split(':')[0];
-        div.innerText = name;
+        div.firstChild.classList.add('bg-gradient-info');
+        div.firstChild.classList.remove('bg-gradient-success');
+        userId = div.firstChild.id;
+        document.getElementById(userId + "score").innerText = ""
     });
 });
 
@@ -170,7 +231,8 @@ socket.on('currentVotes', (votes) => {
     for (const [userId, vote] of Object.entries(votes)) {
         const userElement = document.getElementById(userId);
         if (userElement) {
-            userElement.style.backgroundColor = 'lightgreen';
+            userElement.classList.add('bg-gradient-success');
+            userElement.classList.remove('bg-gradient-info');
         }
     }
 });
@@ -178,29 +240,29 @@ socket.on('currentVotes', (votes) => {
 socket.on('updateOwner', (sessionOwner) => {
     const userId = getCookie('userId');
      if (userId === sessionOwner) {
-        showElement('reveal');
-        showElement('restart');
-        showElement('end');
-        showElement('voteTitleContainer');
+        showAdmin();
      } else {
-        hideElement('reveal');
-        hideElement('restart');
-        hideElement('end');
-        hideElement('voteTitleContainer');
+        hideAdmin();
      }
 });
 
 window.onload = () => {
+    document.getElementById('voteTitle').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            setVoteTitle();
+        }
+    });
     const userId = getCookie('userId');
     const name = getCookie('name');
     if (userId && name && getCookie('sessionId') === sessionId) {
         socket.emit('joinSession', { sessionId, name, userId });
         socket.emit('getTitle', { sessionId });
         hideElement('join');
-        showElement('app');
-        showElement('bottom-bar', 'flex');
-        hideElement('average');
+        showElement('mainContent');
+        // showElement('bottom-bar', 'flex');
+        // hideElement('average');
     } else {
-        hideElement('bottom-bar');
+        hideElement('mainContent');
     }
 };

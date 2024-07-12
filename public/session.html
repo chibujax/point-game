@@ -1,42 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Join Session</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <title>
+        Voting Game
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="./assets/nucleo-icons.css" rel="stylesheet" />
+    <link href="./assets/nucleo-svg.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link id="pagestyle" href="./assets/argon-dashboard.min.css?v=2.0.4" rel="stylesheet" />
 </head>
-<body>
-    <div class="container">
-        <div id="join" class="form-container">
-            <input type="text" id="name" placeholder="Enter your name" class="input-field">
-            <button onclick="joinSession()" class="button">Join Session</button>
-        </div>
-        <div id="app" style="display:none;" class="content">
-            <div id="sessionName" class="session-name"></div>
-            <div id="voteTitleContainer" style="display:none;">
-                <input type="text" id="voteTitle" placeholder="Enter vote title" style="width: 200px;" class="input-field">
-                <button onclick="setVoteTitle()" class="title-button">Set Vote Title</button>
-            </div>
-            <div id="voteTitleDisplay" class="vote-title-display">Title: </div>
-            <div id="users" class="users-container"></div>
-            <div id="votes" class="votes-container"></div>
-        </div>
-        <div class="bottom-controls" id="bottom-bar">
-            <div class="buttons-container">
-                <button id="reveal" onclick="reveal()" style="display:none;" class="button">Reveal Votes</button>
-                <button id="restart" onclick="restart()" style="display:none;" class="button">Restart Voting</button>
-                <button id="end" onclick="endSession()" style="display:none;" class="button">End Session</button>
-                <button id="leave" onclick="leaveSession()" class="button">Leave Session</button>
-            </div>
-            <div id="average" class="average"></div>
-        </div>
-        <div id="notification" class="notification"></div>
+
+<body class="g-sidenav-show bg-gray-100">
+    <div class="position-absolute w-100 min-height-300 top-0"
+        style="background-image: url('./assets/images/mediacity.jpg'); background-position-y: 50%;">
+        <span class="mask bg-primary opacity-6"></span>
     </div>
 
-    <script src="notification.js"></script>
+
+
+
+    <main id="join" class="main-content  mt-0">
+        <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg"
+            style=" background-position: top;">
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 text-center mx-auto">
+                        <h1 class="text-white mb-2 mt-5">Welcome!</h1>
+                        <p class="text-lead text-white">Enter a display name to continue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
+                <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+                    <div class="card card-profile shadow  z-index-0">
+                        <div class="card-body">
+                            <form role="form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Enter display name"
+                                        aria-label="display name">
+                                </div>
+                        </div>
+                        <div class="text-center">
+                            <button onclick="joinSession()" type="button"
+                                class="btn btn-primary  my-4 mb-2">Submit</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+    <div id="mainContent" class="main-content position-relative max-height-vh-100 h-100">
+        <nav
+            class="navbar navbar-main navbar-expand-lg bg-transparent shadow-none position-absolute px-4 w-100 z-index-2 mt-n11">
+            <div class="container-fluid py-1">
+                <div class="collapse navbar-collapse me-md-0 me-sm-4 mt-sm-0 mt-2" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                        <div id="titleChange" class="input-group">
+                            <span class="input-group-text text-body"><i class="fas fa-edit"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" id="voteTitle" class="form-control" placeholder="Change title...">
+                        </div>
+                    </div>
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="javascript:leaveSession();" class="nav-link text-white font-weight-bold px-0">
+                                <i class="fa fa-user me-sm-1"></i>
+                                <span class="d-sm-inline d-none">Leave</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="card shadow-lg mx-4 card-profile-bottom">
+            <div class="card-body p-3">
+                <div class="row gx-4">
+                    <div class="col-auto">
+                        <div class="avatar avatar-xl position-relative">
+                            <img src="./assets/images/team-1.jpg" alt="profile_image"
+                                class="w-100 border-radius-lg shadow-sm">
+                        </div>
+                    </div>
+                    <div class="col-auto my-auto">
+                        <div class="h-100">
+                            <h5 id="sessionName" class="mb-1">
+                                Session: Sayo Kravits
+                            </h5>
+                            <p id="voteTitleDisplay" class="mb-0 font-weight-bold text-sm">
+                                Title: Public Relations
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
+                        <div class="nav-wrapper position-relative end-0">
+                            <button id="end" onclick="endSession()" class="btn btn-danger btn-sm ms-auto"
+                                style="float: right;">End Session</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card" style="min-height: 30vh;">
+                        <div class="card-body">
+                            <div id="votes" style="display: flex;flex-wrap: wrap;gap: 10px;"></div>
+                            <div class="row" id="users"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-profile">
+                        <div id="scoreAdmin" style="display: none!important;" class="card-header text-center border-0">
+                            <div class="d-flex justify-content-between">
+                                <div id="revealBtn">
+                                    <a href="javascript:reveal();"  class="btn btn-sm btn-info mb-0">Reveal</a>
+                                </div>
+
+                                <a href="javascript:restart();" id="restart"
+                                    class="btn btn-sm btn-dark float-right mb-0">Restart</a>
+                            </div>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="text-center mt-4">
+                                <h5 id="average">
+                                    Average: 0
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer pt-3" style="position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.3;">
+                <div class="container-fluid">
+                    <div class="row align-items-center justify-content-lg-between">
+                        <div class="col-lg-6 mb-lg-0 mb-4">
+                            <div class="copyright text-center text-sm text-muted text-lg-start">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>,
+                                made with <i class="fa fa-heart"></i> by
+                                Jax.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="notification" style="position: fixed; bottom: 0;left: 0;right: 0;" class="alert hide" role="alert">
+            
+    </div>
     <script src="common.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="session.js"></script>
 </body>
+
 </html>
