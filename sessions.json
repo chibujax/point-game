@@ -17,23 +17,5 @@
     ],
     "owner": "a37fafab-4ff8-4a35-97a2-e43e84e7abe9",
     "voteTitle": "update dependency"
-  },
-  "session_1720862260654": {
-    "name": "UAP",
-    "users": {
-      "04caef1c-91fc-4b43-badb-ac8fa997a297": "Adam"
-    },
-    "votes": {},
-    "points": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      8,
-      13
-    ],
-    "owner": "04caef1c-91fc-4b43-badb-ac8fa997a297",
-    "voteTitle": "new ticket"
   }
 }

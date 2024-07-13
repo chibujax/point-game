@@ -9,8 +9,9 @@ function showElement(id, style) {
     document.getElementById(id).style.display = displayStyle;
 }
 
-function hideElement(id) {
-    document.getElementById(id).style.display = 'none';
+function hideElement(id, important) {
+    const hide = important ? 'none!important' : 'none'
+    document.getElementById(id).style.display = hide;
 }
 
 function getElementValue(id) {
@@ -22,13 +23,16 @@ function getElementValue(id) {
 function showNotification(message, isError = false) {
     const notification = document.getElementById('notification');
     notification.textContent = message;
-    notification.classList.add('show');
+    notification.classList.add('nshow');
+    notification.classList.remove('hide');
     if (isError) {
-        notification.classList.add('error');
+        notification.classList.add('alert-danger');
     } else {
-        notification.classList.remove('error');
+        notification.classList.add('alert-info');
     }
     setTimeout(() => {
-        notification.classList.remove('show');
+        const notification = document.getElementById('notification');
+        notification.classList.remove('nshow');
+        notification.classList.add('hide');
     }, 3000);
 }
