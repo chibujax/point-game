@@ -1,9 +1,7 @@
 {
   "session_1720858933145": {
     "name": "Cbeebies",
-    "users": {
-      "9a03ad06-2c91-4a16-bf42-8a0ece84e63a": "Amy"
-    },
+    "users": {},
     "votes": {
       "6a26a9da-4471-4fab-b773-81ee8f945b2c": 6,
       "9a03ad06-2c91-4a16-bf42-8a0ece84e63a": 8,
@@ -35,6 +33,7 @@
       8,
       13
     ],
-    "owner": "04caef1c-91fc-4b43-badb-ac8fa997a297"
+    "owner": "04caef1c-91fc-4b43-badb-ac8fa997a297",
+    "voteTitle": "new ticket"
   }
 }
