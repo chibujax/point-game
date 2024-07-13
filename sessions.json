@@ -2,9 +2,13 @@
   "session_1720858933145": {
     "name": "Cbeebies",
     "users": {
-      "a37fafab-4ff8-4a35-97a2-e43e84e7abe9": "Adam"
+      "9a03ad06-2c91-4a16-bf42-8a0ece84e63a": "Amy"
     },
-    "votes": {},
+    "votes": {
+      "6a26a9da-4471-4fab-b773-81ee8f945b2c": 6,
+      "9a03ad06-2c91-4a16-bf42-8a0ece84e63a": 8,
+      "a37fafab-4ff8-4a35-97a2-e43e84e7abe9": 13
+    },
     "points": [
       2,
       4,
@@ -15,5 +19,22 @@
     ],
     "owner": "a37fafab-4ff8-4a35-97a2-e43e84e7abe9",
     "voteTitle": "update dependency"
+  },
+  "session_1720862260654": {
+    "name": "UAP",
+    "users": {
+      "04caef1c-91fc-4b43-badb-ac8fa997a297": "Adam"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      13
+    ],
+    "owner": "04caef1c-91fc-4b43-badb-ac8fa997a297"
   }
 }

@@ -17,7 +17,7 @@ app.use(express.json());
 let sessions = {}; // To keep track of sessions in memory
 const sessionsFilePath = path.join(__dirname, "sessions.json");
 
-// Load sessions from file if it exists 
+// Load sessions from file if it exists
 const loadSessions = () => {
   if (fs.existsSync(sessionsFilePath)) {
     sessions = JSON.parse(fs.readFileSync(sessionsFilePath, "utf8"));
@@ -91,17 +91,24 @@ app.post("/set-vote-title", (req, res) => {
 
 app.post("/leave-session", (req, res) => {
   const { sessionId, userId } = req.cookies;
-  if (sessions[sessionId] && sessions[sessionId].users[userId]) {
-    delete sessions[sessionId].users[userId];
-    saveSessionsToFile();
-    res.clearCookie("sessionId");
-    res.clearCookie("userId");
-    res.clearCookie("owner");
-    res.clearCookie("name");
-    res.json({ message: "Left session successfully" });
-  } else {
-    res.status(400).json({ message: "Session or user not found" });
+  const currentSessionId = sessions[sessionId];
+  const isUser = sessions[sessionId].users[userId];
+  if (!currentSessionId ||  !isUser) {
+    return res.status(400).json({ message: "Session or user not found" });
   }
+
+  if (currentSessionId && currentSessionId.owner === userId) {
+    const msg = "Admin cannot leave the sessions as the admin, end the session instead";
+    return res.status(400).json({ message: msg });
+  }
+
+  delete sessions[sessionId].users[userId];
+  saveSessionsToFile();
+  res.clearCookie("sessionId");
+  res.clearCookie("userId");
+  res.clearCookie("owner");
+  res.clearCookie("name");
+  return res.json({ message: "Left session successfully" });
 });
 
 io.on("connection", (socket) => {
@@ -165,6 +172,7 @@ io.on("connection", (socket) => {
       sessions[currentSessionId].votes = {};
       saveSessionsToFile();
       io.to(currentSessionId).emit("restartVoting");
+      io.to(currentSessionId).emit("updateOwner", sessions[currentSessionId].owner);
     } else {
       socket.emit("sessionError", "Only the session owner can restart voting");
     }

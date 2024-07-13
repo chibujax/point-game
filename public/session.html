@@ -47,16 +47,15 @@
                                     <input type="text" class="form-control" id="name" placeholder="Enter display name"
                                         aria-label="display name">
                                 </div>
+                                <div class="text-center">
+                                    <button onclick="joinSession()" type="button"
+                                        class="btn btn-primary  my-4 mb-2">Submit</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="text-center">
-                            <button onclick="joinSession()" type="button"
-                                class="btn btn-primary  my-4 mb-2">Submit</button>
-                        </div>
-                        </form>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 
@@ -129,7 +128,7 @@
                         <div id="scoreAdmin" style="display: none!important;" class="card-header text-center border-0">
                             <div class="d-flex justify-content-between">
                                 <div id="revealBtn">
-                                    <a href="javascript:reveal();"  class="btn btn-sm btn-info mb-0">Reveal</a>
+                                    <a href="javascript:reveal();" class="btn btn-sm btn-info mb-0">Reveal</a>
                                 </div>
 
                                 <a href="javascript:restart();" id="restart"
@@ -170,7 +169,7 @@
         </div>
     </div>
     <div id="notification" style="position: fixed; bottom: 0;left: 0;right: 0;" class="alert hide" role="alert">
-            
+
     </div>
     <script src="common.js"></script>
     <script src="/socket.io/socket.io.js"></script>
