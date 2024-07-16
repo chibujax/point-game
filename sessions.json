@@ -34,5 +34,31 @@
       13
     ],
     "owner": "c6503c5c-3d4c-411d-86b8-10f103f9d986"
+  },
+  "session_1721124078349": {
+    "name": "Codebuil Thing",
+    "users": {
+      "c840fe2c-05ac-4039-8cc3-8ee337c26167": "Cuong",
+      "a377d017-9bda-4fcb-b885-e52977807c24": "Agnel"
+    },
+    "votes": {
+      "a29c0ecb-06e7-45d6-a958-70ce83d937c4": 5,
+      "979758c5-c160-4478-a763-a3ba76239c2d": 5,
+      "41e515e5-e02c-490d-824d-09efe86449b8": 5,
+      "c0a41b80-85de-4e8f-9493-566992edfbf6": 5,
+      "c1f26b99-480d-4bd1-a9fd-7330f078fbea": 5,
+      "c840fe2c-05ac-4039-8cc3-8ee337c26167": 5,
+      "a377d017-9bda-4fcb-b885-e52977807c24": 8
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "a29c0ecb-06e7-45d6-a958-70ce83d937c4",
+    "voteTitle": "CAPP-3226"
   }
 }
