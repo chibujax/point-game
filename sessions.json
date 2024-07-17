@@ -59,5 +59,21 @@
     ],
     "owner": "a29c0ecb-06e7-45d6-a958-70ce83d937c4",
     "voteTitle": "CAPP-3226"
+  },
+  "session_1721210395270": {
+    "name": "What's the point?",
+    "users": {
+      "fd076083-8c62-46a8-ab26-254d42b3c005": "Adam"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "fd076083-8c62-46a8-ab26-254d42b3c005"
   }
 }
