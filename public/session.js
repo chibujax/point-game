@@ -7,7 +7,14 @@ function sanitizeInput(input) {
 }
 
 function joinSession() {
-    const name = getElementValue('name');
+    const name = getElementValue('name').trim();
+    const validName = /^[A-Za-z0-9]{1,10}$/;
+
+    if (!validName.test(name)) {
+        showNotification('Please enter a valid display name with only letters and numbers, up to 10 characters.', true);
+        return;
+    }
+
     if (name) {
         const userId = getCookie('userId');
         document.cookie = `sessionId=${sessionId}; path=/; Secure`;
@@ -18,9 +25,9 @@ function joinSession() {
         showElement('mainContent');
     } else {
         showNotification('Please enter your name first.', true);
-        return;
     }
 }
+
 
 function hideAdmin() {
     hideElement('end');
@@ -113,7 +120,7 @@ socket.on('userList', (users) => {
     userList.innerHTML = '';
     users.forEach(([id, name]) => {
         var outerDiv = document.createElement('div');
-        outerDiv.setAttribute('class', 'col-xl-3 col-sm-6 mb-xl-0 mb-4');
+        outerDiv.setAttribute('class', 'col-xl-3 col-sm-6 mb-4');
         var cardDiv = document.createElement('div');
         cardDiv.setAttribute('class', 'card bg-gradient-info move-on-hover');
         cardDiv.id = id;
@@ -173,8 +180,8 @@ socket.on('voteReceived', (userId) => {
 });
 
 socket.on('revealVotes', (data) => {
-    const { votes, average } = data;
-    if (average) {
+    const { votes, average, highestVote, lowestVote, totalVoters } = data;
+    if (votes) {
         for (const [userId, vote] of Object.entries(votes)) {
             const userElement = document.getElementById(userId + "score");
             if (userElement) {
@@ -182,12 +189,20 @@ socket.on('revealVotes', (data) => {
             }
         }
         document.getElementById('average').innerText = `Average: ${average.toFixed(2)}`;
+        document.getElementById('highestVote').innerText = `Highest Vote: ${highestVote.value} (${highestVote.count} people voted)`;
+        document.getElementById('lowestVote').innerText = `Lowest Vote: ${lowestVote.value} (${lowestVote.count} person voted)`;
+        document.getElementById('totalVoters').innerText = `Total Votes: ${totalVoters}`;
         hideElement('revealBtn', true);
         showElement('average');
+        showElement('highestVote');
+        showElement('lowestVote');
+        showElement('totalVoters');
         const sessionOwner = getCookie('userId');
         socket.emit('getSessionOwner', { sessionId });
     }
 });
+
+
 
 socket.on('setSessionOwner', (ownerId) => {
     const userId = getCookie('userId');
@@ -203,6 +218,9 @@ socket.on('updateVoteTitle', (voteTitle) => {
 
 socket.on('restartVoting', () => {
     document.getElementById('average').innerText = 'Average: 0';
+    document.getElementById('highestVote').innerText = "";
+    document.getElementById('lowestVote').innerText = "";
+    document.getElementById('totalVoters').innerText = "";
     hideElement('revealBtn');
     const userList = document.getElementById('users');
     userList.childNodes.forEach(div => {

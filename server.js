@@ -156,16 +156,60 @@ io.on("connection", (socket) => {
 
   socket.on("revealVotes", () => {
     if (currentSessionId && sessions[currentSessionId].owner === userId) {
-      const totalVotes = Object.values(sessions[currentSessionId].votes);
-      const average = totalVotes.reduce((a, b) => a + b, 0) / totalVotes.length;
-      io.to(currentSessionId).emit("revealVotes", {
-        votes: sessions[currentSessionId].votes,
-        average,
-      });
+        const totalVotes = Object.values(sessions[currentSessionId].votes);
+        
+        if (totalVotes.length > 0) {
+            const average = totalVotes.reduce((a, b) => a + b, 0) / totalVotes.length;
+            
+            // Count the frequency of each vote
+            const voteCounts = totalVotes.reduce((acc, vote) => {
+                acc[vote] = (acc[vote] || 0) + 1;
+                return acc;
+            }, {});
+
+            // Find the highest and lowest voted numbers by count
+            const highestVoteCount = Math.max(...Object.values(voteCounts));
+            const lowestVoteCount = Math.min(...Object.values(voteCounts));
+
+            const highestVote = Object.keys(voteCounts).find(vote => voteCounts[vote] === highestVoteCount);
+            const lowestVote = Object.keys(voteCounts).find(vote => voteCounts[vote] === lowestVoteCount);
+
+            const totalVoters = totalVotes.length;
+
+            io.to(currentSessionId).emit("revealVotes", {
+                votes: sessions[currentSessionId].votes,
+                average,
+                highestVote: {
+                    value: highestVote,
+                    count: highestVoteCount
+                },
+                lowestVote: {
+                    value: lowestVote,
+                    count: lowestVoteCount
+                },
+                totalVoters
+            });
+        } else {
+            io.to(currentSessionId).emit("revealVotes", {
+                votes: {},
+                average: 0,
+                highestVote: {
+                    value: 0,
+                    count: 0
+                },
+                lowestVote: {
+                    value: 0,
+                    count: 0
+                },
+                totalVoters: 0
+            });
+        }
     } else {
-      socket.emit("sessionError", "Only the session owner can reveal votes");
+        socket.emit("sessionError", "Only the session owner can reveal votes");
     }
-  });
+});
+
+
 
   socket.on("restartVoting", () => {
     if (currentSessionId && sessions[currentSessionId].owner === userId) {
