@@ -71,6 +71,7 @@ function leaveSession() {
         if (response.ok) {
             return response.json().then(data => {
                 showNotification(data.message);
+                clearCookie('session_cookie_name');
                 window.location.href = '/';
             });
         } else {

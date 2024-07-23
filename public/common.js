@@ -36,3 +36,7 @@ function showNotification(message, isError = false) {
         notification.classList.add('hide');
     }, 3000);
 }
+
+function clearCookie(name) {
+    document.cookie = name + '=; Max-Age=-99999999;';
+}
