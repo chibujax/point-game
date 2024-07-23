@@ -71,7 +71,7 @@ function leaveSession() {
         if (response.ok) {
             return response.json().then(data => {
                 showNotification(data.message);
-                clearCookie('session_cookie_name');
+                clearCookie();
                 window.location.href = '/';
             });
         } else {
@@ -239,6 +239,7 @@ socket.on('sessionEnded', () => {
 
 socket.on('sessionError', (message) => {
     showNotification(message, true);
+    clearCookie();
     window.location.href = '/';
 });
 

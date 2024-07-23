@@ -108,7 +108,7 @@ app.post("/leave-session", (req, res) => {
   res.clearCookie("userId");
   res.clearCookie("owner");
   res.clearCookie("name");
-  return res.json({ message: "Left session successfully" });
+  return res.json({ message: "Left session successfully" }); 
 });
 
 io.on("connection", (socket) => {

@@ -1,3 +1,4 @@
+const cookieNames = ["name", "owner", "sessionId", "useId"];
 function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
@@ -37,6 +38,8 @@ function showNotification(message, isError = false) {
     }, 3000);
 }
 
-function clearCookie(name) {
-    document.cookie = name + '=; Max-Age=-99999999;';
+function clearCookie() {
+  cookieNames.forEach(name => {
+        document.cookie = name + '=; Max-Age=-99999999;';
+    });
 }
