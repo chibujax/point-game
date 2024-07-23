@@ -85,21 +85,5 @@
       13
     ],
     "owner": "fd076083-8c62-46a8-ab26-254d42b3c005"
-  },
-  "session_1721725695304": {
-    "name": "UAP Sprint planning",
-    "users": {},
-    "votes": {},
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      9,
-      13
-    ],
-    "owner": "bf59af3a-80e5-44ed-9419-95f9cbd70d2b",
-    "voteTitle": "Add UAP NMAs"
   }
 }
