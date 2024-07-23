@@ -234,12 +234,12 @@ socket.on('restartVoting', () => {
 
 socket.on('sessionEnded', () => {
     showNotification('The session has ended.');
+    clearCookie();
     window.location.href = '/';
 });
 
 socket.on('sessionError', (message) => {
     showNotification(message, true);
-    clearCookie();
     window.location.href = '/';
 });
 

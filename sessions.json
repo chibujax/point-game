@@ -86,11 +86,9 @@
     ],
     "owner": "fd076083-8c62-46a8-ab26-254d42b3c005"
   },
-  "session_1721732774020": {
-    "name": "UAP Games",
-    "users": {
-      "9ef0e06f-4735-4b69-ab5c-9518abf44c5d": "Chibu"
-    },
+  "session_1721732926473": {
+    "name": "UAP Sprint planning",
+    "users": {},
     "votes": {},
     "points": [
       1,
@@ -101,6 +99,6 @@
       9,
       13
     ],
-    "owner": "9ef0e06f-4735-4b69-ab5c-9518abf44c5d"
+    "owner": "6cdd875d-a86b-4f8d-96eb-2bb4b269d2d2"
   }
 }
