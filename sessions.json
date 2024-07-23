@@ -86,11 +86,11 @@
     ],
     "owner": "fd076083-8c62-46a8-ab26-254d42b3c005"
   },
-  "session_1721724676481": {
-    "name": "UAP Games",
+  "session_1721725695304": {
+    "name": "UAP Sprint planning",
     "users": {
-      "9dca954e-43c5-461f-b17a-6ccdb45a73b0": "Chibu",
-      "e8248320-2f44-4a18-a7d6-050e8f860538": "Agnel"
+      "bf59af3a-80e5-44ed-9419-95f9cbd70d2b": "Chibu",
+      "2a8060d2-9c24-46b3-aa8b-8edf5b14f4b6": "Agnel"
     },
     "votes": {},
     "points": [
@@ -102,7 +102,7 @@
       9,
       13
     ],
-    "owner": "9dca954e-43c5-461f-b17a-6ccdb45a73b0",
-    "voteTitle": "Spike: Fix button click on click"
+    "owner": "bf59af3a-80e5-44ed-9419-95f9cbd70d2b",
+    "voteTitle": "Add UAP NMAs"
   }
 }
