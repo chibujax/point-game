@@ -90,9 +90,15 @@
     "name": "Apps & Games",
     "users": {
       "b3b9e77c-3b77-4ccf-9d10-bcc45f8ebae2": "Adam",
-      "c1f26b99-480d-4bd1-a9fd-7330f078fbea": "Vedant"
+      "b0a5ab04-5da1-4eed-98ca-cb704ca84a12": "Chaitanya",
+      "afbbd949-23c3-452a-b162-361993e09bb9": "craig",
+      "19607e7b-aa78-41d9-be90-9399c6346b22": "Moose",
+      "c1f26b99-480d-4bd1-a9fd-7330f078fbea": "Vedant",
+      "db8bb085-3187-4f54-a954-6bf902e557f8": "Hani"
     },
-    "votes": {},
+    "votes": {
+      "c1f26b99-480d-4bd1-a9fd-7330f078fbea": 5
+    },
     "points": [
       1,
       2,
