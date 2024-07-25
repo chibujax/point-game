@@ -116,11 +116,10 @@
     "name": "sign in ",
     "users": {
       "20485d58-b3d5-4ab0-aa2a-fe73a6a3f1a0": "Adam",
-      "da743d74-ad41-4102-94f2-b2ae8fa78eee": "Chaitanya",
       "db8bb085-3187-4f54-a954-6bf902e557f8": "Hani",
       "2eed0905-d8a9-47c4-9199-83697795f21f": "Github",
-      "671cf4d3-c5ea-48c8-8abb-cec3ef429279": "Vedant",
-      "a377d017-9bda-4fcb-b885-e52977807c24": "AJ"
+      "a377d017-9bda-4fcb-b885-e52977807c24": "AJ",
+      "671cf4d3-c5ea-48c8-8abb-cec3ef429279": "Vedant"
     },
     "votes": {
       "da743d74-ad41-4102-94f2-b2ae8fa78eee": 8,
