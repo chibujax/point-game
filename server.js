@@ -38,7 +38,6 @@ const sendCurrentVotesToUsers = (sessionId) =>{
 }
 
 
-// Save sessions to file
 const saveSessionsToFile = () => {
   fs.writeFileSync(sessionsFilePath, JSON.stringify(sessions, null, 2), "utf8");
 };
