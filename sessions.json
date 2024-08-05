@@ -1,158 +1,19 @@
 {
-  "session_1720858933145": {
-    "name": "Cbeebies",
-    "users": {},
-    "votes": {
-      "6a26a9da-4471-4fab-b773-81ee8f945b2c": 6,
-      "9a03ad06-2c91-4a16-bf42-8a0ece84e63a": 8,
-      "a37fafab-4ff8-4a35-97a2-e43e84e7abe9": 13
+  "session_1722867986382": {
+    "name": "UAPt",
+    "users": {
+      "1bde9ab4-c8ea-4cd9-a349-77b91983d311": "Admint"
     },
+    "votes": {},
     "points": [
+      1,
       2,
+      3,
       4,
-      6,
-      8,
-      9,
-      13
-    ],
-    "owner": "a37fafab-4ff8-4a35-97a2-e43e84e7abe9",
-    "voteTitle": "update dependency"
-  },
-  "session_1721034184165": {
-    "name": "test session 15/07",
-    "users": {},
-    "votes": {
-      "c6503c5c-3d4c-411d-86b8-10f103f9d986": 1,
-      "6521a7ab-6991-49ad-b23c-c4a458f5540a": 3
-    },
-    "points": [
-      1,
-      2,
-      3,
       5,
       8,
       13
     ],
-    "owner": "c6503c5c-3d4c-411d-86b8-10f103f9d986"
-  },
-  "session_1721124078349": {
-    "name": "Codebuil Thing",
-    "users": {
-      "a377d017-9bda-4fcb-b885-e52977807c24": "Agnel"
-    },
-    "votes": {
-      "a29c0ecb-06e7-45d6-a958-70ce83d937c4": 5,
-      "979758c5-c160-4478-a763-a3ba76239c2d": 5,
-      "41e515e5-e02c-490d-824d-09efe86449b8": 5,
-      "c0a41b80-85de-4e8f-9493-566992edfbf6": 5,
-      "c1f26b99-480d-4bd1-a9fd-7330f078fbea": 5,
-      "c840fe2c-05ac-4039-8cc3-8ee337c26167": 5,
-      "a377d017-9bda-4fcb-b885-e52977807c24": 8
-    },
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "a29c0ecb-06e7-45d6-a958-70ce83d937c4",
-    "voteTitle": "CAPP-3226"
-  },
-  "session_1721210395270": {
-    "name": "What's the point?",
-    "users": {
-      "c840fe2c-05ac-4039-8cc3-8ee337c26167": "<script>delete *</script>"
-    },
-    "votes": {
-      "c1f26b99-480d-4bd1-a9fd-7330f078fbea": 8,
-      "b2749b5c-0d73-4ae8-a979-b3c1960a431d": 5,
-      "a377d017-9bda-4fcb-b885-e52977807c24": 5,
-      "5d72ee8e-fed0-49dc-b23e-081d8553b4c1": 2,
-      "fd076083-8c62-46a8-ab26-254d42b3c005": 8,
-      "19607e7b-aa78-41d9-be90-9399c6346b22": 5,
-      "c840fe2c-05ac-4039-8cc3-8ee337c26167": 8,
-      "aae86464-9e60-4b17-84ac-24f75def9bd2": 3,
-      "c0a41b80-85de-4e8f-9493-566992edfbf6": 5
-    },
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "fd076083-8c62-46a8-ab26-254d42b3c005"
-  },
-  "session_1721812066842": {
-    "name": "Apps & Games",
-    "users": {},
-    "votes": {
-      "afbbd949-23c3-452a-b162-361993e09bb9": 5,
-      "c1f26b99-480d-4bd1-a9fd-7330f078fbea": 5,
-      "b3b9e77c-3b77-4ccf-9d10-bcc45f8ebae2": 5,
-      "2eed0905-d8a9-47c4-9199-83697795f21f": 8,
-      "19607e7b-aa78-41d9-be90-9399c6346b22": 13,
-      "b0a5ab04-5da1-4eed-98ca-cb704ca84a12": 8,
-      "fede9f42-e3e0-46cc-aa38-e1a6892a9cb9": 5,
-      "db8bb085-3187-4f54-a954-6bf902e557f8": 5,
-      "a377d017-9bda-4fcb-b885-e52977807c24": 3,
-      "1b394f9d-64cf-4445-89e2-b9b720198dd3": 3
-    },
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "b3b9e77c-3b77-4ccf-9d10-bcc45f8ebae2",
-    "voteTitle": "CAP-3241"
-  },
-  "session_1721912150433": {
-    "name": "sign in ",
-    "users": {},
-    "votes": {
-      "da743d74-ad41-4102-94f2-b2ae8fa78eee": 8,
-      "a377d017-9bda-4fcb-b885-e52977807c24": 8,
-      "db8bb085-3187-4f54-a954-6bf902e557f8": 3,
-      "2eed0905-d8a9-47c4-9199-83697795f21f": 3,
-      "20485d58-b3d5-4ab0-aa2a-fe73a6a3f1a0": 5,
-      "671cf4d3-c5ea-48c8-8abb-cec3ef429279": 2
-    },
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "20485d58-b3d5-4ab0-aa2a-fe73a6a3f1a0"
-  },
-  "session_1722418551083": {
-    "name": "Apps",
-    "users": {},
-    "votes": {
-      "afbbd949-23c3-452a-b162-361993e09bb9": 8,
-      "13f80804-0fac-4311-bdaa-5f6ef114ca25": 13,
-      "cb96266a-f20f-4482-b45b-bdc82a78f310": 8,
-      "ed15bd70-5549-4cae-ab8d-7d971d76af23": 8,
-      "671cf4d3-c5ea-48c8-8abb-cec3ef429279": 13,
-      "a377d017-9bda-4fcb-b885-e52977807c24": 8,
-      "74289cb6-f8ec-4dcd-8cd6-1a8f418972f2": 13
-    },
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "af6844f3-0f1c-4b5c-b538-a38bb5cce44e"
+    "owner": "1bde9ab4-c8ea-4cd9-a349-77b91983d311"
   }
 }
