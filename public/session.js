@@ -248,7 +248,9 @@ socket.on('sessionName', (name) => {
 });
 
 socket.on('currentVotes', (votes) => {
+    console.log("votes", votes);
     for (const [userId, vote] of Object.entries(votes)) {
+      console.log("userId", vote, userId);
         const userElement = document.getElementById(userId);
         if (userElement) {
             userElement.classList.add('bg-gradient-success');
