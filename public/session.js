@@ -182,22 +182,29 @@ socket.on('voteReceived', (userId) => {
 
 socket.on('revealVotes', (data) => {
     const { votes, average, highestVote, lowestVote, totalVoters } = data;
+    let allUserVotes = "";
     if (votes) {
         for (const [userId, vote] of Object.entries(votes)) {
             const userElement = document.getElementById(userId + "score");
+            const userNameElement = document.getElementById(userId + "name");
             if (userElement) {
                 userElement.innerText = vote;
+            }
+            if (userNameElement) {
+                allUserVotes += `${userNameElement.value}: ${vote} <br/>`;
             }
         }
         document.getElementById('average').innerText = `Average: ${average.toFixed(2)}`;
         document.getElementById('highestVote').innerText = `Highest Vote: ${highestVote.value} (${highestVote.count} people voted)`;
         document.getElementById('lowestVote').innerText = `Lowest Vote: ${lowestVote.value} (${lowestVote.count} person voted)`;
         document.getElementById('totalVoters').innerText = `Total Votes: ${totalVoters}`;
+        document.getElementById('allVoters').innerHTML = allUserVotes;
         hideElement('revealBtn', true);
         showElement('average');
         showElement('highestVote');
         showElement('lowestVote');
         showElement('totalVoters');
+        showElement('allVoters');
         const sessionOwner = getCookie('userId');
         socket.emit('getSessionOwner', { sessionId });
     }
@@ -222,6 +229,7 @@ socket.on('restartVoting', () => {
     document.getElementById('highestVote').innerText = "";
     document.getElementById('lowestVote').innerText = "";
     document.getElementById('totalVoters').innerText = "";
+    document.getElementById('allVoters').innerHtml = "";
     hideElement('revealBtn');
     const userList = document.getElementById('users');
     userList.childNodes.forEach(div => {
@@ -248,9 +256,7 @@ socket.on('sessionName', (name) => {
 });
 
 socket.on('currentVotes', (votes) => {
-    console.log("votes", votes);
     for (const [userId, vote] of Object.entries(votes)) {
-      console.log("userId", vote, userId);
         const userElement = document.getElementById(userId);
         if (userElement) {
             userElement.classList.add('bg-gradient-success');
