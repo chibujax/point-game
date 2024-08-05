@@ -35,7 +35,7 @@ const sendCurrentVotesToUsers = (sessionId) =>{
       return result;
   }, {});
   io.to(sessionId).emit('currentVotes', votedUsers);
-}
+} 
 
 const saveSessionsToFile = () => {
   fs.writeFileSync(sessionsFilePath, JSON.stringify(sessions, null, 2), "utf8");

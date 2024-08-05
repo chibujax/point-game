@@ -19,12 +19,13 @@
     "users": {
       "e3acb2fc-db42-429e-83d9-68cdc32a0b6b": "babu",
       "b9929f30-3793-4ba1-801b-d8e9bf39a3f5": "Chibu",
-      "63d4cb54-2e37-4123-8c02-ac08c2336f12": "Admint"
+      "63d4cb54-2e37-4123-8c02-ac08c2336f12": "Admint",
+      "8388f2cb-f200-48ba-8a2c-2ab9a8f7c7ad": "bills"
     },
     "votes": {
-      "63d4cb54-2e37-4123-8c02-ac08c2336f12": 4,
-      "b9929f30-3793-4ba1-801b-d8e9bf39a3f5": 4,
-      "e3acb2fc-db42-429e-83d9-68cdc32a0b6b": 8
+      "b9929f30-3793-4ba1-801b-d8e9bf39a3f5": 5,
+      "63d4cb54-2e37-4123-8c02-ac08c2336f12": 8,
+      "e3acb2fc-db42-429e-83d9-68cdc32a0b6b": 3
     },
     "points": [
       1,

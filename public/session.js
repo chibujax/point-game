@@ -191,7 +191,7 @@ socket.on('revealVotes', (data) => {
                 userElement.innerText = vote;
             }
             if (userNameElement) {
-                allUserVotes += `${userNameElement.value}: ${vote} <br/>`;
+                allUserVotes += `${userNameElement.innerText}: ${vote} <br/>`;
             }
         }
         document.getElementById('average').innerText = `Average: ${average.toFixed(2)}`;
