@@ -229,7 +229,7 @@ socket.on('revealVotes', (data) => {
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
-                restVotersLabel = `${userName},`;
+                restVotersLabel += `${userName},`;
             }
         });  
         restVotersLabel = removeLastComma(restVotersLabel);      
