@@ -24,19 +24,19 @@ function getElementValue(id) {
 function showNotification(message, isError = false) {
     const notification = document.getElementById('notification');
     notification.textContent = message;
-    
-    //notification.classList.remove('hide');
-    if (isError) {
-        notification.classList.add('alert-warning');
-    } else {
-        notification.classList.add('alert-info');
-    }
+    //notification.classList.add('alert-info');
+    //otification.classList.remove('hide');
+    // if (isError) {
+    //     notification.classList.add('alert-warning');
+    // } else {
+    //     notification.classList.add('alert-info');
+    // }
     notification.classList.add('nshow');
-    setTimeout(() => {
-        const notification = document.getElementById('notification');
-        notification.classList.remove('nshow');
-        notification.classList.add('hide');
-    }, 300000);
+    // setTimeout(() => {
+    //     const notification = document.getElementById('notification');
+    //     notification.classList.remove('nshow');
+    //     notification.classList.add('hide');
+    // }, 300000);
 }
 
 function clearCookie() {
