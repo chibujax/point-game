@@ -180,7 +180,7 @@ socket.on('voteReceived', (userId) => {
 });
 
 socket.on('revealVotes', (data) => {
-    const { votes, average, highestVote, lowestVote, totalVoters } = data;
+    const { votes, average, highestVotes, lowestVote, totalVoters } = data;
     let allUserVotes = "";
     if (votes) {
         for (const [userId, vote] of Object.entries(votes)) {
@@ -193,8 +193,21 @@ socket.on('revealVotes', (data) => {
                 allUserVotes += `${userNameElement.innerText}: ${vote} <br/>`;
             }
         }
+        const hiVotes = highestVotes.value.join(", ");
+        const hiVoters = highestVotes.voters;
+        let hiVotersLabel = "";
+        hiVoters.forEach(obj => {
+            const userId = Object.keys(obj)[0];
+            const score = obj[userId];
+            const userDiv = document.getElementById(userId);
+            if(userDiv){
+                const userName = userDiv.textContent;
+                hiVotersLabel = `${userName}: ${score} <br>`;
+            }
+        });      
+        
         document.getElementById('averageVotes').innerText = `Average: ${average.toFixed(2)}`;
-        document.getElementById('highestVote').innerText = `Highest Vote: ${highestVote.value} (${highestVote.count} people voted)`;
+        document.getElementById('highestVote').innerText = `Highest Vote: ${highestVote.value} `;
         document.getElementById('lowestVote').innerText = `Lowest Vote: ${lowestVote.value} (${lowestVote.count} person voted)`;
         document.getElementById('totalVoters').innerText = `Total Votes: ${totalVoters}`;
         document.getElementById('allVoters').innerHTML = allUserVotes;
