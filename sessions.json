@@ -23,22 +23,12 @@
     ],
     "owner": "cb1c5e87-3d71-422c-9b2e-79ddc6083015"
   },
-  "session_1723054120308": {
+  "session_1723065327284": {
     "name": "UAPt",
     "users": {
-      "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622": "Admint",
-      "ec24df9f-8b73-4ae0-8cff-f9e0b18a1e62": "Vedant",
-      "80ffc69d-b865-47b8-9763-c3c56fefe184": "Adam",
-      "e3acb2fc-db42-429e-83d9-68cdc32a0b6b": "Hani"
+      "8a2fefbb-bac9-4d6e-85ce-673b63f2963e": "Admint"
     },
-    "votes": {
-      "8388f2cb-f200-48ba-8a2c-2ab9a8f7c7ad": 5,
-      "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622": 5,
-      "e3acb2fc-db42-429e-83d9-68cdc32a0b6b": 5,
-      "80ffc69d-b865-47b8-9763-c3c56fefe184": 3,
-      "f1a4745d-592b-4b0c-af3d-ad7fe8b0c87d": 3,
-      "ec24df9f-8b73-4ae0-8cff-f9e0b18a1e62": 2
-    },
+    "votes": {},
     "points": [
       1,
       2,
@@ -48,6 +38,6 @@
       8,
       13
     ],
-    "owner": "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622"
+    "owner": "8a2fefbb-bac9-4d6e-85ce-673b63f2963e"
   }
 }
