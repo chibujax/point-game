@@ -195,20 +195,16 @@ socket.on('revealVotes', (data) => {
             if (userElement) {
                 userElement.innerText = vote;
             }
-            if (userNameElement) {
-                allUserVotes += `${userNameElement.innerText}: ${vote} <br/>`;
-            }
         }
         const hiVotes = highestVotes.value.join(", ");
         const hiVoters = highestVotes.voters;
         let hiVotersLabel = "";
         hiVoters.forEach(obj => {
             const userId = Object.keys(obj)[0];
-            const score = obj[userId];
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
-                hiVotersLabel = `${userName},`;
+                hiVotersLabel += `${userName},`;
             }
         });  
         hiVotersLabel = removeLastComma(hiVotersLabel);
@@ -219,11 +215,10 @@ socket.on('revealVotes', (data) => {
         let loVotersLabel = "";
         loVoters.forEach(obj => {
             const userId = Object.keys(obj)[0];
-            const score = obj[userId];
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
-                loVotersLabel = `${userName},`;
+                loVotersLabel += `${userName},`;
             }
         });  
         loVotersLabel = removeLastComma(loVotersLabel);
@@ -231,7 +226,6 @@ socket.on('revealVotes', (data) => {
         let restVotersLabel = "";
         otherVotes.forEach(obj => {
             const userId = Object.keys(obj)[0];
-            const score = obj[userId];
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;

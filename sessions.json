@@ -27,9 +27,16 @@
     "name": "UAPt",
     "users": {
       "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622": "Admint",
-      "f1a4745d-592b-4b0c-af3d-ad7fe8b0c87d": "dende"
+      "f1a4745d-592b-4b0c-af3d-ad7fe8b0c87d": "dende",
+      "e3acb2fc-db42-429e-83d9-68cdc32a0b6b": "Hani",
+      "80ffc69d-b865-47b8-9763-c3c56fefe184": "Adam",
+      "24f1c002-7a1e-4918-ae0c-922efe7f5b52": "vedant"
     },
     "votes": {
+      "f1a4745d-592b-4b0c-af3d-ad7fe8b0c87d": 3,
+      "e3acb2fc-db42-429e-83d9-68cdc32a0b6b": 3,
+      "80ffc69d-b865-47b8-9763-c3c56fefe184": 2,
+      "24f1c002-7a1e-4918-ae0c-922efe7f5b52": 5,
       "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622": 5
     },
     "points": [
