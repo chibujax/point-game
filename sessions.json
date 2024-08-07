@@ -26,9 +26,12 @@
   "session_1723054120308": {
     "name": "UAPt",
     "users": {
-      "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622": "Admint"
+      "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622": "Admint",
+      "f1a4745d-592b-4b0c-af3d-ad7fe8b0c87d": "dende"
     },
-    "votes": {},
+    "votes": {
+      "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622": 5
+    },
     "points": [
       1,
       2,

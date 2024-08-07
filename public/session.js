@@ -205,7 +205,7 @@ socket.on('revealVotes', (data) => {
         hiVoters.forEach(obj => {
             const userId = Object.keys(obj)[0];
             const score = obj[userId];
-            const userDiv = document.getElementById(userId);
+            const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
                 hiVotersLabel = `${userName},`;
@@ -220,7 +220,7 @@ socket.on('revealVotes', (data) => {
         loVoters.forEach(obj => {
             const userId = Object.keys(obj)[0];
             const score = obj[userId];
-            const userDiv = document.getElementById(userId);
+            const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
                 loVotersLabel = `${userName},`;
@@ -232,7 +232,7 @@ socket.on('revealVotes', (data) => {
         otherVotes.forEach(obj => {
             const userId = Object.keys(obj)[0];
             const score = obj[userId];
-            const userDiv = document.getElementById(userId);
+            const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
                 restVotersLabel = `${userName},`;

@@ -160,13 +160,14 @@ io.on("connection", (socket) => {
             const totalVotes = Object.values(sessions[currentSessionId].votes);
             if (totalVotes.length === 0) {
                 return emitEmptyVoteResult();
-            }      
+            } 
+            const sessionVotes = sessions[currentSessionId].votes;
 
             const voteGroups = processVotes(sessionVotes);
 
             return voteGroups;
 
-      } 
+      }  
     
       function processVotes(votesObject) {
           const votes = Object.entries(votesObject);
@@ -208,17 +209,16 @@ io.on("connection", (socket) => {
         // Calculate average
         const sum = votes.reduce((acc, [, vote]) => acc + vote, 0);
         const average = sum / totalVoters;
-
-        return {
+        return io.to(currentSessionId).emit("revealVotes", {
             votes: votesObject,
             average: average,
             highestVotes: { value: highestVoteValues, voters: highestVotes },
             lowestVotes: { value: lowestVoteValues, voters: lowestVotes },
             otherVotes: otherVotes,
             totalVoters: totalVoters
-        };
+        });
+        
     }
-
 
 
     function emitEmptyVoteResult() {
