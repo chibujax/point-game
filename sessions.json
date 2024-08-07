@@ -23,12 +23,12 @@
     ],
     "owner": "cb1c5e87-3d71-422c-9b2e-79ddc6083015"
   },
-  "session_1723065898071": {
+  "session_1723067413554": {
     "name": "ffff",
-    "users": {
-      "3cb649f6-8205-4efd-9770-25dae05cd9b3": "ffff"
+    "users": {},
+    "votes": {
+      "1925a4d0-009e-4caa-973a-49184d7c4917": 4
     },
-    "votes": {},
     "points": [
       1,
       2,
@@ -38,6 +38,6 @@
       6,
       7
     ],
-    "owner": "3cb649f6-8205-4efd-9770-25dae05cd9b3"
+    "owner": "1925a4d0-009e-4caa-973a-49184d7c4917"
   }
 }
