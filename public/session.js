@@ -193,7 +193,7 @@ socket.on('revealVotes', (data) => {
                 allUserVotes += `${userNameElement.innerText}: ${vote} <br/>`;
             }
         }
-        document.getElementById('average').innerText = `Average: ${average.toFixed(2)}`;
+        document.getElementById('averageVotes').innerText = `Average: ${average.toFixed(2)}`;
         document.getElementById('highestVote').innerText = `Highest Vote: ${highestVote.value} (${highestVote.count} people voted)`;
         document.getElementById('lowestVote').innerText = `Lowest Vote: ${lowestVote.value} (${lowestVote.count} person voted)`;
         document.getElementById('totalVoters').innerText = `Total Votes: ${totalVoters}`;
