@@ -23,10 +23,10 @@
     ],
     "owner": "cb1c5e87-3d71-422c-9b2e-79ddc6083015"
   },
-  "session_1723065327284": {
-    "name": "UAPt",
+  "session_1723065898071": {
+    "name": "ffff",
     "users": {
-      "8a2fefbb-bac9-4d6e-85ce-673b63f2963e": "Admint"
+      "3cb649f6-8205-4efd-9770-25dae05cd9b3": "ffff"
     },
     "votes": {},
     "points": [
@@ -35,9 +35,9 @@
       3,
       4,
       5,
-      8,
-      13
+      6,
+      7
     ],
-    "owner": "8a2fefbb-bac9-4d6e-85ce-673b63f2963e"
+    "owner": "3cb649f6-8205-4efd-9770-25dae05cd9b3"
   }
 }
