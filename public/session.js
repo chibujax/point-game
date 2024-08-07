@@ -8,7 +8,7 @@ function sanitizeInput(input) {
 
 function joinSession() {
     const name = getElementValue('name').trim();
-    const validName = /^[A-Za-z0-9]{1,10}$/;
+    const validName = /^[A-Za-z]{3,10}$/;
 
     if (!validName.test(name)) {
         showNotification('Please enter a valid display name with only letters and numbers, up to 10 characters.', true);
@@ -45,7 +45,6 @@ function showAdmin() {
 
 function vote(point) {
     socket.emit('vote', { vote: point });
-    console.log("pribt")
 }
 
 function reveal() {
