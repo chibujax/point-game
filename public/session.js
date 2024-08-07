@@ -180,6 +180,12 @@ socket.on('voteReceived', (userId) => {
 });
 
 socket.on('revealVotes', (data) => {
+    function removeLastComma(str) {
+    if (str.endsWith(',')) {
+        return str.slice(0, -1);
+    }
+    return str;
+}
     const { votes, average, highestVotes, lowestVote, totalVoters } = data;
     let allUserVotes = "";
     if (votes) {
@@ -202,14 +208,15 @@ socket.on('revealVotes', (data) => {
             const userDiv = document.getElementById(userId);
             if(userDiv){
                 const userName = userDiv.textContent;
-                hiVotersLabel = `${userName}: ${score} <br>`;
+                hiVotersLabel = `${userName},`;
             }
-        });      
+        });  
+        hiVotersLabel = removeLastComma(hiVotersLabel);
         
-        document.getElementById('averageVotes').innerText = `Average: ${average.toFixed(2)}`;
+        document.getElementById('averageVotes').innerText = average.toFixed(2);
         document.getElementById('highestVote').innerText = `Highest Vote: ${highestVote.value} `;
         document.getElementById('lowestVote').innerText = `Lowest Vote: ${lowestVote.value} (${lowestVote.count} person voted)`;
-        document.getElementById('totalVoters').innerText = `Total Votes: ${totalVoters}`;
+        document.getElementById('totalVotes').innerText = totalVoters;
         document.getElementById('allVoters').innerHTML = allUserVotes;
         hideElement('revealBtn', true);
         showElement('average');
