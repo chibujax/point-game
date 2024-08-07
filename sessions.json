@@ -22,5 +22,22 @@
       13
     ],
     "owner": "cb1c5e87-3d71-422c-9b2e-79ddc6083015"
+  },
+  "session_1723054120308": {
+    "name": "UAPt",
+    "users": {
+      "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622": "Admint"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      13
+    ],
+    "owner": "ec3bee4b-5c8f-48fe-8c3e-6e9ba184c622"
   }
 }

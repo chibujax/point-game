@@ -153,73 +153,74 @@ io.on("connection", (socket) => {
   });
 
   socket.on("revealVotes", () => {
-    if (!currentSessionId || sessions[currentSessionId].owner !== userId) {
-      return socket.emit("sessionError", "Only the session owner can reveal votes");
-    }    
-    if (currentSessionId && sessions[currentSessionId].owner === userId) {
-        const totalVotes = Object.values(sessions[currentSessionId].votes);
-        if (totalVotes.length === 0) {
-            return emitEmptyVoteResult();
-        }      
+      if (!currentSessionId || sessions[currentSessionId].owner !== userId) {
+          return socket.emit("sessionError", "Only the session owner can reveal votes");
+      }    
+      if (currentSessionId && sessions[currentSessionId].owner === userId) {
+            const totalVotes = Object.values(sessions[currentSessionId].votes);
+            if (totalVotes.length === 0) {
+                return emitEmptyVoteResult();
+            }      
 
-        const voteGroups = processVotes(sessionVotes);
-  
-        return voteGroups;
+            const voteGroups = processVotes(sessionVotes);
 
-    } 
-    function processVotes(votesObject) {
-  const votes = Object.entries(votesObject);
-  const totalVoters = votes.length;
+            return voteGroups;
 
-  // Count occurrences of each vote value
-  const voteCount = {};
-  votes.forEach(([, vote]) => {
-    voteCount[vote] = (voteCount[vote] || 0) + 1;
-  });
+      } 
+    
+      function processVotes(votesObject) {
+          const votes = Object.entries(votesObject);
+          const totalVoters = votes.length;
 
-  // Find the highest vote count and all values with that count
-  const maxVoteCount = Math.max(...Object.values(voteCount));
-  const highestVoteValues = Object.entries(voteCount)
-    .filter(([, count]) => count === maxVoteCount)
-    .map(([value]) => parseInt(value));
+          // Count occurrences of each vote value
+          const voteCount = {};
+          votes.forEach(([, vote]) => {
+              voteCount[vote] = (voteCount[vote] || 0) + 1;
+          });
 
-  // Find the lowest vote count and all values with that count
-  const minVoteCount = Math.min(...Object.values(voteCount));
-  const lowestVoteValues = Object.entries(voteCount)
-    .filter(([, count]) => count === minVoteCount)
-    .map(([value]) => parseInt(value));
+          // Find the highest vote count and all values with that count
+          const maxVoteCount = Math.max(...Object.values(voteCount));
+          const highestVoteValues = Object.entries(voteCount)
+              .filter(([, count]) => count === maxVoteCount)
+              .map(([value]) => parseInt(value));
 
-  // Group votes
-  const highestVotes = [];
-  const lowestVotes = [];
-  const otherVotes = [];
+          // Find the lowest vote count and all values with that count
+          const minVoteCount = Math.min(...Object.values(voteCount));
+          const lowestVoteValues = Object.entries(voteCount)
+              .filter(([, count]) => count === minVoteCount)
+              .map(([value]) => parseInt(value));
 
-  votes.forEach(([userID, vote]) => {
-    if (highestVoteValues.includes(vote)) {
-      highestVotes.push({ [userID]: vote });
-    } else if (lowestVoteValues.includes(vote)) {
-      lowestVotes.push({ [userID]: vote });
-    } else {
-      otherVotes.push({ [userID]: vote });
+          // Group votes
+          const highestVotes = [];
+          const lowestVotes = [];
+          const otherVotes = [];
+
+          votes.forEach(([userID, vote]) => {
+              if (highestVoteValues.includes(vote)) {
+                  highestVotes.push({ [userID]: vote });
+              } else if (lowestVoteValues.includes(vote)) {
+                  lowestVotes.push({ [userID]: vote });
+              } else {
+                  otherVotes.push({ [userID]: vote });
+              }
+          });
+
+        // Calculate average
+        const sum = votes.reduce((acc, [, vote]) => acc + vote, 0);
+        const average = sum / totalVoters;
+
+        return {
+            votes: votesObject,
+            average: average,
+            highestVotes: { value: highestVoteValues, voters: highestVotes },
+            lowestVotes: { value: lowestVoteValues, voters: lowestVotes },
+            otherVotes: otherVotes,
+            totalVoters: totalVoters
+        };
     }
-  });
 
-  // Calculate average
-  const sum = votes.reduce((acc, [, vote]) => acc + vote, 0);
-  const average = sum / totalVoters;
 
-  return {
-    votes: votesObject,
-    average: average,
-    highestVotes: { value: highestVoteValues, voters: highestVotes },
-    lowestVotes: { value: lowestVoteValues, voters: lowestVotes },
-    otherVotes: otherVotes,
-    totalVoters: totalVoters
-  };
-}
 
-    
-    
     function emitEmptyVoteResult() {
         return io.to(currentSessionId).emit("revealVotes", {
             votes: {},
