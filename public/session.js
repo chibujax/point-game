@@ -186,7 +186,7 @@ socket.on('revealVotes', (data) => {
     }
     return str;
 }
-    const { votes, average, highestVotes, lowestVote, totalVoters } = data;
+    const { votes, average, highestVotes, lowestVotes, otherVotes, totalVoters } = data;
     let allUserVotes = "";
     if (votes) {
         for (const [userId, vote] of Object.entries(votes)) {
@@ -212,18 +212,46 @@ socket.on('revealVotes', (data) => {
             }
         });  
         hiVotersLabel = removeLastComma(hiVotersLabel);
+      
+        
+        const loVotes = lowestVotes.value.join(", ");
+        const loVoters = lowestVotes.voters;
+        let loVotersLabel = "";
+        loVoters.forEach(obj => {
+            const userId = Object.keys(obj)[0];
+            const score = obj[userId];
+            const userDiv = document.getElementById(userId);
+            if(userDiv){
+                const userName = userDiv.textContent;
+                loVotersLabel = `${userName},`;
+            }
+        });  
+        loVotersLabel = removeLastComma(loVotersLabel);
+      
+        let restVotersLabel = "";
+        otherVotes.forEach(obj => {
+            const userId = Object.keys(obj)[0];
+            const score = obj[userId];
+            const userDiv = document.getElementById(userId);
+            if(userDiv){
+                const userName = userDiv.textContent;
+                restVotersLabel = `${userName},`;
+            }
+        });  
+        restVotersLabel = removeLastComma(restVotersLabel);      
+      
         
         document.getElementById('averageVotes').innerText = average.toFixed(2);
-        document.getElementById('highestVote').innerText = `Highest Vote: ${highestVote.value} `;
-        document.getElementById('lowestVote').innerText = `Lowest Vote: ${lowestVote.value} (${lowestVote.count} person voted)`;
+        document.getElementById('highestVote').innerText = hiVotes;
+        document.getElementById('highestVoter').innerText = hiVotersLabel;
+      
+        document.getElementById('lowestVote').innerText = loVotes;
+        document.getElementById('lowestVoteLabel').innerText = loVotersLabel;      
+      
+        document.getElementById('otherVotes').innerText = restVotersLabel; 
         document.getElementById('totalVotes').innerText = totalVoters;
-        document.getElementById('allVoters').innerHTML = allUserVotes;
         hideElement('revealBtn', true);
-        showElement('average');
-        showElement('highestVote');
-        showElement('lowestVote');
-        showElement('totalVoters');
-        showElement('allVoters');
+        showElement('scoreBoard2');
         const sessionOwner = getCookie('userId');
         socket.emit('getSessionOwner', { sessionId });
     }
@@ -244,12 +272,18 @@ socket.on('updateVoteTitle', (voteTitle) => {
 });
 
 socket.on('restartVoting', () => {
-    document.getElementById('average').innerText = 'Average: 0';
-    document.getElementById('highestVote').innerText = "";
-    document.getElementById('lowestVote').innerText = "";
-    document.getElementById('totalVoters').innerText = "";
-    document.getElementById('allVoters').innerHtml = "";
-    hideElement('revealBtn');
+    document.getElementById('averageVotes').innerText = 0;
+    document.getElementById('highestVote').innerText = 0;
+    document.getElementById('highestVoter').innerText = "";
+
+    document.getElementById('lowestVote').innerText = 0;
+    document.getElementById('lowestVoteLabel').innerText = "";      
+
+    document.getElementById('otherVotes').innerText = ""; 
+    document.getElementById('totalVotes').innerText = 0;
+    hideElement('revealBtn', true);
+    hideElement('scoreBoard2');
+
     const userList = document.getElementById('users');
     userList.childNodes.forEach(div => {
         div.firstChild.classList.add('bg-gradient-info');
