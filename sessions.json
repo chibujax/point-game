@@ -23,35 +23,20 @@
     ],
     "owner": "cb1c5e87-3d71-422c-9b2e-79ddc6083015"
   },
-  "session_1723103464630": {
-    "name": "Bitesize",
+  "session_1723106155964": {
+    "name": "test game",
     "users": {
-      "1925a4d0-009e-4caa-973a-49184d7c4917": "Hani",
-      "1173af42-de05-4930-9bb3-f5155da595ef": "Vedant",
-      "e3acb2fc-db42-429e-83d9-68cdc32a0b6b": "Agnel",
-      "d1075218-c3bc-460b-b45c-fc7314a56357": "Craig",
-      "49846898-c37f-4584-a4c3-2d7037e7b1c2": "Chibu",
-      "ecef9bc9-c831-4ba7-8738-cfba426a94e3": "Adam",
-      "08f8fe1d-6f98-4c98-aaba-0fa96f003905": "Maz"
+      "4bcea75a-60fd-49e7-abf0-b8df4f027519": "ad"
     },
-    "votes": {
-      "08f8fe1d-6f98-4c98-aaba-0fa96f003905": 2,
-      "49846898-c37f-4584-a4c3-2d7037e7b1c2": 3,
-      "e3acb2fc-db42-429e-83d9-68cdc32a0b6b": 3,
-      "d1075218-c3bc-460b-b45c-fc7314a56357": 3,
-      "ecef9bc9-c831-4ba7-8738-cfba426a94e3": 5,
-      "1173af42-de05-4930-9bb3-f5155da595ef": 5,
-      "1925a4d0-009e-4caa-973a-49184d7c4917": 5
-    },
+    "votes": {},
     "points": [
       1,
       2,
       3,
-      4,
       5,
       8,
       13
     ],
-    "owner": "ecef9bc9-c831-4ba7-8738-cfba426a94e3"
+    "owner": "4bcea75a-60fd-49e7-abf0-b8df4f027519"
   }
 }

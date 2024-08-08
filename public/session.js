@@ -11,7 +11,7 @@ function joinSession() {
     const validName = /^[A-Za-z]{3,10}$/;
 
     if (!validName.test(name)) {
-        showNotification('Please enter a valid display name with only letters between 3 to 10 characters allowed.', true);
+        showNotification('Please enter a valid display name with only letters between 3 to 10 characters.', true);
         return;
     }
 
