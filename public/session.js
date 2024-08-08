@@ -204,10 +204,10 @@ socket.on('revealVotes', (data) => {
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
-                hiVotersLabel += `${userName},`;
+                hiVotersLabel += `${userName}, `;
             }
         });  
-        hiVotersLabel = removeLastComma(hiVotersLabel);
+        hiVotersLabel = removeLastComma(hiVotersLabel.trim());
       
         
         const loVotes = lowestVotes.value.join(", ");
@@ -218,10 +218,10 @@ socket.on('revealVotes', (data) => {
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
-                loVotersLabel += `${userName},`;
+                loVotersLabel += `${userName}, `;
             }
         });  
-        loVotersLabel = removeLastComma(loVotersLabel);
+        loVotersLabel = removeLastComma(loVotersLabel.trim());
       
         let restVotersLabel = "";
         otherVotes.forEach(obj => {
@@ -229,10 +229,11 @@ socket.on('revealVotes', (data) => {
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
-                restVotersLabel += `${userName},`;
+              const score = obj[userId]; 
+                restVotersLabel += `${userName}:score, `;
             }
         });  
-        restVotersLabel = removeLastComma(restVotersLabel);      
+        restVotersLabel = removeLastComma(restVotersLabel.trim());      
       
         
         document.getElementById('averageVotes').innerText = average.toFixed(2);
