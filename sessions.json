@@ -25,10 +25,11 @@
   },
   "session_1723106155964": {
     "name": "test game",
-    "users": {
-      "4bcea75a-60fd-49e7-abf0-b8df4f027519": "ad"
+    "users": {},
+    "votes": {
+      "4bcea75a-60fd-49e7-abf0-b8df4f027519": 5,
+      "ecef9bc9-c831-4ba7-8738-cfba426a94e3": 5
     },
-    "votes": {},
     "points": [
       1,
       2,
