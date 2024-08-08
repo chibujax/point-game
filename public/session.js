@@ -204,7 +204,8 @@ socket.on('revealVotes', (data) => {
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
-                hiVotersLabel += `${userName}, `;
+                const score = obj[userId]; 
+                hiVotersLabel += `${userName}:${score} <br> `;
             }
         });  
         hiVotersLabel = removeLastComma(hiVotersLabel.trim());
@@ -218,7 +219,8 @@ socket.on('revealVotes', (data) => {
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
-                loVotersLabel += `${userName}, `;
+                const score = obj[userId];
+                loVotersLabel += `${userName}:${score} <br> `;
             }
         });  
         loVotersLabel = removeLastComma(loVotersLabel.trim());
@@ -229,21 +231,21 @@ socket.on('revealVotes', (data) => {
             const userDiv = document.getElementById(`${userId}name`);
             if(userDiv){
                 const userName = userDiv.textContent;
-              const score = obj[userId]; 
-                restVotersLabel += `${userName}:score, `;
+                const score = obj[userId]; 
+                restVotersLabel += `${userName}:${score} <br> `;
             }
         });  
-        restVotersLabel = removeLastComma(restVotersLabel.trim());      
+        //restVotersLabel = removeLastComma(restVotersLabel.trim());      
       
         
         document.getElementById('averageVotes').innerText = average.toFixed(2);
         document.getElementById('highestVote').innerText = hiVotes;
-        document.getElementById('highestVoter').innerText = hiVotersLabel;
+        document.getElementById('highestVoter').innerHTML = hiVotersLabel;
       
         document.getElementById('lowestVote').innerText = loVotes;
-        document.getElementById('lowestVoteLabel').innerText = loVotersLabel;      
+        document.getElementById('lowestVoteLabel').innerHTML = loVotersLabel;      
       
-        document.getElementById('otherVotes').innerText = restVotersLabel; 
+        document.getElementById('otherVotes').innerHTML = restVotersLabel; 
         document.getElementById('totalVotes').innerText = totalVoters;
         hideElement('revealBtn', true);
         showElement('scoreBoard2');
