@@ -64,5 +64,42 @@
       13
     ],
     "owner": "05ce43ab-7c37-4dbd-92b2-f16461ff34c8"
+  },
+  "session_1724230634258": {
+    "name": "Planning ",
+    "users": {
+      "ea070565-168a-4267-bafd-a7d40f402ede": "Liv",
+      "2494928d-2f36-4608-b0e3-09bb301292b0": "Lokesh",
+      "d4e2123e-1e97-4ee5-ae3c-528a9bdaff3f": "Vedant",
+      "c5d51e33-e8ad-413b-94ea-0f98cfb03bc2": "Chibu",
+      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": "Hani",
+      "13f80804-0fac-4311-bdaa-5f6ef114ca25": "Cuong",
+      "ed15bd70-5549-4cae-ab8d-7d971d76af23": "Alexa",
+      "a377d017-9bda-4fcb-b885-e52977807c24": "Agnel",
+      "afbbd949-23c3-452a-b162-361993e09bb9": "craig",
+      "74289cb6-f8ec-4dcd-8cd6-1a8f418972f2": "Chaitanya",
+      "45ea3f4b-cb61-4f30-aa05-9d4ed12ce30b": "Celia"
+    },
+    "votes": {
+      "c5d51e33-e8ad-413b-94ea-0f98cfb03bc2": 3,
+      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": 2,
+      "13f80804-0fac-4311-bdaa-5f6ef114ca25": 2,
+      "d4e2123e-1e97-4ee5-ae3c-528a9bdaff3f": 2,
+      "ed15bd70-5549-4cae-ab8d-7d971d76af23": 3,
+      "ea070565-168a-4267-bafd-a7d40f402ede": 2,
+      "2494928d-2f36-4608-b0e3-09bb301292b0": 2,
+      "afbbd949-23c3-452a-b162-361993e09bb9": 3,
+      "a377d017-9bda-4fcb-b885-e52977807c24": 2,
+      "74289cb6-f8ec-4dcd-8cd6-1a8f418972f2": 3
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "ea070565-168a-4267-bafd-a7d40f402ede"
   }
 }
