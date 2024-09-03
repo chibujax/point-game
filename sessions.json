@@ -91,10 +91,8 @@
   "session_1725377570113": {
     "name": "Feature flag",
     "users": {
-      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": "Hani",
       "a377d017-9bda-4fcb-b885-e52977807c24": "Agnel",
-      "13f80804-0fac-4311-bdaa-5f6ef114ca25": "Cuong",
-      "ed15bd70-5549-4cae-ab8d-7d971d76af23": "alexa"
+      "13f80804-0fac-4311-bdaa-5f6ef114ca25": "Cuong"
     },
     "votes": {
       "ac46ed28-fc65-4026-a6d9-99fee8a06088": 1,
