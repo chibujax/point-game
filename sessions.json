@@ -87,5 +87,31 @@
       13
     ],
     "owner": "7e1d2a2e-6558-4db4-a840-45c9c6995dca"
+  },
+  "session_1725377570113": {
+    "name": "Feature flag",
+    "users": {
+      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": "Hani",
+      "a377d017-9bda-4fcb-b885-e52977807c24": "Agnel",
+      "13f80804-0fac-4311-bdaa-5f6ef114ca25": "Cuong",
+      "ed15bd70-5549-4cae-ab8d-7d971d76af23": "alexa"
+    },
+    "votes": {
+      "ac46ed28-fc65-4026-a6d9-99fee8a06088": 1,
+      "a377d017-9bda-4fcb-b885-e52977807c24": 1,
+      "13f80804-0fac-4311-bdaa-5f6ef114ca25": 1,
+      "234c4255-653c-499b-b835-6ac932c0ab88": 2,
+      "31ce1f6a-5ebb-4735-b794-e286e52dfb68": 2,
+      "0583025d-3a7b-49fa-b9d3-6c96bae5707f": 2,
+      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": 2,
+      "ed15bd70-5549-4cae-ab8d-7d971d76af23": 2,
+      "9c8e1728-32c1-4f0f-b6b8-f115fcb1e9c6": 2
+    },
+    "points": [
+      1,
+      2
+    ],
+    "owner": "234c4255-653c-499b-b835-6ac932c0ab88",
+    "voteTitle": "1 = Optimizely, 2 = iSite"
   }
 }
