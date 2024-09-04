@@ -112,30 +112,28 @@
   "session_1725443258045": {
     "name": "Apps & Games",
     "users": {
-      "e2c2a770-ffed-4956-a7e2-eec0338dcc99": "Ad",
       "7ddff54f-f1ea-4e64-a19b-14de1292ecbc": "Chaitanya",
       "ac46ed28-fc65-4026-a6d9-99fee8a06088": "Vedant",
-      "9c8e1728-32c1-4f0f-b6b8-f115fcb1e9c6": "Alex",
-      "a377d017-9bda-4fcb-b885-e52977807c24": "AAAJJJJ",
       "ea070565-168a-4267-bafd-a7d40f402ede": "Livvy",
       "0583025d-3a7b-49fa-b9d3-6c96bae5707f": "MrBoyes",
       "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": "HaNi",
       "45ea3f4b-cb61-4f30-aa05-9d4ed12ce30b": "Celeleleia",
       "be2ca507-1517-4f3d-ba98-5500e9738b8e": "Chibu",
-      "77f76e3a-d227-4106-ab43-9c04aa0e27d4": "Loki",
-      "13f80804-0fac-4311-bdaa-5f6ef114ca25": "Cuong",
-      "ed15bd70-5549-4cae-ab8d-7d971d76af23": "Alexa"
+      "ed15bd70-5549-4cae-ab8d-7d971d76af23": "Alexa",
+      "13f80804-0fac-4311-bdaa-5f6ef114ca25": "Cuong"
     },
     "votes": {
-      "ac46ed28-fc65-4026-a6d9-99fee8a06088": 5,
-      "0583025d-3a7b-49fa-b9d3-6c96bae5707f": 3,
-      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": 2,
-      "e2c2a770-ffed-4956-a7e2-eec0338dcc99": 2,
-      "77f76e3a-d227-4106-ab43-9c04aa0e27d4": 5,
-      "be2ca507-1517-4f3d-ba98-5500e9738b8e": 2,
-      "7ddff54f-f1ea-4e64-a19b-14de1292ecbc": 5,
-      "a377d017-9bda-4fcb-b885-e52977807c24": 3,
-      "ed15bd70-5549-4cae-ab8d-7d971d76af23": 5
+      "ac46ed28-fc65-4026-a6d9-99fee8a06088": 1,
+      "ed15bd70-5549-4cae-ab8d-7d971d76af23": 2,
+      "e2c2a770-ffed-4956-a7e2-eec0338dcc99": 1,
+      "0583025d-3a7b-49fa-b9d3-6c96bae5707f": 2,
+      "a377d017-9bda-4fcb-b885-e52977807c24": 5,
+      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": 3,
+      "13f80804-0fac-4311-bdaa-5f6ef114ca25": 1,
+      "9c8e1728-32c1-4f0f-b6b8-f115fcb1e9c6": 3,
+      "77f76e3a-d227-4106-ab43-9c04aa0e27d4": 2,
+      "7ddff54f-f1ea-4e64-a19b-14de1292ecbc": 3,
+      "be2ca507-1517-4f3d-ba98-5500e9738b8e": 2
     },
     "points": [
       1,
