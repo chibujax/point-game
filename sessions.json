@@ -90,9 +90,7 @@
   },
   "session_1725377570113": {
     "name": "Feature flag",
-    "users": {
-      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": "Hani"
-    },
+    "users": {},
     "votes": {
       "ac46ed28-fc65-4026-a6d9-99fee8a06088": 1,
       "a377d017-9bda-4fcb-b885-e52977807c24": 1,
