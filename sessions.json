@@ -134,5 +134,31 @@
       13
     ],
     "owner": "e2c2a770-ffed-4956-a7e2-eec0338dcc99"
+  },
+  "session_1726059795498": {
+    "name": "Apps & Games",
+    "users": {
+      "176b82a5-ffd9-4e58-8396-a54913e05f09": "Ad",
+      "d75450d8-9ea9-47ec-9e9e-b8fcbf9103f8": "Alex",
+      "eb2ae47d-e5ad-4e79-afb9-b40a9485162f": "Mozzer",
+      "be2ca507-1517-4f3d-ba98-5500e9738b8e": "Chibu",
+      "77f76e3a-d227-4106-ab43-9c04aa0e27d4": "Lokesh",
+      "a377d017-9bda-4fcb-b885-e52977807c24": "AAAJJJJ",
+      "7ddff54f-f1ea-4e64-a19b-14de1292ecbc": "Chaitanya",
+      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": "HAni",
+      "ac46ed28-fc65-4026-a6d9-99fee8a06088": "Vedant",
+      "0583025d-3a7b-49fa-b9d3-6c96bae5707f": "Mazamoose",
+      "76452369-9ab2-4fc3-ac52-e20d82e69651": "Cuong"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "176b82a5-ffd9-4e58-8396-a54913e05f09"
   }
 }
