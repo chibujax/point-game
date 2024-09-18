@@ -157,7 +157,6 @@
       "77f76e3a-d227-4106-ab43-9c04aa0e27d4": "Lokesh",
       "76452369-9ab2-4fc3-ac52-e20d82e69651": "Cuong",
       "2e4ec5af-2b2f-412b-8bcd-19b89878dd39": "Maz",
-      "baa40d42-64a4-4977-9089-fb139c77ad25": "Gail",
       "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": "Hani",
       "a377d017-9bda-4fcb-b885-e52977807c24": "AAggnneell",
       "ac46ed28-fc65-4026-a6d9-99fee8a06088": "Vedant",
@@ -165,7 +164,19 @@
       "ed15bd70-5549-4cae-ab8d-7d971d76af23": "Alexa",
       "be2ca507-1517-4f3d-ba98-5500e9738b8e": "Chibu"
     },
-    "votes": {},
+    "votes": {
+      "352b81df-5ea5-4881-bcd3-0be342e22962": 5,
+      "a377d017-9bda-4fcb-b885-e52977807c24": 3,
+      "176b82a5-ffd9-4e58-8396-a54913e05f09": 3,
+      "a7bfe06b-7456-4cb2-a8d3-78ba627d9ec5": 5,
+      "ac46ed28-fc65-4026-a6d9-99fee8a06088": 3,
+      "ed15bd70-5549-4cae-ab8d-7d971d76af23": 8,
+      "77f76e3a-d227-4106-ab43-9c04aa0e27d4": 8,
+      "2e4ec5af-2b2f-412b-8bcd-19b89878dd39": 2,
+      "76452369-9ab2-4fc3-ac52-e20d82e69651": 3,
+      "7ddff54f-f1ea-4e64-a19b-14de1292ecbc": 3,
+      "be2ca507-1517-4f3d-ba98-5500e9738b8e": 5
+    },
     "points": [
       1,
       2,
@@ -175,6 +186,6 @@
       13
     ],
     "owner": "352b81df-5ea5-4881-bcd3-0be342e22962",
-    "voteTitle": "CAPP-3368 - [SPIKE] Investigate Sign in Offline behaviour"
+    "voteTitle": "Create Profile Button (UI ONLY) "
   }
 }
