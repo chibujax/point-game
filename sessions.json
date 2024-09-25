@@ -176,30 +176,5 @@
     ],
     "owner": "352b81df-5ea5-4881-bcd3-0be342e22962",
     "voteTitle": "Issue Locally Building iOS App for Native Automation"
-  },
-  "session_1727269553756": {
-    "name": "Backlog Refinement!!",
-    "users": {
-      "4e5b7d37-7dc3-46c8-a7c4-c0e6eb75586a": "Alexa",
-      "b0eb304b-cf23-434f-b219-35caf1f316a6": "Hani",
-      "ac39771b-ae29-4d8d-847d-8aee106b4d84": "Chaitanya",
-      "d53f230e-e71a-4712-99e5-fcea9d0fed52": "Adam",
-      "ce05789c-b4b0-41e2-b79b-2eba2b69b6af": "certExpire",
-      "878c7c9d-09ca-43b3-ba14-3def1925b42e": "Vedant",
-      "bdf034c4-ebd7-4a4c-b170-18251442afd0": "loki",
-      "e2247b1e-b7d3-4f18-9d81-e5e75076c304": "AGGNNNEELL"
-    },
-    "votes": {
-      "4e5b7d37-7dc3-46c8-a7c4-c0e6eb75586a": 3
-    },
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "4e5b7d37-7dc3-46c8-a7c4-c0e6eb75586a"
   }
 }
