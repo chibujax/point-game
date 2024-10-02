@@ -180,21 +180,23 @@
   "session_1727859839970": {
     "name": "Sprint Planning 02/10",
     "users": {
-      "86c086f0-1504-4581-b22f-936de34258a3": "Liv",
       "95cde90e-3197-486e-950c-fd9e4021be22": "Vedant",
       "0d772a31-f7ee-4ee6-b302-58668af5f0c4": "Chibu",
       "d8798d57-cad6-47a4-adee-167d2d713249": "Maz",
       "ac39771b-ae29-4d8d-847d-8aee106b4d84": "Chaitanya",
       "4669c317-c935-4198-a5fe-194fb9d914ef": "Loki",
       "b0eb304b-cf23-434f-b219-35caf1f316a6": "HaN",
-      "d53f230e-e71a-4712-99e5-fcea9d0fed52": "adam",
       "7c6402b8-b0f9-462a-ae96-f934fd2656e8": "Alexa"
     },
     "votes": {
       "95cde90e-3197-486e-950c-fd9e4021be22": 5,
       "d53f230e-e71a-4712-99e5-fcea9d0fed52": 3,
       "4669c317-c935-4198-a5fe-194fb9d914ef": 5,
-      "7c6402b8-b0f9-462a-ae96-f934fd2656e8": 3
+      "7c6402b8-b0f9-462a-ae96-f934fd2656e8": 3,
+      "ac39771b-ae29-4d8d-847d-8aee106b4d84": 3,
+      "0d772a31-f7ee-4ee6-b302-58668af5f0c4": 5,
+      "b0eb304b-cf23-434f-b219-35caf1f316a6": 3,
+      "d8798d57-cad6-47a4-adee-167d2d713249": 5
     },
     "points": [
       1,
