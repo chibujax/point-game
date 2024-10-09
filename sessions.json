@@ -199,5 +199,29 @@
       13
     ],
     "owner": "86c086f0-1504-4581-b22f-936de34258a3"
+  },
+  "session_1728479330386": {
+    "name": "09/10/2024",
+    "users": {
+      "bf165f13-3c22-49fc-a48f-b9744688068f": "Liv",
+      "99ea0e6a-15f1-4e7b-8fcb-871b0d62c294": "Vedant",
+      "34ab83ca-11cd-4a58-9412-0f13af9c60ec": "Hani",
+      "d8798d57-cad6-47a4-adee-167d2d713249": "Moose",
+      "e0a16fdc-b829-46bc-b906-def995ddfb55": "Adam",
+      "86d4a518-1fde-4613-a450-82bb558b708d": "loki",
+      "b40ad7c4-007d-43ee-a8a8-668ec72a3d92": "Chibu",
+      "8d7cba5f-fc3e-4085-8caf-9758e032dd7c": "Chaitanya",
+      "2ba908d9-be26-4aab-9f25-3387f59a8340": "Lauren"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "bf165f13-3c22-49fc-a48f-b9744688068f"
   }
 }
