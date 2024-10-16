@@ -214,5 +214,24 @@
     ],
     "owner": "bf165f13-3c22-49fc-a48f-b9744688068f",
     "voteTitle": "Cypress v12 "
+  },
+  "session_1729068819045": {
+    "name": "Sprint Planning 16-10",
+    "users": {
+      "3cb8a168-5b3f-4438-af8a-efda7a9b644b": "Liv",
+      "838dec9b-1b79-4d1a-a4b1-0b3b3310e1f9": "Alex",
+      "34ab83ca-11cd-4a58-9412-0f13af9c60ec": "Hani",
+      "b40ad7c4-007d-43ee-a8a8-668ec72a3d92": "Chibu"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "3cb8a168-5b3f-4438-af8a-efda7a9b644b"
   }
 }
