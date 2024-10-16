@@ -221,9 +221,20 @@
       "3cb8a168-5b3f-4438-af8a-efda7a9b644b": "Liv",
       "838dec9b-1b79-4d1a-a4b1-0b3b3310e1f9": "Alex",
       "34ab83ca-11cd-4a58-9412-0f13af9c60ec": "Hani",
-      "b40ad7c4-007d-43ee-a8a8-668ec72a3d92": "Chibu"
+      "b40ad7c4-007d-43ee-a8a8-668ec72a3d92": "Chibu",
+      "b42108e5-faba-44c3-9483-a763abf41282": "Adam",
+      "13047487-a834-44cc-8719-c65cdca617b1": "Vedant",
+      "0c3b8334-be8a-40c9-a5df-6d73d7316d15": "chaitanya"
     },
-    "votes": {},
+    "votes": {
+      "13047487-a834-44cc-8719-c65cdca617b1": 3,
+      "3cb8a168-5b3f-4438-af8a-efda7a9b644b": 2,
+      "0c3b8334-be8a-40c9-a5df-6d73d7316d15": 5,
+      "b40ad7c4-007d-43ee-a8a8-668ec72a3d92": 2,
+      "34ab83ca-11cd-4a58-9412-0f13af9c60ec": 3,
+      "b42108e5-faba-44c3-9483-a763abf41282": 3,
+      "838dec9b-1b79-4d1a-a4b1-0b3b3310e1f9": 3
+    },
     "points": [
       1,
       2,
