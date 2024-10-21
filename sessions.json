@@ -233,5 +233,20 @@
       13
     ],
     "owner": "3cb8a168-5b3f-4438-af8a-efda7a9b644b"
+  },
+  "session_1729504550949": {
+    "name": "CVs",
+    "users": {
+      "6f4cd074-5a06-458d-85b6-ac5e2fa1b8ae": "Adam",
+      "d8798d57-cad6-47a4-adee-167d2d713249": "Maz"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "owner": "6f4cd074-5a06-458d-85b6-ac5e2fa1b8ae"
   }
 }
