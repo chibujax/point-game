@@ -253,25 +253,20 @@
     "name": "Backlog refinement ",
     "users": {
       "261201a7-fbdb-4d7a-82fc-6c55a7fc2f61": "Liv",
-      "5183fd94-cf4c-4041-bab9-a98368abb5c9": "Alexa",
-      "628a5ba9-4812-4882-8b1d-1bf7cb9b7e03": "Hani",
       "0f3ff69a-014d-4000-8b60-f10e78c54974": "Vedant",
-      "35be6421-95e3-4aaf-a186-0d9c15e01dbe": "Chaitanya",
       "b40ad7c4-007d-43ee-a8a8-668ec72a3d92": "Jax",
-      "6f4cd074-5a06-458d-85b6-ac5e2fa1b8ae": "Adam",
-      "d8798d57-cad6-47a4-adee-167d2d713249": "Maz",
       "587b569b-9f84-4000-a3f6-7f530111cb71": "Alex"
     },
     "votes": {
       "261201a7-fbdb-4d7a-82fc-6c55a7fc2f61": 8,
-      "5183fd94-cf4c-4041-bab9-a98368abb5c9": 8,
+      "5183fd94-cf4c-4041-bab9-a98368abb5c9": 3,
       "628a5ba9-4812-4882-8b1d-1bf7cb9b7e03": 8,
       "35be6421-95e3-4aaf-a186-0d9c15e01dbe": 5,
       "0f3ff69a-014d-4000-8b60-f10e78c54974": 3,
       "b40ad7c4-007d-43ee-a8a8-668ec72a3d92": 3,
       "4f143dac-b576-4e4f-abe4-daf6013441ef": 8,
-      "d8798d57-cad6-47a4-adee-167d2d713249": 8,
-      "6f4cd074-5a06-458d-85b6-ac5e2fa1b8ae": 8
+      "d8798d57-cad6-47a4-adee-167d2d713249": 3,
+      "6f4cd074-5a06-458d-85b6-ac5e2fa1b8ae": 3
     },
     "points": [
       1,
