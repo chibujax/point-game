@@ -89,25 +89,79 @@ app.post("/set-vote-title", (req, res) => {
 
 app.post("/leave-session", (req, res) => {
   const { sessionId, userId } = req.cookies;
-  const currentSessionId = sessions[sessionId];
+  const currentSession = sessions[sessionId];
   const isUser = sessions[sessionId].users[userId];
-  if (!currentSessionId ||  !isUser) {
+  if (!currentSession ||  !isUser) {
     return res.status(400).json({ message: "Session or user not found" });
   }
 
-  if (currentSessionId && currentSessionId.owner === userId) {
-    const msg = "Admin cannot leave the sessions as the admin, end the session instead";
-    return res.status(400).json({ message: msg });
+  const userCount = Object.keys(currentSession.users).length;
+  const isAdmin = currentSession.owner === userId;
+
+  if (isAdmin && userCount > 1) {
+    const otherUsers = Object.entries(currentSession.users)
+      .filter(([id]) => id !== userId)
+      .map(([id, name]) => ({ id, name }));
+    
+    return res.json({ 
+      requiresTransfer: true, 
+      users: otherUsers 
+    });
   }
 
-  delete sessions[sessionId].users[userId];
+  if (isAdmin && userCount > 1) {
+    // Return the list of other users for admin selection
+    const otherUsers = Object.entries(currentSession.users)
+      .filter(([id]) => id !== userId)
+      .map(([id, name]) => ({ id, name }));
+    
+    return res.json({ 
+      requiresTransfer: true, 
+      users: otherUsers 
+    });
+  }
+
+  if (userCount <= 1) {
+    delete sessions[sessionId];
+  } else {
+    delete currentSession.users[userId];
+    if (isAdmin) {
+      currentSession.owner = Object.keys(currentSession.users)[0];
+      io.to(sessionId).emit("updateOwner", currentSession.owner);
+    }
+  }
+
   saveSessionsToFile();
   res.clearCookie("sessionId");
   res.clearCookie("userId");
   res.clearCookie("owner");
   res.clearCookie("name");
-  return res.json({ message: "Left session successfully" }); 
+  return res.json({ message: "Left session successfully" });
 });
+
+app.post("/transfer-admin", (req, res) => {
+  const { sessionId, currentAdminId, newAdminId } = req.body;
+  const session = sessions[sessionId];
+  
+  if (!session) {
+    return res.status(404).json({ success: false, message: "Session not found" });
+  }
+  
+  if (session.owner !== currentAdminId) {
+    return res.status(403).json({ success: false, message: "Only current admin can transfer ownership" });
+  }
+
+  if (!session.users[newAdminId]) {
+    return res.status(404).json({ success: false, message: "New admin user not found" });
+  }
+
+  session.owner = newAdminId;
+  saveSessionsToFile();
+  
+  io.to(sessionId).emit("updateOwner", newAdminId);
+  res.json({ success: true, message: "Admin rights transferred successfully" });
+});
+
 
 io.on("connection", (socket) => {
   let currentSessionId = null;
