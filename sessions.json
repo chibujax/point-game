@@ -272,5 +272,22 @@
       13
     ],
     "owner": "261201a7-fbdb-4d7a-82fc-6c55a7fc2f61"
+  },
+  "session_1729873261812": {
+    "name": "AdminTest",
+    "users": {
+      "c1cef1ad-825d-4bf5-ac88-e4be97c4a1af": "Admint"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      13
+    ],
+    "owner": "c1cef1ad-825d-4bf5-ac88-e4be97c4a1af"
   }
 }
