@@ -66,17 +66,14 @@ function leaveSession() {
             'Content-Type': 'application/json'
         }
     })
-    .then(response => {
-        if (response.ok) {
-            return response.json().then(data => {
-                showNotification(data.message);
-                clearCookie();
-                window.location.href = '/';
-            });
+    .then(response => response.json())
+    .then(data => {
+        if (data.requiresTransfer) {
+            showAdminTransferModal(data.users);
         } else {
-            return response.json().then(data => {
-                showNotification(data.message || 'Error leaving session.', true);
-            });
+            showNotification(data.message);
+            clearCookie();
+            window.location.href = '/';
         }
     })
     .catch(error => {
@@ -84,6 +81,66 @@ function leaveSession() {
         showNotification('Error leaving session. Please try again.', true);
     });
 }
+
+function showAdminTransferModal(users) {
+    const modal = document.getElementById('adminTransferModal');
+    const userList = document.getElementById('userList');
+    userList.innerHTML = '';
+    
+    users.forEach(user => {
+        const button = document.createElement('button');
+        button.className = 'user-select-btn btn bg-gradient-info mb-2';
+        button.textContent = user.name;
+        button.onclick = () => transferAdmin(user.id);
+        userList.appendChild(button);
+    });
+    
+    modal.style.display = 'block';
+}
+
+function cancelAdminTransfer() {
+    hideAdminTransferModal();
+}
+
+function hideAdminTransferModal() {
+    document.getElementById('adminTransferModal').style.display = 'none';
+}
+
+function transferAdmin(newAdminId) {
+    const sessionId = getCookie('sessionId');
+    const currentAdminId = getCookie('userId');
+    
+    fetch('/transfer-admin', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            sessionId,
+            currentAdminId,
+            newAdminId
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showNotification('Admin rights transferred successfully');
+            hideAdminTransferModal();
+            setTimeout(() => {
+                clearCookie();
+                window.location.href = '/';
+            }, 1500);
+        } else {
+            showNotification(data.message || 'Error transferring admin rights.', true);
+        }
+    })
+    .catch(error => {
+        console.error('Error transferring admin:', error);
+        showNotification('Error transferring admin rights. Please try again.', true);
+        hideAdminTransferModal();
+    });
+}
+
 
 function setVoteTitle() {
     const voteTitle = getElementValue('voteTitle');
