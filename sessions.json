@@ -289,5 +289,59 @@
       13
     ],
     "owner": "e1767c0e-7924-4720-a2d5-7770d30da17a"
+  },
+  "session_1730285224624": {
+    "name": "SPRINT PLANNING 30.10",
+    "users": {
+      "3b669457-c85d-4877-8850-d2d9e0aebd6b": "LIV"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "3b669457-c85d-4877-8850-d2d9e0aebd6b"
+  },
+  "session_1730285225498": {
+    "name": "SPRINT PLANNING 30.10",
+    "users": {
+      "53335551-6e37-48f8-bd94-e0ed47054f20": "LIV"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "53335551-6e37-48f8-bd94-e0ed47054f20"
+  },
+  "session_1730285243079": {
+    "name": "SPRINT PLANNING",
+    "users": {
+      "5ca3fdec-fdb6-4751-9113-9b27ed3892e5": "Liv",
+      "35be6421-95e3-4aaf-a186-0d9c15e01dbe": "Chaitanya",
+      "b978f97e-96c2-4469-8664-5c5a548067f5": "Adam",
+      "0f3ff69a-014d-4000-8b60-f10e78c54974": "Vedant",
+      "6fd79e24-bb2e-4f50-9791-36a4822f6185": "Chibu",
+      "d8798d57-cad6-47a4-adee-167d2d713249": "MrBoyes",
+      "46c0d08a-da64-4a67-a60b-ee0a1fb71369": "Hani"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "5ca3fdec-fdb6-4751-9113-9b27ed3892e5"
   }
 }
