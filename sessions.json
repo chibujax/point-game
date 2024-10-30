@@ -331,9 +331,19 @@
       "0f3ff69a-014d-4000-8b60-f10e78c54974": "Vedant",
       "6fd79e24-bb2e-4f50-9791-36a4822f6185": "Chibu",
       "d8798d57-cad6-47a4-adee-167d2d713249": "MrBoyes",
-      "46c0d08a-da64-4a67-a60b-ee0a1fb71369": "Hani"
+      "46c0d08a-da64-4a67-a60b-ee0a1fb71369": "Hani",
+      "5183fd94-cf4c-4041-bab9-a98368abb5c9": "Alexa"
     },
-    "votes": {},
+    "votes": {
+      "0f3ff69a-014d-4000-8b60-f10e78c54974": 5,
+      "d8798d57-cad6-47a4-adee-167d2d713249": 5,
+      "5183fd94-cf4c-4041-bab9-a98368abb5c9": 3,
+      "35be6421-95e3-4aaf-a186-0d9c15e01dbe": 5,
+      "46c0d08a-da64-4a67-a60b-ee0a1fb71369": 3,
+      "b978f97e-96c2-4469-8664-5c5a548067f5": 3,
+      "5ca3fdec-fdb6-4751-9113-9b27ed3892e5": 5,
+      "6fd79e24-bb2e-4f50-9791-36a4822f6185": 5
+    },
     "points": [
       1,
       2,
