@@ -344,5 +344,26 @@
       13
     ],
     "owner": "5ca3fdec-fdb6-4751-9113-9b27ed3892e5"
+  },
+  "session_1730902640434": {
+    "name": "Refinement ",
+    "users": {
+      "595bc363-cf6f-48b6-ae57-553e94bcb1bc": "Liv",
+      "46c0d08a-da64-4a67-a60b-ee0a1fb71369": "Hani",
+      "b5cfbd2d-77d0-48dd-94f1-3d6796a7c068": "Alexa",
+      "35be6421-95e3-4aaf-a186-0d9c15e01dbe": "Chaitanya",
+      "163c2472-a687-407f-a0e4-b302d8d22c53": "Adam",
+      "86d4a518-1fde-4613-a450-82bb558b708d": "loki"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "595bc363-cf6f-48b6-ae57-553e94bcb1bc"
   }
 }
