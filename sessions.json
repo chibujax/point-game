@@ -353,9 +353,18 @@
       "b5cfbd2d-77d0-48dd-94f1-3d6796a7c068": "Alexa",
       "35be6421-95e3-4aaf-a186-0d9c15e01dbe": "Chaitanya",
       "163c2472-a687-407f-a0e4-b302d8d22c53": "Adam",
-      "86d4a518-1fde-4613-a450-82bb558b708d": "loki"
+      "86d4a518-1fde-4613-a450-82bb558b708d": "loki",
+      "c2161cb9-0fed-4534-996f-733d0ec86dc3": "Vedant"
     },
-    "votes": {},
+    "votes": {
+      "35be6421-95e3-4aaf-a186-0d9c15e01dbe": 3,
+      "46c0d08a-da64-4a67-a60b-ee0a1fb71369": 2,
+      "595bc363-cf6f-48b6-ae57-553e94bcb1bc": 2,
+      "c2161cb9-0fed-4534-996f-733d0ec86dc3": 3,
+      "b5cfbd2d-77d0-48dd-94f1-3d6796a7c068": 3,
+      "86d4a518-1fde-4613-a450-82bb558b708d": 8,
+      "163c2472-a687-407f-a0e4-b302d8d22c53": 2
+    },
     "points": [
       1,
       2,
