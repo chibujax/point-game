@@ -366,26 +366,5 @@
       13
     ],
     "owner": "163c2472-a687-407f-a0e4-b302d8d22c53"
-  },
-  "session_1731493646398": {
-    "name": "planning ",
-    "users": {
-      "c689da4d-8018-4c56-b58d-5e2413d458d9": "liv",
-      "2fbbfeb0-bace-4e70-8619-cf279185bd9b": "Hani",
-      "c2161cb9-0fed-4534-996f-733d0ec86dc3": "Vedant",
-      "6fd79e24-bb2e-4f50-9791-36a4822f6185": "Chibu",
-      "35be6421-95e3-4aaf-a186-0d9c15e01dbe": "Chaitanya",
-      "707736c2-199b-436e-880a-e5d2cbd86fe9": "Alex"
-    },
-    "votes": {},
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "c689da4d-8018-4c56-b58d-5e2413d458d9"
   }
 }
