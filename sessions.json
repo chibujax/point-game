@@ -379,12 +379,14 @@
     ],
     "owner": "594214c9-bb7e-4352-b8bd-7aab3a1395ad"
   },
-  "session_1732197172846": {
+  "session_1732197979572": {
     "name": "Show And Tell",
     "users": {
-      "d92cee73-12ae-4528-9e6a-e330089413cc": "Chibu"
+      "2deabfd3-8053-44a0-969e-60854e627e0d": "Chibu"
     },
-    "votes": {},
+    "votes": {
+      "2deabfd3-8053-44a0-969e-60854e627e0d": 2
+    },
     "points": [
       1,
       2,
@@ -394,7 +396,6 @@
       8,
       13
     ],
-    "owner": "d92cee73-12ae-4528-9e6a-e330089413cc",
-    "voteTitle": "UAP Pointing"
+    "owner": "2deabfd3-8053-44a0-969e-60854e627e0d"
   }
 }
