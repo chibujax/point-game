@@ -725,5 +725,20 @@
       1
     ],
     "owner": "62a166d2-3508-4f5d-98f4-3cb32f5e5a35"
+  },
+  "session_1732205337693": {
+    "name": "Ant's test",
+    "users": {
+      "3bf102d2-d181-4bea-9ea6-cbfb896e29f0": "Ant"
+    },
+    "votes": {
+      "3bf102d2-d181-4bea-9ea6-cbfb896e29f0": 1
+    },
+    "points": [
+      1,
+      2,
+      3
+    ],
+    "owner": "3bf102d2-d181-4bea-9ea6-cbfb896e29f0"
   }
 }
