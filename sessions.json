@@ -728,9 +728,7 @@
   },
   "session_1732205337693": {
     "name": "Ant's test",
-    "users": {
-      "3bf102d2-d181-4bea-9ea6-cbfb896e29f0": "Ant"
-    },
+    "users": {},
     "votes": {
       "3bf102d2-d181-4bea-9ea6-cbfb896e29f0": 1
     },
