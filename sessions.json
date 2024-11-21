@@ -447,11 +447,9 @@
   },
   "session_1732203186755": {
     "name": "hellllllllo",
-    "users": {
-      "0ff6daf5-dd80-460b-9057-2769da6b5076": "tdb"
-    },
+    "users": {},
     "votes": {
-      "0ff6daf5-dd80-460b-9057-2769da6b5076": 2
+      "0ff6daf5-dd80-460b-9057-2769da6b5076": 1
     },
     "points": [
       1,
