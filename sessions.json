@@ -379,28 +379,22 @@
     ],
     "owner": "594214c9-bb7e-4352-b8bd-7aab3a1395ad"
   },
-  "session_1732184546058": {
-    "name": "refinement today :) ",
-    "users": {},
-    "votes": {
-      "c2161cb9-0fed-4534-996f-733d0ec86dc3": 5,
-      "5deb5cca-a06f-4d18-97e8-e4e82d78ea30": 5,
-      "b23ee812-2022-4453-bb8a-9c946ffc7f95": 3,
-      "6fd79e24-bb2e-4f50-9791-36a4822f6185": 8,
-      "f409fbb2-a19d-4d9e-8ca1-af98d5286106": 5,
-      "4b168752-58a6-41d9-bd33-9dd53809bd28": 5,
-      "6030c79d-a29a-4969-a80d-ce3af2777e98": 3,
-      "1de0438e-e572-4312-bd5c-832d8f585271": 3,
-      "594214c9-bb7e-4352-b8bd-7aab3a1395ad": 5
+  "session_1732197172846": {
+    "name": "Show And Tell",
+    "users": {
+      "d92cee73-12ae-4528-9e6a-e330089413cc": "Chibu"
     },
+    "votes": {},
     "points": [
       1,
       2,
       3,
+      4,
       5,
       8,
       13
     ],
-    "owner": "1de0438e-e572-4312-bd5c-832d8f585271"
+    "owner": "d92cee73-12ae-4528-9e6a-e330089413cc",
+    "voteTitle": "UAP Pointing"
   }
 }
