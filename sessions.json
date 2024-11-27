@@ -754,8 +754,7 @@
   "session_1732702508236": {
     "name": "bitesize",
     "users": {
-      "a6eb45bc-876a-461a-9743-d2d9de574abb": "tdb",
-      "473f458d-c874-4c5f-b9dc-eba7ed01385b": "Dom"
+      "a6eb45bc-876a-461a-9743-d2d9de574abb": "tdb"
     },
     "votes": {
       "473f458d-c874-4c5f-b9dc-eba7ed01385b": 1,
@@ -781,19 +780,10 @@
       "f409fbb2-a19d-4d9e-8ca1-af98d5286106": "loki",
       "0880d0fa-743b-4e87-a148-4e1d2d855c2b": "Chibu",
       "f57a8023-b777-4a3c-a17a-6fc09d0975ec": "Alex",
-      "754f7abf-8b7c-42a9-afc3-e386bc9840e8": "Chaitanya",
       "cce3fec7-c189-40d2-aef2-307c2bc52aed": "Vedant",
       "5deb5cca-a06f-4d18-97e8-e4e82d78ea30": "Hani"
     },
-    "votes": {
-      "f57a8023-b777-4a3c-a17a-6fc09d0975ec": 1,
-      "cce3fec7-c189-40d2-aef2-307c2bc52aed": 1,
-      "5deb5cca-a06f-4d18-97e8-e4e82d78ea30": 2,
-      "b5cfbd2d-77d0-48dd-94f1-3d6796a7c068": 3,
-      "f409fbb2-a19d-4d9e-8ca1-af98d5286106": 2,
-      "0880d0fa-743b-4e87-a148-4e1d2d855c2b": 3,
-      "754f7abf-8b7c-42a9-afc3-e386bc9840e8": 3
-    },
+    "votes": {},
     "points": [
       1,
       2,
