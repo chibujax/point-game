@@ -773,10 +773,7 @@
   },
   "session_1732702564290": {
     "name": "Planning ",
-    "users": {
-      "de6d6ec9-16bf-4d2f-a98f-ddca4feb0c52": "Liv",
-      "b5cfbd2d-77d0-48dd-94f1-3d6796a7c068": "Alexa"
-    },
+    "users": {},
     "votes": {
       "cce3fec7-c189-40d2-aef2-307c2bc52aed": 8,
       "0880d0fa-743b-4e87-a148-4e1d2d855c2b": 5,
