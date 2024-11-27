@@ -755,12 +755,7 @@
     "name": "bitesize",
     "users": {
       "a6eb45bc-876a-461a-9743-d2d9de574abb": "tdb",
-      "edc32648-9390-47e1-aa45-d4b121d965c5": "britt",
-      "d4683e12-e8fa-4f26-bae0-8be2e80403d6": "Yash",
-      "473f458d-c874-4c5f-b9dc-eba7ed01385b": "Dom",
-      "ea503b99-1efb-4f82-abb7-78a67918bb71": "iwan",
-      "d7a5c3ef-6501-43b8-9bbb-e10f9dfc9d28": "Kamara",
-      "a5477bf7-fbae-4df7-abc7-ff48be1a5f0e": "Hannah"
+      "473f458d-c874-4c5f-b9dc-eba7ed01385b": "Dom"
     },
     "votes": {
       "473f458d-c874-4c5f-b9dc-eba7ed01385b": 1,
@@ -785,13 +780,20 @@
       "de6d6ec9-16bf-4d2f-a98f-ddca4feb0c52": "Liv",
       "f409fbb2-a19d-4d9e-8ca1-af98d5286106": "loki",
       "0880d0fa-743b-4e87-a148-4e1d2d855c2b": "Chibu",
-      "5deb5cca-a06f-4d18-97e8-e4e82d78ea30": "Hani",
+      "f57a8023-b777-4a3c-a17a-6fc09d0975ec": "Alex",
       "754f7abf-8b7c-42a9-afc3-e386bc9840e8": "Chaitanya",
       "cce3fec7-c189-40d2-aef2-307c2bc52aed": "Vedant",
-      "f57a8023-b777-4a3c-a17a-6fc09d0975ec": "Alex",
-      "b5cfbd2d-77d0-48dd-94f1-3d6796a7c068": "Alexa"
+      "5deb5cca-a06f-4d18-97e8-e4e82d78ea30": "Hani"
     },
-    "votes": {},
+    "votes": {
+      "f57a8023-b777-4a3c-a17a-6fc09d0975ec": 1,
+      "cce3fec7-c189-40d2-aef2-307c2bc52aed": 1,
+      "5deb5cca-a06f-4d18-97e8-e4e82d78ea30": 2,
+      "b5cfbd2d-77d0-48dd-94f1-3d6796a7c068": 3,
+      "f409fbb2-a19d-4d9e-8ca1-af98d5286106": 2,
+      "0880d0fa-743b-4e87-a148-4e1d2d855c2b": 3,
+      "754f7abf-8b7c-42a9-afc3-e386bc9840e8": 3
+    },
     "points": [
       1,
       2,
