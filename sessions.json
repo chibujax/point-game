@@ -753,9 +753,7 @@
   },
   "session_1732702508236": {
     "name": "bitesize",
-    "users": {
-      "a6eb45bc-876a-461a-9743-d2d9de574abb": "tdb"
-    },
+    "users": {},
     "votes": {
       "473f458d-c874-4c5f-b9dc-eba7ed01385b": 1,
       "d7a5c3ef-6501-43b8-9bbb-e10f9dfc9d28": 1,
@@ -780,10 +778,19 @@
       "f409fbb2-a19d-4d9e-8ca1-af98d5286106": "loki",
       "0880d0fa-743b-4e87-a148-4e1d2d855c2b": "Chibu",
       "f57a8023-b777-4a3c-a17a-6fc09d0975ec": "Alex",
-      "cce3fec7-c189-40d2-aef2-307c2bc52aed": "Vedant",
-      "5deb5cca-a06f-4d18-97e8-e4e82d78ea30": "Hani"
+      "5deb5cca-a06f-4d18-97e8-e4e82d78ea30": "Hani",
+      "d8798d57-cad6-47a4-adee-167d2d713249": "Mazamoose",
+      "b5cfbd2d-77d0-48dd-94f1-3d6796a7c068": "Alexa"
     },
-    "votes": {},
+    "votes": {
+      "cce3fec7-c189-40d2-aef2-307c2bc52aed": 8,
+      "0880d0fa-743b-4e87-a148-4e1d2d855c2b": 5,
+      "5deb5cca-a06f-4d18-97e8-e4e82d78ea30": 5,
+      "f57a8023-b777-4a3c-a17a-6fc09d0975ec": 3,
+      "d8798d57-cad6-47a4-adee-167d2d713249": 8,
+      "f409fbb2-a19d-4d9e-8ca1-af98d5286106": 5,
+      "b5cfbd2d-77d0-48dd-94f1-3d6796a7c068": 8
+    },
     "points": [
       1,
       2,
