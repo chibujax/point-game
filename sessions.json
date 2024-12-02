@@ -843,9 +843,7 @@
   },
   "session_1733149439451": {
     "name": "bitesize",
-    "users": {
-      "f1b9897a-082b-4167-b6f7-f37c57ca81f6": "tdb"
-    },
+    "users": {},
     "votes": {
       "ea503b99-1efb-4f82-abb7-78a67918bb71": 2,
       "473f458d-c874-4c5f-b9dc-eba7ed01385b": 2,
