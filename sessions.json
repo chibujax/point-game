@@ -843,15 +843,28 @@
   },
   "session_1733307928043": {
     "name": "bitesize",
-    "users": {},
+    "users": {
+      "928ef163-d571-4ea5-9ebe-d63dec69851f": "tdb",
+      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt",
+      "ea503b99-1efb-4f82-abb7-78a67918bb71": "Iwan",
+      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": "Joe",
+      "549068e4-eeed-4645-80ef-3278ea467659": "Kamara",
+      "4158aeea-e681-4107-8099-90c6a1d5957a": "Hannah",
+      "5c8d4957-6ced-4020-bc0d-fe62dbbbf687": "Jessica",
+      "669a4e41-717e-4c2d-bb69-57397b85ba04": "Nicola"
+    },
     "votes": {
-      "5c8d4957-6ced-4020-bc0d-fe62dbbbf687": 3,
+      "5c8d4957-6ced-4020-bc0d-fe62dbbbf687": 1,
       "d7a5c3ef-6501-43b8-9bbb-e10f9dfc9d28": 3,
-      "473f458d-c874-4c5f-b9dc-eba7ed01385b": 3,
+      "473f458d-c874-4c5f-b9dc-eba7ed01385b": 2,
       "ea503b99-1efb-4f82-abb7-78a67918bb71": 2,
-      "a5477bf7-fbae-4df7-abc7-ff48be1a5f0e": 3,
+      "a5477bf7-fbae-4df7-abc7-ff48be1a5f0e": 1,
       "edc32648-9390-47e1-aa45-d4b121d965c5": 2,
-      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": 3
+      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": 3,
+      "810a3fed-a599-4c2b-989e-99b79264d5ef": 1,
+      "4158aeea-e681-4107-8099-90c6a1d5957a": 1,
+      "928ef163-d571-4ea5-9ebe-d63dec69851f": 2,
+      "549068e4-eeed-4645-80ef-3278ea467659": 1
     },
     "points": [
       1,
