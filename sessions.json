@@ -864,5 +864,38 @@
       13
     ],
     "owner": "928ef163-d571-4ea5-9ebe-d63dec69851f"
+  },
+  "session_1734617868945": {
+    "name": "Sprint planning",
+    "users": {
+      "288d312a-ca5d-4e88-8548-8c8157263fa2": "Liv",
+      "473f458d-c874-4c5f-b9dc-eba7ed01385b": "Dom",
+      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": "Joe",
+      "549068e4-eeed-4645-80ef-3278ea467659": "Kamara",
+      "ea503b99-1efb-4f82-abb7-78a67918bb71": "Iwan",
+      "928ef163-d571-4ea5-9ebe-d63dec69851f": "tom",
+      "de2db148-49bd-4909-a11d-97bcb6fc3994": "Yash",
+      "4158aeea-e681-4107-8099-90c6a1d5957a": "Hannah",
+      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt"
+    },
+    "votes": {
+      "473f458d-c874-4c5f-b9dc-eba7ed01385b": 3,
+      "4158aeea-e681-4107-8099-90c6a1d5957a": 2,
+      "de2db148-49bd-4909-a11d-97bcb6fc3994": 2,
+      "ea503b99-1efb-4f82-abb7-78a67918bb71": 2,
+      "928ef163-d571-4ea5-9ebe-d63dec69851f": 2,
+      "549068e4-eeed-4645-80ef-3278ea467659": 2,
+      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": 2,
+      "edc32648-9390-47e1-aa45-d4b121d965c5": 3
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "288d312a-ca5d-4e88-8548-8c8157263fa2"
   }
 }
