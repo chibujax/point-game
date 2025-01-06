@@ -897,16 +897,18 @@
       "0880d0fa-743b-4e87-a148-4e1d2d855c2b": "Chibu",
       "16e8958d-8e89-4808-bf83-f066f50cbe25": "Alex",
       "5911829e-047f-48ec-9e4c-0e909715ec54": "Vedant",
-      "c0beaee7-bac8-4cb1-bf59-4c9a7cb8db42": "Alexa",
-      "0d76ce19-d2b7-4efb-854a-5cd355a0c32a": "loki"
+      "0d76ce19-d2b7-4efb-854a-5cd355a0c32a": "loki",
+      "9b257117-a082-45e0-af99-f04d7bee6bbc": "James"
     },
     "votes": {
-      "bb812b23-7cb0-4923-843e-660e7c1c5a4b": 5,
+      "6b7abbf6-709c-416e-b7d8-aeb8db53bbac": 5,
+      "0d76ce19-d2b7-4efb-854a-5cd355a0c32a": 5,
       "0880d0fa-743b-4e87-a148-4e1d2d855c2b": 5,
-      "16e8958d-8e89-4808-bf83-f066f50cbe25": 3,
-      "0d76ce19-d2b7-4efb-854a-5cd355a0c32a": 1,
-      "5911829e-047f-48ec-9e4c-0e909715ec54": 5,
-      "891ca1f4-d3e7-4c2e-bc39-877684f629a2": 5
+      "5911829e-047f-48ec-9e4c-0e909715ec54": 3,
+      "891ca1f4-d3e7-4c2e-bc39-877684f629a2": 5,
+      "9b257117-a082-45e0-af99-f04d7bee6bbc": 3,
+      "bb812b23-7cb0-4923-843e-660e7c1c5a4b": 3,
+      "16e8958d-8e89-4808-bf83-f066f50cbe25": 3
     },
     "points": [
       1,
