@@ -887,5 +887,23 @@
       13
     ],
     "owner": "288d312a-ca5d-4e88-8548-8c8157263fa2"
+  },
+  "session_1736330876790": {
+    "name": "brats",
+    "users": {
+      "4c3d0082-20a6-4ff5-b597-8924570ec94c": "tdb",
+      "de2db148-49bd-4909-a11d-97bcb6fc3994": "Yash",
+      "4158aeea-e681-4107-8099-90c6a1d5957a": "Hannah",
+      "ea503b99-1efb-4f82-abb7-78a67918bb71": "Iwan"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "owner": "4c3d0082-20a6-4ff5-b597-8924570ec94c"
   }
 }
