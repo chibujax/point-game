@@ -909,5 +909,23 @@
       8
     ],
     "owner": "4c3d0082-20a6-4ff5-b597-8924570ec94c"
+  },
+  "session_1736777086372": {
+    "name": "BRATS 13/01",
+    "users": {
+      "9474d680-c04c-42a1-acd3-76aeda69c753": "Liv",
+      "d1c700b4-cb20-4c87-88a4-39f1a896e104": "Yash",
+      "2ecc99a1-59b2-487d-8bda-9050affab4f5": "Kamara"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "9474d680-c04c-42a1-acd3-76aeda69c753"
   }
 }
