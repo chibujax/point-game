@@ -956,15 +956,12 @@
   "session_1736950137195": {
     "name": "Backlog refinement 15.01",
     "users": {
-      "bb812b23-7cb0-4923-843e-660e7c1c5a4b": "Hani",
-      "506018db-4ce9-4bec-961f-de71ac6416ee": "James",
       "fad69540-75c6-4d23-86e4-c3db30010f80": "Gaurav",
       "6c951483-52a7-4ca1-a179-aa86127d7627": "Padma",
       "0880d0fa-743b-4e87-a148-4e1d2d855c2b": "Chibu",
       "c0beaee7-bac8-4cb1-bf59-4c9a7cb8db42": "Alexa",
       "336c9d83-604a-4afe-8115-3b0674927783": "Adam",
-      "4e59c831-7142-4278-8548-54c83aad32b9": "Vedant",
-      "891ca1f4-d3e7-4c2e-bc39-877684f629a2": "Chaitanya"
+      "4e59c831-7142-4278-8548-54c83aad32b9": "Vedant"
     },
     "votes": {},
     "points": [
@@ -985,21 +982,19 @@
       "e846e697-c9d4-4ec4-b1c3-3601186f48a1": "Kamara",
       "04557516-aaa3-41a0-863d-01f1161b54ee": "Iwan",
       "7f7cbb89-3861-49bf-be0f-2e4816c6e46d": "Yash",
-      "4158aeea-e681-4107-8099-90c6a1d5957a": "Hannah",
       "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt",
       "7754059e-f01e-46c3-b7e1-1d554225b5ed": "tdb",
       "634fa24f-6b9a-4ece-a7ac-024d25bd988f": "Jessica"
     },
     "votes": {
-      "634fa24f-6b9a-4ece-a7ac-024d25bd988f": 2,
-      "7754059e-f01e-46c3-b7e1-1d554225b5ed": 1,
-      "50048c40-2738-4288-a437-e96bff30c166": 2,
+      "edc32648-9390-47e1-aa45-d4b121d965c5": 1,
+      "634fa24f-6b9a-4ece-a7ac-024d25bd988f": 1,
       "e846e697-c9d4-4ec4-b1c3-3601186f48a1": 1,
-      "988668d6-face-42d7-b92a-696e370912b8": 2,
-      "04557516-aaa3-41a0-863d-01f1161b54ee": 2,
-      "7f7cbb89-3861-49bf-be0f-2e4816c6e46d": 3,
-      "4158aeea-e681-4107-8099-90c6a1d5957a": 2,
-      "edc32648-9390-47e1-aa45-d4b121d965c5": 3
+      "7f7cbb89-3861-49bf-be0f-2e4816c6e46d": 1,
+      "7754059e-f01e-46c3-b7e1-1d554225b5ed": 1,
+      "50048c40-2738-4288-a437-e96bff30c166": 1,
+      "04557516-aaa3-41a0-863d-01f1161b54ee": 1,
+      "4158aeea-e681-4107-8099-90c6a1d5957a": 1
     },
     "points": [
       1,
