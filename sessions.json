@@ -972,26 +972,5 @@
       13
     ],
     "owner": "074faf43-012d-4062-9de6-85855eba87e7"
-  },
-  "session_1736953613532": {
-    "name": "Sprint planning 15/01 ",
-    "users": {
-      "988668d6-face-42d7-b92a-696e370912b8": "Liv",
-      "50048c40-2738-4288-a437-e96bff30c166": "Dom",
-      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt",
-      "7754059e-f01e-46c3-b7e1-1d554225b5ed": "tdb",
-      "634fa24f-6b9a-4ece-a7ac-024d25bd988f": "Jessica",
-      "4158aeea-e681-4107-8099-90c6a1d5957a": "Hannah"
-    },
-    "votes": {},
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "988668d6-face-42d7-b92a-696e370912b8"
   }
 }
