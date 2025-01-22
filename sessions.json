@@ -987,8 +987,28 @@
   },
   "session_1737542965818": {
     "name": "Sprint Planning",
+    "users": {},
+    "votes": {
+      "7afa6e79-21a9-49d3-b41d-4ac1c41b4197": 5,
+      "d8798d57-cad6-47a4-adee-167d2d713249": 3,
+      "f7edba31-501e-4765-8830-0ef94da1f414": 1,
+      "991aefb1-4b39-45f3-a790-6d3048d4001b": 2,
+      "4e798fbe-d2b7-4432-b514-9f1ea302e14d": 3
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "4e798fbe-d2b7-4432-b514-9f1ea302e14d"
+  },
+  "session_1737543641348": {
+    "name": "Planning ",
     "users": {
-      "4e798fbe-d2b7-4432-b514-9f1ea302e14d": "Alex"
+      "259999f5-9329-4a93-8092-df0110cd699b": "Liv"
     },
     "votes": {},
     "points": [
@@ -999,6 +1019,20 @@
       8,
       13
     ],
-    "owner": "4e798fbe-d2b7-4432-b514-9f1ea302e14d"
+    "owner": "259999f5-9329-4a93-8092-df0110cd699b"
+  },
+  "session_1737543641458": {
+    "name": "Planning ",
+    "users": {},
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "bdcd2ca8-08cb-4588-83bb-f7c0d397485f"
   }
 }
