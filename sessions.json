@@ -984,5 +984,21 @@
       5
     ],
     "owner": "b3d1bbb2-294f-4600-a0ed-c9cd599dd5dd"
+  },
+  "session_1737542965818": {
+    "name": "Sprint Planning",
+    "users": {
+      "4e798fbe-d2b7-4432-b514-9f1ea302e14d": "Alex"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "4e798fbe-d2b7-4432-b514-9f1ea302e14d"
   }
 }
