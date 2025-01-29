@@ -44,5 +44,25 @@
       13
     ],
     "owner": "0960c4e9-ab76-4173-9c20-b9572b99c198"
+  },
+  "session_1738146239025": {
+    "name": "brats 29/01/25",
+    "users": {
+      "93612b24-d086-4d7b-b65b-f83cb9f987b0": "tdb",
+      "bdcd2ca8-08cb-4588-83bb-f7c0d397485f": "Liv",
+      "32e12aa4-c047-4408-b0a3-d7d2f444630d": "Yash",
+      "249ab034-1713-42e5-b3d4-218b630c5352": "Kamara",
+      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt",
+      "dbebd8be-2486-4434-87d9-133fdb932ae0": "Iwan"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "owner": "93612b24-d086-4d7b-b65b-f83cb9f987b0"
   }
 }
