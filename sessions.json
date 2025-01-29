@@ -44,30 +44,5 @@
       13
     ],
     "owner": "0960c4e9-ab76-4173-9c20-b9572b99c198"
-  },
-  "session_1738163791253": {
-    "name": "Planning",
-    "users": {
-      "a948927e-9c4b-4ca2-95bb-bcb6ca492c65": "Liv",
-      "249ab034-1713-42e5-b3d4-218b630c5352": "Kamara",
-      "32e12aa4-c047-4408-b0a3-d7d2f444630d": "Yash",
-      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt",
-      "dbebd8be-2486-4434-87d9-133fdb932ae0": "Iwan",
-      "4158aeea-e681-4107-8099-90c6a1d5957a": "Hannah",
-      "50048c40-2738-4288-a437-e96bff30c166": "Dom",
-      "93612b24-d086-4d7b-b65b-f83cb9f987b0": "tdb",
-      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": "Joe",
-      "8036853d-153c-4826-b84b-e87a60b1bb42": "Jessica"
-    },
-    "votes": {},
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "a948927e-9c4b-4ca2-95bb-bcb6ca492c65"
   }
 }
