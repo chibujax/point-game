@@ -77,5 +77,20 @@
       5
     ],
     "owner": "060efc0f-da9e-446a-98d4-2c97d6f97853"
+  },
+  "session_1738525167463": {
+    "name": "Show And Tell",
+    "users": {
+      "e35645d3-846c-488b-8c1a-b8b6de46165c": "Chibu"
+    },
+    "votes": {
+      "e35645d3-846c-488b-8c1a-b8b6de46165c": 3
+    },
+    "points": [
+      1,
+      2,
+      3
+    ],
+    "owner": "e35645d3-846c-488b-8c1a-b8b6de46165c"
   }
 }
