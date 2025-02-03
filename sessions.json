@@ -90,5 +90,28 @@
       3
     ],
     "owner": "e35645d3-846c-488b-8c1a-b8b6de46165c"
+  },
+  "session_1738577622380": {
+    "name": "emergency brats 03/02/25",
+    "users": {
+      "305ffc0b-790f-4a94-9d7d-47db541bfc07": "tdb",
+      "f5c2755b-6513-4a1c-bd41-77949855a714": "Kamara",
+      "8036853d-153c-4826-b84b-e87a60b1bb42": "Jessica",
+      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": "Hannah",
+      "65d3fcbf-394c-456a-b310-0a58081c7035": "Yash",
+      "dbebd8be-2486-4434-87d9-133fdb932ae0": "IWAN",
+      "50048c40-2738-4288-a437-e96bff30c166": "Dom",
+      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "305ffc0b-790f-4a94-9d7d-47db541bfc07"
   }
 }
