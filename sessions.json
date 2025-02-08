@@ -144,5 +144,45 @@
       13
     ],
     "owner": "bbac56dc-7b16-4cb2-aa63-87879b7ddbaf"
+  },
+  "session_1739051496732": {
+    "name": "Show And Tell",
+    "users": {
+      "e14b1e82-216c-4d1e-84f9-4a7ba762b623": "Chibu"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "e14b1e82-216c-4d1e-84f9-4a7ba762b623"
+  },
+  "session_1739051496913": {
+    "name": "Show And Tell",
+    "users": {
+      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": "Chibu",
+      "f9cf9120-e6ba-44a0-ada8-547519ee66cd": "babaa",
+      "a0b873cd-a178-4117-94b4-d2054f46171a": "babab",
+      "771e1f8f-d8ba-4658-b2ca-30781eb3f89e": "babac"
+    },
+    "votes": {
+      "771e1f8f-d8ba-4658-b2ca-30781eb3f89e": 3,
+      "a0b873cd-a178-4117-94b4-d2054f46171a": 3,
+      "f9cf9120-e6ba-44a0-ada8-547519ee66cd": 5,
+      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": 5
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5"
   }
 }
