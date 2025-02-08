@@ -163,12 +163,7 @@
   },
   "session_1739051496913": {
     "name": "Show And Tell",
-    "users": {
-      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": "Chibu",
-      "f9cf9120-e6ba-44a0-ada8-547519ee66cd": "babaa",
-      "771e1f8f-d8ba-4658-b2ca-30781eb3f89e": "babac",
-      "a0b873cd-a178-4117-94b4-d2054f46171a": "babab"
-    },
+    "users": {},
     "votes": {
       "771e1f8f-d8ba-4658-b2ca-30781eb3f89e": 3,
       "a0b873cd-a178-4117-94b4-d2054f46171a": 3,
