@@ -115,5 +115,18 @@
       13
     ],
     "owner": "305ffc0b-790f-4a94-9d7d-47db541bfc07"
+  },
+  "session_1739017292511": {
+    "name": "hola",
+    "users": {
+      "4bd4158c-7a1a-42b6-b504-7ec22d235423": "Me@gmail.com"
+    },
+    "votes": {},
+    "points": [
+      1,
+      1,
+      1
+    ],
+    "owner": "4bd4158c-7a1a-42b6-b504-7ec22d235423"
   }
 }
