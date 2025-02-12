@@ -258,40 +258,5 @@
       13
     ],
     "owner": "7967de40-8ab4-4b50-964d-e96275c2679b"
-  },
-  "session_1739360145444": {
-    "name": "Refinement ",
-    "users": {
-      "ddaa9d92-00e5-4f56-8be9-2acb226d540f": "Liv",
-      "bb812b23-7cb0-4923-843e-660e7c1c5a4b": "Hani",
-      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": "Jax",
-      "3355b9ef-a01c-4777-8ec7-b9d274fd89e1": "Gaurav",
-      "022141f5-9a72-4e9f-a8aa-d99cf7a5f182": "Vedant",
-      "f95fe035-47f0-45c7-8be0-3649cd533cee": "Padma",
-      "3cd62277-1f23-4c64-8561-bd3b5c862c4b": "Gail",
-      "c2b1446c-7b40-41f6-b54e-1f0edc994381": "Alexa",
-      "07b80d3d-ade9-4c6f-99f9-f7112015db03": "James",
-      "56e9958b-7026-4164-aade-263d5b2cc5c1": "Maz",
-      "991aefb1-4b39-45f3-a790-6d3048d4001b": "Adam"
-    },
-    "votes": {
-      "07b80d3d-ade9-4c6f-99f9-f7112015db03": 3,
-      "022141f5-9a72-4e9f-a8aa-d99cf7a5f182": 5,
-      "bb812b23-7cb0-4923-843e-660e7c1c5a4b": 3,
-      "56e9958b-7026-4164-aade-263d5b2cc5c1": 3,
-      "ddaa9d92-00e5-4f56-8be9-2acb226d540f": 5,
-      "991aefb1-4b39-45f3-a790-6d3048d4001b": 3,
-      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": 3,
-      "c2b1446c-7b40-41f6-b54e-1f0edc994381": 5
-    },
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "ddaa9d92-00e5-4f56-8be9-2acb226d540f"
   }
 }
