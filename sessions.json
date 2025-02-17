@@ -255,5 +255,35 @@
       13
     ],
     "owner": "7967de40-8ab4-4b50-964d-e96275c2679b"
+  },
+  "session_1739786821918": {
+    "name": "Bitesize emergency ticket sizing",
+    "users": {
+      "619c4f46-5cd8-42a8-b69c-c93bc09d154e": "Dom",
+      "32907694-bc7e-4a24-be36-4b98d355331a": "Kamara",
+      "3c310b85-44bd-413a-a1cb-f72781bd0b44": "Jessica",
+      "65d3fcbf-394c-456a-b310-0a58081c7035": "Yash",
+      "91456fdf-7786-46b4-b913-e7a65eed8d35": "Iwan",
+      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt",
+      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": "Hannah"
+    },
+    "votes": {
+      "3c310b85-44bd-413a-a1cb-f72781bd0b44": 2,
+      "65d3fcbf-394c-456a-b310-0a58081c7035": 2,
+      "91456fdf-7786-46b4-b913-e7a65eed8d35": 1,
+      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": 3,
+      "32907694-bc7e-4a24-be36-4b98d355331a": 2,
+      "edc32648-9390-47e1-aa45-d4b121d965c5": 2,
+      "619c4f46-5cd8-42a8-b69c-c93bc09d154e": 2
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "619c4f46-5cd8-42a8-b69c-c93bc09d154e"
   }
 }
