@@ -284,9 +284,21 @@
       "8b10b03e-0a40-47a0-bcc2-84eb2af6f0e8": "Liv",
       "1d87d68b-5c3d-43e3-bd04-4044c2868e75": "James",
       "05ef1484-e6e5-46ad-beee-1335ede0c05e": "Vedant",
-      "c2b1446c-7b40-41f6-b54e-1f0edc994381": "Alexa"
+      "991aefb1-4b39-45f3-a790-6d3048d4001b": "Adam",
+      "56e9958b-7026-4164-aade-263d5b2cc5c1": "Maz",
+      "c2b1446c-7b40-41f6-b54e-1f0edc994381": "Alexa",
+      "47e4efca-342d-4fa7-92e1-07f5ca2f2d0e": "Hani",
+      "3355b9ef-a01c-4777-8ec7-b9d274fd89e1": "Gaurav"
     },
-    "votes": {},
+    "votes": {
+      "c2b1446c-7b40-41f6-b54e-1f0edc994381": 3,
+      "991aefb1-4b39-45f3-a790-6d3048d4001b": 3,
+      "05ef1484-e6e5-46ad-beee-1335ede0c05e": 5,
+      "1d87d68b-5c3d-43e3-bd04-4044c2868e75": 3,
+      "47e4efca-342d-4fa7-92e1-07f5ca2f2d0e": 3,
+      "56e9958b-7026-4164-aade-263d5b2cc5c1": 5,
+      "8b10b03e-0a40-47a0-bcc2-84eb2af6f0e8": 5
+    },
     "points": [
       1,
       2,
