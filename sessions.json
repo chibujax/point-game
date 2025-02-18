@@ -283,7 +283,9 @@
     "users": {
       "cd0afc0f-b3af-4c5f-8d98-4762703912dc": "James"
     },
-    "votes": {},
+    "votes": {
+      "cd0afc0f-b3af-4c5f-8d98-4762703912dc": "AA"
+    },
     "points": [
       1,
       5,
