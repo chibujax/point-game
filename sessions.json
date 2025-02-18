@@ -280,12 +280,8 @@
   },
   "session_1739885477856": {
     "name": "Testing",
-    "users": {
-      "cd0afc0f-b3af-4c5f-8d98-4762703912dc": "James"
-    },
-    "votes": {
-      "cd0afc0f-b3af-4c5f-8d98-4762703912dc": "AA"
-    },
+    "users": {},
+    "votes": {},
     "points": [
       1,
       5,
@@ -305,5 +301,24 @@
       10
     ],
     "owner": "1ff4a66e-235f-4264-a36d-876de67bf466"
+  },
+  "session_1739886762470": {
+    "name": "saSA",
+    "users": {
+      "65714196-b433-45bd-888c-af8dd12c2ec9": "Alex",
+      "064fe2c3-7a86-4031-bb16-7db52a053044": "Jim"
+    },
+    "votes": {
+      "064fe2c3-7a86-4031-bb16-7db52a053044": 8
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "65714196-b433-45bd-888c-af8dd12c2ec9"
   }
 }
