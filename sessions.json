@@ -277,5 +277,24 @@
       13
     ],
     "owner": "619c4f46-5cd8-42a8-b69c-c93bc09d154e"
+  },
+  "session_1739878648884": {
+    "name": "Sprint planning ",
+    "users": {
+      "8b10b03e-0a40-47a0-bcc2-84eb2af6f0e8": "Liv",
+      "1d87d68b-5c3d-43e3-bd04-4044c2868e75": "James",
+      "05ef1484-e6e5-46ad-beee-1335ede0c05e": "Vedant",
+      "c2b1446c-7b40-41f6-b54e-1f0edc994381": "Alexa"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "8b10b03e-0a40-47a0-bcc2-84eb2af6f0e8"
   }
 }
