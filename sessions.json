@@ -277,5 +277,31 @@
       13
     ],
     "owner": "619c4f46-5cd8-42a8-b69c-c93bc09d154e"
+  },
+  "session_1739885477856": {
+    "name": "Testing",
+    "users": {
+      "cd0afc0f-b3af-4c5f-8d98-4762703912dc": "James"
+    },
+    "votes": {},
+    "points": [
+      1,
+      5,
+      10
+    ],
+    "owner": "cd0afc0f-b3af-4c5f-8d98-4762703912dc"
+  },
+  "session_1739885478084": {
+    "name": "Testing",
+    "users": {
+      "1ff4a66e-235f-4264-a36d-876de67bf466": "James"
+    },
+    "votes": {},
+    "points": [
+      1,
+      5,
+      10
+    ],
+    "owner": "1ff4a66e-235f-4264-a36d-876de67bf466"
   }
 }
