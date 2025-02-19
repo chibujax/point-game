@@ -303,5 +303,25 @@
       10
     ],
     "owner": "1ff4a66e-235f-4264-a36d-876de67bf466"
+  },
+  "session_1739959480733": {
+    "name": "BRATS ",
+    "users": {
+      "2d4548d8-0ece-43ee-9c4a-3b20afb98c75": "Liv",
+      "65d3fcbf-394c-456a-b310-0a58081c7035": "Yash",
+      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": "Hannah",
+      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": "Joe",
+      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "2d4548d8-0ece-43ee-9c4a-3b20afb98c75"
   }
 }
