@@ -303,38 +303,5 @@
       10
     ],
     "owner": "1ff4a66e-235f-4264-a36d-876de67bf466"
-  },
-  "session_1740565981137": {
-    "name": "BIG BRATZ",
-    "users": {
-      "4bb693f1-2d76-49ba-bd5e-ba5dcf183806": "Livvy",
-      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": "Hannah",
-      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt",
-      "5fa708d6-1824-4979-be82-21335cb3a946": "tdb",
-      "9dcc9c67-0498-45b8-a224-2ffdc89dd5c8": "Kamara",
-      "619c4f46-5cd8-42a8-b69c-c93bc09d154e": "Dom",
-      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": "Joe",
-      "b1bbdc0f-f2a3-46a5-985b-6b90cbdc3fd1": "Iwan",
-      "c5a5b1ec-d6b7-47e6-8643-036db328201a": "Jessica"
-    },
-    "votes": {
-      "5fa708d6-1824-4979-be82-21335cb3a946": 5,
-      "b1bbdc0f-f2a3-46a5-985b-6b90cbdc3fd1": 5,
-      "619c4f46-5cd8-42a8-b69c-c93bc09d154e": 8,
-      "9dcc9c67-0498-45b8-a224-2ffdc89dd5c8": 5,
-      "edc32648-9390-47e1-aa45-d4b121d965c5": 5,
-      "c5a5b1ec-d6b7-47e6-8643-036db328201a": 5,
-      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": 5,
-      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": 5
-    },
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "owner": "4bb693f1-2d76-49ba-bd5e-ba5dcf183806"
   }
 }
