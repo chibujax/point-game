@@ -303,5 +303,27 @@
       10
     ],
     "owner": "1ff4a66e-235f-4264-a36d-876de67bf466"
+  },
+  "session_1740565981137": {
+    "name": "BIG BRATZ",
+    "users": {
+      "4bb693f1-2d76-49ba-bd5e-ba5dcf183806": "Livvy",
+      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": "Hannah",
+      "edc32648-9390-47e1-aa45-d4b121d965c5": "Britt",
+      "5fa708d6-1824-4979-be82-21335cb3a946": "tdb",
+      "9dcc9c67-0498-45b8-a224-2ffdc89dd5c8": "Kamara",
+      "619c4f46-5cd8-42a8-b69c-c93bc09d154e": "Dom",
+      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": "Joe"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "4bb693f1-2d76-49ba-bd5e-ba5dcf183806"
   }
 }
