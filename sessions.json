@@ -318,7 +318,9 @@
       "56e9958b-7026-4164-aade-263d5b2cc5c1": "MrBoyes",
       "65714196-b433-45bd-888c-af8dd12c2ec9": "Alex"
     },
-    "votes": {},
+    "votes": {
+      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": 3
+    },
     "points": [
       1,
       2,
