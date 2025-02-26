@@ -313,9 +313,20 @@
       "5fa708d6-1824-4979-be82-21335cb3a946": "tdb",
       "9dcc9c67-0498-45b8-a224-2ffdc89dd5c8": "Kamara",
       "619c4f46-5cd8-42a8-b69c-c93bc09d154e": "Dom",
-      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": "Joe"
+      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": "Joe",
+      "b1bbdc0f-f2a3-46a5-985b-6b90cbdc3fd1": "Iwan",
+      "c5a5b1ec-d6b7-47e6-8643-036db328201a": "Jessica"
     },
-    "votes": {},
+    "votes": {
+      "619c4f46-5cd8-42a8-b69c-c93bc09d154e": 5,
+      "edc32648-9390-47e1-aa45-d4b121d965c5": 5,
+      "62a166d2-3508-4f5d-98f4-3cb32f5e5a35": 5,
+      "5fa708d6-1824-4979-be82-21335cb3a946": 8,
+      "9dcc9c67-0498-45b8-a224-2ffdc89dd5c8": 8,
+      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": 5,
+      "b1bbdc0f-f2a3-46a5-985b-6b90cbdc3fd1": 5,
+      "c5a5b1ec-d6b7-47e6-8643-036db328201a": 8
+    },
     "points": [
       1,
       2,
