@@ -303,5 +303,24 @@
       10
     ],
     "owner": "1ff4a66e-235f-4264-a36d-876de67bf466"
+  },
+  "session_1741000516571": {
+    "name": "test",
+    "users": {
+      "ee3ea3b8-ecb8-4f53-af39-ad9700dc9990": "Ben"
+    },
+    "votes": {
+      "f0dc8c8c-9845-48c6-886b-ee2cb656af55": 3,
+      "ee3ea3b8-ecb8-4f53-af39-ad9700dc9990": 3
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "f0dc8c8c-9845-48c6-886b-ee2cb656af55"
   }
 }
