@@ -306,9 +306,7 @@
   },
   "session_1741000516571": {
     "name": "test",
-    "users": {
-      "ee3ea3b8-ecb8-4f53-af39-ad9700dc9990": "Ben"
-    },
+    "users": {},
     "votes": {
       "f0dc8c8c-9845-48c6-886b-ee2cb656af55": 3,
       "ee3ea3b8-ecb8-4f53-af39-ad9700dc9990": 3
