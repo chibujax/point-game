@@ -333,10 +333,21 @@
       "73f627ba-8349-48c7-9c4f-8697baed31b6": "Vedant",
       "56e9958b-7026-4164-aade-263d5b2cc5c1": "Maz",
       "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": "Chibu",
-      "10978b79-23fa-45f3-82f3-ddc1c19c7272": "Alexa",
-      "f35d81dc-bffc-48d8-aa66-66373e6164da": "James"
+      "f35d81dc-bffc-48d8-aa66-66373e6164da": "James",
+      "10978b79-23fa-45f3-82f3-ddc1c19c7272": "Alexa"
     },
-    "votes": {},
+    "votes": {
+      "403596a5-082d-437b-94fe-9223614542db": 3,
+      "47e4efca-342d-4fa7-92e1-07f5ca2f2d0e": 3,
+      "f35d81dc-bffc-48d8-aa66-66373e6164da": 3,
+      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": 3,
+      "73f627ba-8349-48c7-9c4f-8697baed31b6": 5,
+      "cb3f8d7f-aaa4-43fb-8f90-402af78fc185": 3,
+      "10978b79-23fa-45f3-82f3-ddc1c19c7272": 3,
+      "56e9958b-7026-4164-aade-263d5b2cc5c1": 3,
+      "1a2638b4-db39-4d4c-a68a-6311234b2fce": 5,
+      "3355b9ef-a01c-4777-8ec7-b9d274fd89e1": 3
+    },
     "points": [
       1,
       2,
@@ -346,5 +357,21 @@
       13
     ],
     "owner": "403596a5-082d-437b-94fe-9223614542db"
+  },
+  "session_1741175572518": {
+    "name": "Show And Tell",
+    "users": {},
+    "votes": {
+      "3398302f-9963-4d3f-8661-f6505ce93e54": 5
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "3398302f-9963-4d3f-8661-f6505ce93e54"
   }
 }
