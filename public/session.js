@@ -358,6 +358,10 @@ socket.on('sessionError', (message) => {
     window.location.href = '/';
 });
 
+socket.on('voteError', (message) => {
+    showNotification(message, true);
+});
+
 socket.on('sessionName', (name) => {
     document.getElementById('sessionName').innerText = `Session: ${name}`;
 });

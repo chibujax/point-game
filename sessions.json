@@ -325,10 +325,8 @@
     "name": "Fix everything sprint ",
     "users": {
       "47e4efca-342d-4fa7-92e1-07f5ca2f2d0e": "Hani",
-      "1a2638b4-db39-4d4c-a68a-6311234b2fce": "Padma",
       "3355b9ef-a01c-4777-8ec7-b9d274fd89e1": "Gaurav",
-      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": "Chibu",
-      "10978b79-23fa-45f3-82f3-ddc1c19c7272": "Alexa"
+      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": "Chibu"
     },
     "votes": {},
     "points": [
@@ -343,9 +341,7 @@
   },
   "session_1741175572518": {
     "name": "Show And Tell",
-    "users": {
-      "3398302f-9963-4d3f-8661-f6505ce93e54": "Chibu"
-    },
+    "users": {},
     "votes": {
       "3398302f-9963-4d3f-8661-f6505ce93e54": 999
     },
