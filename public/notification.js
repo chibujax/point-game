@@ -1,13 +1,1 @@
-function showNotification(message, isError = false) {
-    const notification = document.getElementById('notification');
-    notification.textContent = message;
-    notification.classList.add('show');
-    if (isError) {
-        notification.classList.add('error');
-    } else {
-        notification.classList.remove('error');
-    }
-    setTimeout(() => {
-        notification.classList.remove('show');
-    }, 3000);
-}
+function showNotification(o,t=!1){const i=document.getElementById("notification");i.textContent=o,i.classList.add("show"),t?i.classList.add("error"):i.classList.remove("error"),setTimeout(()=>{document.getElementById("notification").classList.remove("show")},3e3)}

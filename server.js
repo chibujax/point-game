@@ -202,7 +202,7 @@ io.on("connection", (socket) => {
     if (currentSessionId) {
       const allowedPoints = sessions[currentSessionId].points;
       if (!allowedPoints.includes(data.vote)) {
-        return socket.emit("sessionError", "Invalid vote value");
+        return socket.emit("voteError", "Invalid vote value");
       }
       sessions[currentSessionId].votes[userId] = data.vote;
       saveSessionsToFile();
