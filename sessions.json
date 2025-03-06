@@ -358,15 +358,18 @@
   "session_1741270162379": {
     "name": "Apps & Games",
     "users": {
-      "ddb50434-439c-432d-bf0b-27a7ca0111be": "Adam",
-      "3355b9ef-a01c-4777-8ec7-b9d274fd89e1": "Gaurav",
-      "73f627ba-8349-48c7-9c4f-8697baed31b6": "Vedant",
-      "56e9958b-7026-4164-aade-263d5b2cc5c1": "Maz",
-      "06487810-0547-4a7d-8364-7b2089ba8050": "Ben",
-      "c524d309-48eb-415b-82ef-3b7211b5884a": "Padma",
       "3236f08b-99ec-42a7-abba-d5ab9dcf9007": "Jaaax"
     },
-    "votes": {},
+    "votes": {
+      "10978b79-23fa-45f3-82f3-ddc1c19c7272": 3,
+      "ddb50434-439c-432d-bf0b-27a7ca0111be": 3,
+      "73f627ba-8349-48c7-9c4f-8697baed31b6": 5,
+      "c524d309-48eb-415b-82ef-3b7211b5884a": 3,
+      "06487810-0547-4a7d-8364-7b2089ba8050": 5,
+      "3355b9ef-a01c-4777-8ec7-b9d274fd89e1": 3,
+      "56e9958b-7026-4164-aade-263d5b2cc5c1": 3,
+      "3236f08b-99ec-42a7-abba-d5ab9dcf9007": 3
+    },
     "points": [
       1,
       2,
