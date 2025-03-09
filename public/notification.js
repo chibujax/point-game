@@ -1,0 +1,1 @@
+function showNotification(o,t=!1){const i=document.getElementById("notification");i.textContent=o,i.classList.add("show"),t?i.classList.add("error"):i.classList.remove("error"),setTimeout(()=>{document.getElementById("notification").classList.remove("show")},3e3)}
