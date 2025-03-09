@@ -1,1 +1,407 @@
-const socket=io(),sessionId=window.location.pathname.split("/")[1];function sanitizeInput(e){const t=document.createElement("div");return t.textContent=e,t.innerHTML}function joinSession(){const e=getElementValue("name").trim();if(/^[A-Za-z]{3,10}$/.test(e)){if(e){const t=getCookie("userId");document.cookie=`sessionId=${sessionId}; path=/; Secure`,document.cookie=`name=${e}; path=/; Secure`,socket.emit("joinSession",{sessionId:sessionId,name:e,userId:t}),socket.emit("getTitle",{sessionId:sessionId}),hideElement("join"),showElement("mainContent")}else showNotification("Please enter your name first.",!0)}else showNotification("Please enter a valid display name with only letters between 3 to 10 characters.",!0)}function hideAdmin(){hideElement("end"),hideElement("revealBtn"),hideElement("restart"),hideElement("titleChange")}function showAdmin(){showElement("scoreAdmin"),hideElement("revealBtn"),showElement("end"),showElement("titleChange","flex")}function vote(e){socket.emit("vote",{vote:e})}function reveal(){socket.emit("revealVotes")}function restart(){socket.emit("restartVoting")}function endSession(){socket.emit("endSession")}function leaveSession(){fetch("/leave-session",{method:"POST",headers:{"Content-Type":"application/json"}}).then(e=>e.json()).then(e=>{if(e.requiresTransfer)showAdminTransferModal(e.users);else{showNotification(e.message),clearCookie(),window.location.href="/"}}).catch(e=>{console.error("Error leaving session:",e),showNotification("Error leaving session. Please try again.",!0)})}function showAdminTransferModal(e){const t=document.getElementById("adminTransferModal"),n=document.getElementById("userList");n.innerHTML="",e.forEach(e=>{const t=document.createElement("button");t.className="user-select-btn btn bg-gradient-info mb-2",t.textContent=e.name,t.onclick=()=>transferAdmin(e.id),n.appendChild(t)}),t.style.display="block"}function cancelAdminTransfer(){hideAdminTransferModal()}function hideAdminTransferModal(){document.getElementById("adminTransferModal").style.display="none"}function transferAdmin(e){const t=getCookie("sessionId"),n=getCookie("userId");fetch("/transfer-admin",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({sessionId:t,currentAdminId:n,newAdminId:e})}).then(e=>e.json()).then(e=>{e.success?(showNotification("Admin rights transferred successfully"),hideAdminTransferModal(),setTimeout(()=>{clearCookie(),window.location.href="/"},1500)):showNotification(e.message||"Error transferring admin rights.",!0)}).catch(e=>{console.error("Error transferring admin:",e),showNotification("Error transferring admin rights. Please try again.",!0),hideAdminTransferModal()})}function setVoteTitle(){const e=getElementValue("voteTitle");if(e.length<3)return!1;const t=sanitizeInput(e);fetch("/set-vote-title",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({sessionId:sessionId,voteTitle:t})}).then(e=>e.json()).then(e=>{e.success?showNotification("Vote title updated."):showNotification("Error updating vote title.",!0)}).catch(e=>{console.error("Error setting vote title:",e),showNotification("Error setting vote title. Please try again.",!0)})}socket.on("setUserId",e=>{document.cookie=`userId=${e}; path=/; Secure`}),socket.on("userList",e=>{const t=document.getElementById("users");t.innerHTML="",e.forEach(([e,n])=>{var o=document.createElement("div");o.setAttribute("class","col-xl-3 col-sm-6 mb-4");var i=document.createElement("div");i.setAttribute("class","card bg-gradient-info move-on-hover"),i.id=e;var s=document.createElement("div");s.setAttribute("class","card-body");var a=document.createElement("div");a.setAttribute("class","d-flex");var r=document.createElement("h5");r.setAttribute("class","mb-0 text-white"),r.innerText=n;var l=document.createElement("div");l.setAttribute("class","ms-auto");var d=document.createElement("h6");d.setAttribute("class","text-white text-end mb-0 mt-n2"),l.appendChild(d),a.appendChild(r),a.appendChild(l);var c=document.createElement("p");c.setAttribute("class","text-white mb-0"),r.id=e+"name",c.innerText="",c.id=e+"score",s.appendChild(a),s.appendChild(c),i.appendChild(s),o.appendChild(i),t.appendChild(o)})}),socket.on("updatePoints",e=>{const t=document.getElementById("votes");t.innerHTML="",e.forEach(e=>{const n=document.createElement("button");t.appendChild(n),n.id=e+"name",n.setAttribute("type","button"),n.setAttribute("class","btn bg-gradient-secondary btn-sm"),n.innerText=e,n.onclick=()=>vote(e)})}),socket.on("voteReceived",e=>{showElement("revealBtn");const t=document.getElementById(e);t&&(t.classList.add("bg-gradient-success"),t.classList.remove("bg-gradient-info"))}),socket.on("revealVotes",e=>{function t(e){return e.endsWith(",")?e.slice(0,-1):e}const{votes:n,average:o,highestVotes:i,lowestVotes:s,otherVotes:a,totalVoters:r}=e;let l="";if(n){for(const[e,t]of Object.entries(n)){const n=document.getElementById(e+"score");document.getElementById(e+"name");n&&(n.innerText=t)}const d=i.value.join(", "),c=i.voters;let m="";c.forEach(e=>{const t=Object.keys(e)[0],n=document.getElementById(`${t}name`);if(n){const o=n.textContent,i=e[t];m+=`${o}:${i} <br> `}}),m=t(m.trim());const u=s.value.join(", "),h=s.voters;let g="";h.forEach(e=>{const t=Object.keys(e)[0],n=document.getElementById(`${t}name`);if(n){const o=n.textContent,i=e[t];g+=`${o}:${i} <br> `}}),g=t(g.trim());let v="";a.forEach(e=>{const t=Object.keys(e)[0],n=document.getElementById(`${t}name`);if(n){const o=n.textContent,i=e[t];v+=`${o}:${i} <br> `}}),document.getElementById("averageVotes").innerText=o.toFixed(2),document.getElementById("highestVote").innerText=d,document.getElementById("highestVoter").innerHTML=m,document.getElementById("lowestVote").innerText=u,document.getElementById("lowestVoteLabel").innerHTML=g,document.getElementById("otherVotes").innerHTML=v,document.getElementById("totalVotes").innerText=r,hideElement("revealBtn",!0),showElement("scoreBoard2");getCookie("userId");socket.emit("getSessionOwner",{sessionId:sessionId})}}),socket.on("setSessionOwner",e=>{const t=getCookie("userId");t===e&&showAdmin()}),socket.on("updateVoteTitle",e=>{const t=e||"";document.getElementById("voteTitleDisplay").innerText="Vote Title: "+t}),socket.on("restartVoting",()=>{document.getElementById("averageVotes").innerText=0,document.getElementById("highestVote").innerText=0,document.getElementById("highestVoter").innerText="",document.getElementById("lowestVote").innerText=0,document.getElementById("lowestVoteLabel").innerText="",document.getElementById("otherVotes").innerText="",document.getElementById("totalVotes").innerText=0,hideElement("revealBtn",!0),hideElement("scoreBoard2");const e=document.getElementById("users");e.childNodes.forEach(e=>{e.firstChild.classList.add("bg-gradient-info"),e.firstChild.classList.remove("bg-gradient-success"),userId=e.firstChild.id,document.getElementById(userId+"score").innerText=""})}),socket.on("sessionEnded",()=>{showNotification("The session has ended."),clearCookie(),window.location.href="/"}),socket.on("sessionError",(e=>{showNotification(e,!0),window.location.href="/"})),socket.on("voteError",e=>{showNotification(e,!0)}),socket.on("sessionName",e=>{document.getElementById("sessionName").innerText=`Session: ${e}`}),socket.on("currentVotes",e=>{for(const[t,n]of Object.entries(e)){const e=document.getElementById(t);e&&(e.classList.add("bg-gradient-success"),e.classList.remove("bg-gradient-info"))}}),socket.on("updateOwner",e=>{const t=getCookie("userId");t===e?showAdmin():hideAdmin()}),window.onload=()=>{document.getElementById("voteTitle").addEventListener("keydown",function(e){"Enter"===e.key&&(e.preventDefault(),setVoteTitle())});const e=getCookie("userId"),t=getCookie("name");e&&t&&getCookie("sessionId")===sessionId?(socket.emit("joinSession",{sessionId:sessionId,name:t,userId:e}),socket.emit("getTitle",{sessionId:sessionId}),hideElement("join"),showElement("mainContent")):hideElement("mainContent")};
+const socket = io();
+const sessionId = window.location.pathname.split('/')[1];
+function sanitizeInput(input) {
+    const temp = document.createElement('div');
+    temp.textContent = input;
+    return temp.innerHTML;
+}
+
+function joinSession() {
+    const name = getElementValue('name').trim();
+    const validName = /^[A-Za-z]{3,10}$/;
+
+    if (!validName.test(name)) {
+        showNotification('Please enter a valid display name with only letters between 3 to 10 characters.', true);
+        return;
+    }
+
+    if (name) {
+        const userId = getCookie('userId');
+        document.cookie = `sessionId=${sessionId}; path=/; Secure`;
+        document.cookie = `name=${name}; path=/; Secure`;
+        socket.emit('joinSession', { sessionId, name, userId });
+        socket.emit('getTitle', { sessionId });
+        hideElement('join');
+        showElement('mainContent');
+    } else {
+        showNotification('Please enter your name first.', true);
+    }
+}
+
+
+function hideAdmin() {
+    hideElement('end');
+    hideElement('revealBtn');
+    hideElement('restart');
+    hideElement('titleChange');
+}
+
+function showAdmin() {
+    showElement('scoreAdmin');
+    hideElement('revealBtn');
+    showElement('end');
+    showElement('titleChange', 'flex');
+}
+
+function vote(point) {
+    socket.emit('vote', { vote: point });
+}
+
+function reveal() {
+    socket.emit('revealVotes');
+}
+
+function restart() {
+    socket.emit('restartVoting');
+}
+
+function endSession() {
+    socket.emit('endSession');
+}
+
+function leaveSession() {
+    fetch('/leave-session', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.requiresTransfer) {
+            showAdminTransferModal(data.users);
+        } else {
+            showNotification(data.message);
+            clearCookie();
+            window.location.href = '/';
+        }
+    })
+    .catch(error => {
+        console.error('Error leaving session:', error);
+        showNotification('Error leaving session. Please try again.', true);
+    });
+}
+
+function showAdminTransferModal(users) {
+    const modal = document.getElementById('adminTransferModal');
+    const userList = document.getElementById('userList');
+    userList.innerHTML = '';
+    
+    users.forEach(user => {
+        const button = document.createElement('button');
+        button.className = 'user-select-btn btn bg-gradient-info mb-2';
+        button.textContent = user.name;
+        button.onclick = () => transferAdmin(user.id);
+        userList.appendChild(button);
+    });
+    
+    modal.style.display = 'block';
+}
+
+function cancelAdminTransfer() {
+    hideAdminTransferModal();
+}
+
+function hideAdminTransferModal() {
+    document.getElementById('adminTransferModal').style.display = 'none';
+}
+
+function transferAdmin(newAdminId) {
+    const sessionId = getCookie('sessionId');
+    const currentAdminId = getCookie('userId');
+    
+    fetch('/transfer-admin', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            sessionId,
+            currentAdminId,
+            newAdminId
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showNotification('Admin rights transferred successfully');
+            hideAdminTransferModal();
+            setTimeout(() => {
+                clearCookie();
+                window.location.href = '/';
+            }, 1500);
+        } else {
+            showNotification(data.message || 'Error transferring admin rights.', true);
+        }
+    })
+    .catch(error => {
+        console.error('Error transferring admin:', error);
+        showNotification('Error transferring admin rights. Please try again.', true);
+        hideAdminTransferModal();
+    });
+}
+
+
+function setVoteTitle() {
+    const voteTitle = getElementValue('voteTitle');
+    if(voteTitle.length < 3) return false;
+    const sanitizedVoteTitle = sanitizeInput(voteTitle);
+    fetch('/set-vote-title', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ sessionId, voteTitle: sanitizedVoteTitle })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showNotification('Vote title updated.');
+        } else {
+            showNotification('Error updating vote title.', true);
+        }
+    })
+    .catch(error => {
+        console.error('Error setting vote title:', error);
+        showNotification('Error setting vote title. Please try again.', true);
+    });
+}
+
+
+socket.on('setUserId', (userId) => {
+    document.cookie = `userId=${userId}; path=/; Secure`;
+});
+
+socket.on('userList', (users) => {
+    const userList = document.getElementById('users');
+    userList.innerHTML = '';
+    users.forEach(([id, name]) => {
+        var outerDiv = document.createElement('div');
+        outerDiv.setAttribute('class', 'col-xl-3 col-sm-6 mb-4');
+        var cardDiv = document.createElement('div');
+        cardDiv.setAttribute('class', 'card bg-gradient-info move-on-hover');
+        cardDiv.id = id;
+        var cardBodyDiv = document.createElement('div');
+        cardBodyDiv.setAttribute('class', 'card-body');
+        var dFlexDiv = document.createElement('div');
+        dFlexDiv.setAttribute('class', 'd-flex');
+        var h5 = document.createElement('h5');
+        h5.setAttribute('class', 'mb-0 text-white');
+        h5.innerText = name;
+        var msAutoDiv = document.createElement('div');
+        msAutoDiv.setAttribute('class', 'ms-auto');
+        var h6 = document.createElement('h6');
+        h6.setAttribute('class', 'text-white text-end mb-0 mt-n2');
+        
+
+        msAutoDiv.appendChild(h6);
+        dFlexDiv.appendChild(h5);
+        dFlexDiv.appendChild(msAutoDiv);
+        var p = document.createElement('p');
+        p.setAttribute('class', 'text-white mb-0');
+        h5.id = id + "name"
+        p.innerText = '';
+        p.id = id + "score"
+        cardBodyDiv.appendChild(dFlexDiv);
+        cardBodyDiv.appendChild(p);
+        cardDiv.appendChild(cardBodyDiv);
+        outerDiv.appendChild(cardDiv);
+
+        userList.appendChild(outerDiv);
+    });
+});
+
+
+socket.on('updatePoints', (points) => {
+    const votesDiv = document.getElementById('votes');
+    votesDiv.innerHTML = '';
+    points.forEach(point => {
+        const button = document.createElement('button');
+        votesDiv.appendChild(button);
+        button.id = point + "name";
+        button.setAttribute('type', 'button');
+        button.setAttribute('class', 'btn bg-gradient-secondary btn-sm');
+        button.innerText = point;
+        button.onclick = () => vote(point);
+    });
+});
+
+socket.on('voteReceived', (userId) => {
+    console.log("vote recieved", userId)
+    showElement('revealBtn');
+    const userElement = document.getElementById(userId);
+    if (userElement) {
+        userElement.classList.add('bg-gradient-success');
+        userElement.classList.remove('bg-gradient-info');
+    }
+});
+
+socket.on('revealVotes', (data) => {
+    function removeLastComma(str) {
+    if (str.endsWith(',')) {
+        return str.slice(0, -1);
+    }
+    return str;
+}
+    const { votes, average, highestVotes, lowestVotes, otherVotes, totalVoters } = data;
+    let allUserVotes = "";
+    if (votes) {
+        for (const [userId, vote] of Object.entries(votes)) {
+            const userElement = document.getElementById(userId + "score");
+            const userNameElement = document.getElementById(userId + "name");
+            if (userElement) {
+                userElement.innerText = vote;
+            }
+        }
+        const hiVotes = highestVotes.value.join(", ");
+        const hiVoters = highestVotes.voters;
+        let hiVotersLabel = "";
+        hiVoters.forEach(obj => {
+            const userId = Object.keys(obj)[0];
+            const userDiv = document.getElementById(`${userId}name`);
+            if(userDiv){
+                const userName = userDiv.textContent;
+                const score = obj[userId]; 
+                hiVotersLabel += `${userName}:${score} <br> `;
+            }
+        });  
+        hiVotersLabel = removeLastComma(hiVotersLabel.trim());
+      
+        
+        const loVotes = lowestVotes.value.join(", ");
+        const loVoters = lowestVotes.voters;
+        let loVotersLabel = "";
+        loVoters.forEach(obj => {
+            const userId = Object.keys(obj)[0];
+            const userDiv = document.getElementById(`${userId}name`);
+            if(userDiv){
+                const userName = userDiv.textContent;
+                const score = obj[userId];
+                loVotersLabel += `${userName}:${score} <br> `;
+            }
+        });  
+        loVotersLabel = removeLastComma(loVotersLabel.trim());
+      
+        let restVotersLabel = "";
+        otherVotes.forEach(obj => {
+            const userId = Object.keys(obj)[0];
+            const userDiv = document.getElementById(`${userId}name`);
+            if(userDiv){
+                const userName = userDiv.textContent;
+                const score = obj[userId]; 
+                restVotersLabel += `${userName}:${score} <br> `;
+            }
+        });  
+        //restVotersLabel = removeLastComma(restVotersLabel.trim());      
+      
+        
+        document.getElementById('averageVotes').innerText = average.toFixed(2);
+        document.getElementById('highestVote').innerText = hiVotes;
+        document.getElementById('highestVoter').innerHTML = hiVotersLabel;
+      
+        document.getElementById('lowestVote').innerText = loVotes;
+        document.getElementById('lowestVoteLabel').innerHTML = loVotersLabel;      
+      
+        document.getElementById('otherVotes').innerHTML = restVotersLabel; 
+        document.getElementById('totalVotes').innerText = totalVoters;
+        hideElement('revealBtn', true);
+        showElement('scoreBoard2');
+        const sessionOwner = getCookie('userId');
+        socket.emit('getSessionOwner', { sessionId });
+    }
+});
+
+
+
+socket.on('setSessionOwner', (ownerId) => {
+    const userId = getCookie('userId');
+    if (userId === ownerId) {
+        showAdmin()
+    }
+});
+
+socket.on('updateVoteTitle', (voteTitle) => {
+    const title = voteTitle || "";
+    document.getElementById('voteTitleDisplay').innerText = "Vote Title: " + title;
+});
+
+socket.on('restartVoting', () => {
+    document.getElementById('averageVotes').innerText = 0;
+    document.getElementById('highestVote').innerText = 0;
+    document.getElementById('highestVoter').innerText = "";
+
+    document.getElementById('lowestVote').innerText = 0;
+    document.getElementById('lowestVoteLabel').innerText = "";      
+
+    document.getElementById('otherVotes').innerText = ""; 
+    document.getElementById('totalVotes').innerText = 0;
+    hideElement('revealBtn', true);
+    hideElement('scoreBoard2');
+
+    const userList = document.getElementById('users');
+    userList.childNodes.forEach(div => {
+        div.firstChild.classList.add('bg-gradient-info');
+        div.firstChild.classList.remove('bg-gradient-success');
+        userId = div.firstChild.id;
+        document.getElementById(userId + "score").innerText = ""
+    });
+});
+
+socket.on('sessionEnded', () => {
+    showNotification('The session has ended.');
+    clearCookie();
+    window.location.href = '/';
+});
+
+socket.on('sessionError', (message) => {
+    showNotification(message, true);
+    window.location.href = '/';
+});
+
+socket.on('voteError', (message) => {
+    showNotification(message, true);
+});
+
+socket.on('sessionName', (name) => {
+    document.getElementById('sessionName').innerText = `Session: ${name}`;
+});
+
+socket.on('currentVotes', (votes) => {
+    for (const [userId, vote] of Object.entries(votes)) {
+        const userElement = document.getElementById(userId);
+        if (userElement) {
+            userElement.classList.add('bg-gradient-success');
+            userElement.classList.remove('bg-gradient-info');
+        }
+    }
+});
+
+socket.on('updateOwner', (sessionOwner) => {
+    const userId = getCookie('userId');
+     if (userId === sessionOwner) {
+        showAdmin();
+     } else {
+        hideAdmin();
+     }
+});
+
+window.onload = () => {
+    document.getElementById('voteTitle').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            setVoteTitle();
+        }
+    });
+    const userId = getCookie('userId');
+    const name = getCookie('name');
+    if (userId && name && getCookie('sessionId') === sessionId) {
+        socket.emit('joinSession', { sessionId, name, userId });
+        socket.emit('getTitle', { sessionId });
+        hideElement('join');
+        showElement('mainContent');
+        // showElement('bottom-bar', 'flex');
+        // hideElement('average');
+    } else {
+        hideElement('mainContent');
+    }
+};
