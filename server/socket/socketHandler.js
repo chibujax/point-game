@@ -65,6 +65,7 @@ class SocketHandler {
             }
         });
         socket.on('submitVote', (data) => {
+          console.log("*******")
             const userId = this.socketToUserId.get(socket.id);
             const session = this.findUserSession(userId);
             if (!session || !userId)
