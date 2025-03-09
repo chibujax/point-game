@@ -1,0 +1,368 @@
+{
+  "session_1738090315510": {
+    "name": "tester",
+    "users": {
+      "104b6406-e422-443b-8902-1e5c1c7742dc": "Chibu"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "104b6406-e422-443b-8902-1e5c1c7742dc"
+  },
+  "session_1738090315541": {
+    "name": "tester",
+    "users": {
+      "056e5487-2442-484d-b857-ddd93cdb6001": "Chibu"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "056e5487-2442-484d-b857-ddd93cdb6001"
+  },
+  "session_1738090325602": {
+    "name": "Show And Tell",
+    "users": {},
+    "votes": {
+      "0960c4e9-ab76-4173-9c20-b9572b99c198": 3
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "0960c4e9-ab76-4173-9c20-b9572b99c198"
+  },
+  "session_1738339212118": {
+    "name": "Show And Tell",
+    "users": {},
+    "votes": {
+      "4b28b2d4-64fb-4431-b083-f4a3c8eae7d3": 2
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "4b28b2d4-64fb-4431-b083-f4a3c8eae7d3"
+  },
+  "session_1738419307797": {
+    "name": "Show And Tell",
+    "users": {},
+    "votes": {
+      "060efc0f-da9e-446a-98d4-2c97d6f97853": 3
+    },
+    "points": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "owner": "060efc0f-da9e-446a-98d4-2c97d6f97853"
+  },
+  "session_1738525167463": {
+    "name": "Show And Tell",
+    "users": {},
+    "votes": {
+      "e35645d3-846c-488b-8c1a-b8b6de46165c": 3
+    },
+    "points": [
+      1,
+      2,
+      3
+    ],
+    "owner": "e35645d3-846c-488b-8c1a-b8b6de46165c"
+  },
+  "session_1738577622380": {
+    "name": "emergency brats 03/02/25",
+    "users": {
+      "50048c40-2738-4288-a437-e96bff30c166": "Dom",
+      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": "Hannah"
+    },
+    "votes": {
+      "edc32648-9390-47e1-aa45-d4b121d965c5": 1,
+      "50048c40-2738-4288-a437-e96bff30c166": 2,
+      "8036853d-153c-4826-b84b-e87a60b1bb42": 2,
+      "65d3fcbf-394c-456a-b310-0a58081c7035": 1,
+      "f5c2755b-6513-4a1c-bd41-77949855a714": 1,
+      "dbebd8be-2486-4434-87d9-133fdb932ae0": 1,
+      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": 1
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "305ffc0b-790f-4a94-9d7d-47db541bfc07"
+  },
+  "session_1739017292511": {
+    "name": "hola",
+    "users": {
+      "4bd4158c-7a1a-42b6-b504-7ec22d235423": "Me@gmail.com"
+    },
+    "votes": {},
+    "points": [
+      1,
+      1,
+      1
+    ],
+    "owner": "4bd4158c-7a1a-42b6-b504-7ec22d235423"
+  },
+  "session_1739037550322": {
+    "name": "Show And Tell",
+    "users": {},
+    "votes": {
+      "bbac56dc-7b16-4cb2-aa63-87879b7ddbaf": 5
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "bbac56dc-7b16-4cb2-aa63-87879b7ddbaf"
+  },
+  "session_1739051496732": {
+    "name": "Show And Tell",
+    "users": {
+      "e14b1e82-216c-4d1e-84f9-4a7ba762b623": "Chibu"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "e14b1e82-216c-4d1e-84f9-4a7ba762b623"
+  },
+  "session_1739051496913": {
+    "name": "Show And Tell",
+    "users": {},
+    "votes": {
+      "771e1f8f-d8ba-4658-b2ca-30781eb3f89e": 3,
+      "a0b873cd-a178-4117-94b4-d2054f46171a": 3,
+      "f9cf9120-e6ba-44a0-ada8-547519ee66cd": 5,
+      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": 5
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5"
+  },
+  "session_1739295257728": {
+    "name": "hola",
+    "users": {
+      "7f7fa93d-6fc0-4f36-ab61-8c390e797943": "ddcd@gmail.com"
+    },
+    "votes": {
+      "1a759876-cae8-4e78-9c58-00bdb1c2bf85": 1
+    },
+    "points": [
+      1,
+      1,
+      1
+    ],
+    "owner": "7f7fa93d-6fc0-4f36-ab61-8c390e797943"
+  },
+  "session_1739295302961": {
+    "name": "hola",
+    "users": {},
+    "votes": {},
+    "points": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "owner": "7bd96d31-eb8a-4dbe-9bf5-43cfe4f5059a",
+    "voteTitle": "hola"
+  },
+  "session_1739354811344": {
+    "name": "BRATS ",
+    "users": {},
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "7967de40-8ab4-4b50-964d-e96275c2679b"
+  },
+  "session_1739786821918": {
+    "name": "Bitesize emergency ticket sizing",
+    "users": {},
+    "votes": {
+      "7822b810-3fe8-40b0-ab1f-7f4e6003015e": 3,
+      "91456fdf-7786-46b4-b913-e7a65eed8d35": 5,
+      "32907694-bc7e-4a24-be36-4b98d355331a": 5,
+      "3c310b85-44bd-413a-a1cb-f72781bd0b44": 3,
+      "65d3fcbf-394c-456a-b310-0a58081c7035": 5,
+      "edc32648-9390-47e1-aa45-d4b121d965c5": 3,
+      "619c4f46-5cd8-42a8-b69c-c93bc09d154e": 5
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "619c4f46-5cd8-42a8-b69c-c93bc09d154e"
+  },
+  "session_1739885477856": {
+    "name": "Testing",
+    "users": {},
+    "votes": {
+      "cd0afc0f-b3af-4c5f-8d98-4762703912dc": "99999l"
+    },
+    "points": [
+      1,
+      5,
+      10
+    ],
+    "owner": "cd0afc0f-b3af-4c5f-8d98-4762703912dc"
+  },
+  "session_1739885478084": {
+    "name": "Testing",
+    "users": {
+      "1ff4a66e-235f-4264-a36d-876de67bf466": "James"
+    },
+    "votes": {},
+    "points": [
+      1,
+      5,
+      10
+    ],
+    "owner": "1ff4a66e-235f-4264-a36d-876de67bf466"
+  },
+  "session_1741000516571": {
+    "name": "test",
+    "users": {},
+    "votes": {
+      "f0dc8c8c-9845-48c6-886b-ee2cb656af55": 3,
+      "ee3ea3b8-ecb8-4f53-af39-ad9700dc9990": 3
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "f0dc8c8c-9845-48c6-886b-ee2cb656af55"
+  },
+  "session_1741170235069": {
+    "name": "Fix everything sprint ",
+    "users": {
+      "403596a5-082d-437b-94fe-9223614542db": "Adam",
+      "cb3f8d7f-aaa4-43fb-8f90-402af78fc185": "Ben",
+      "1ce8fa6e-47f5-40ed-9ffa-3a43b8f9dc14": "Livvy",
+      "47e4efca-342d-4fa7-92e1-07f5ca2f2d0e": "Hani",
+      "1a2638b4-db39-4d4c-a68a-6311234b2fce": "Padma",
+      "3355b9ef-a01c-4777-8ec7-b9d274fd89e1": "Gaurav",
+      "56e9958b-7026-4164-aade-263d5b2cc5c1": "Maz",
+      "1147f3eb-7ce2-47fd-a235-ba5c505ea4e5": "Chibu",
+      "f35d81dc-bffc-48d8-aa66-66373e6164da": "James",
+      "10978b79-23fa-45f3-82f3-ddc1c19c7272": "Alexa",
+      "73f627ba-8349-48c7-9c4f-8697baed31b6": "Vedant"
+    },
+    "votes": {},
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "403596a5-082d-437b-94fe-9223614542db"
+  },
+  "session_1741175572518": {
+    "name": "Show And Tell",
+    "users": {
+      "3398302f-9963-4d3f-8661-f6505ce93e54": "Chibu"
+    },
+    "votes": {
+      "3398302f-9963-4d3f-8661-f6505ce93e54": 999
+    },
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "owner": "3398302f-9963-4d3f-8661-f6505ce93e54"
+  }
+}
