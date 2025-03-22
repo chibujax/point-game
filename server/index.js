@@ -47,27 +47,7 @@ router.post('/sessions/:sessionId/join', apiLimiter, validationMiddleware_1.vali
 router.get('/validate-session/:sessionId', apiLimiter, validationMiddleware_1.validateSessionId, sessionController.validateSession);
 app.use('/api', router);
 if (process.env.NODE_ENV === 'production') {
-    express_1.default.static.mime.define({
-        'image/jpeg': ['jpg', 'jpeg'],
-        'image/png': ['png'],
-        'image/gif': ['gif'],
-        'image/svg+xml': ['svg'],
-        'image/webp': ['webp']
-    });
-    app.use(express_1.default.static(path_1.default.join(__dirname, '../'), {
-        setHeaders: (res, filePath) => {
-            if (filePath.endsWith('-CF0zint7.jpg') || filePath.includes('mediacity')) {
-                res.setHeader('Content-Type', 'image/jpeg');
-            }
-        }
-    }));
-    app.use('/assets', express_1.default.static(path_1.default.join(__dirname, '../assets'), {
-        setHeaders: (res, filePath) => {
-            if (filePath.endsWith('.jpg') || filePath.endsWith('.jpeg')) {
-                res.setHeader('Content-Type', 'image/jpeg');
-            }
-        }
-    }));
+    app.use(express_1.default.static(path_1.default.join(__dirname, '../')));
     app.get('*', (_req, res) => {
         res.sendFile(path_1.default.join(__dirname, '../index.html'));
     });
