@@ -27,7 +27,6 @@ exports.rateLimit = rateLimit;
  * Simple request sanitization middleware
  */
 const sanitizeRequest = (req, _res, next) => {
-    // Sanitize request body
     if (req.body) {
         Object.keys(req.body).forEach(key => {
             if (typeof req.body[key] === 'string') {
@@ -51,7 +50,12 @@ exports.sanitizeRequest = sanitizeRequest;
 const securityHeaders = (_req, res, next) => {
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('X-Frame-Options', 'DENY');
-    res.setHeader('Content-Security-Policy', "default-src 'self'");
+    res.setHeader('Content-Security-Policy', "default-src 'self'; " +
+        "style-src 'self' 'unsafe-inline'; " +
+        "script-src 'self' https://cdnjs.cloudflare.com; " +
+        "connect-src 'self' wss:; " +
+        "img-src 'self' data:; " +
+        "font-src 'self' data:;");
     res.setHeader('X-XSS-Protection', '1; mode=block');
     res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
     next();
