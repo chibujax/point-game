@@ -48,6 +48,7 @@ router.get('/validate-session/:sessionId', apiLimiter, validationMiddleware_1.va
 app.use('/api', router);
 if (process.env.NODE_ENV === 'production') {
     app.use(express_1.default.static(path_1.default.join(__dirname, '../')));
+    app.use('/assets', express_1.default.static(path_1.default.join(__dirname, '../assets')));
     app.get('*', (_req, res) => {
         res.sendFile(path_1.default.join(__dirname, '../index.html'));
     });
