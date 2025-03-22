@@ -1,19 +1,19 @@
 {
-    "name": "pointing-game-react",
-    "version": "1.0.0",
-    "scripts": {
-        "start": "npm install && NODE_ENV=production node server/index.js"
-    },
-    "dependencies": {
-        "cookie": "^1.0.2",
-        "cookie-parser": "^1.4.7",
-        "cors": "^2.8.5",
-        "express": "^4.21.2",
-        "http": "^0.0.1-security",
-        "socket.io": "^4.8.1",
-        "socket.io-client": "^4.7.5"
-    },
-    "engines": {
-        "node": "16.x"
-    }
+  "name": "pointing-game-react",
+  "version": "1.0.0",
+  "scripts": {
+      "start": "npm install && NODE_ENV=production node server/index.js"
+  },
+  "dependencies": {
+      "cookie": "^1.0.2",
+      "cookie-parser": "^1.4.7",
+      "cors": "^2.8.5",
+      "express": "^4.21.2",
+      "http": "^0.0.1-security",
+      "socket.io": "^4.8.1",
+      "socket.io-client": "^4.7.5"
+  },
+  "engines": {
+      "node": "16.x"
+  }
 }

@@ -35,7 +35,6 @@ class SessionController {
                     });
                 }
                 catch (error) {
-                    console.error('Failed to create session:', error);
                     res.status(500).json({ error: 'Failed to create session' });
                 }
             }
@@ -55,7 +54,6 @@ class SessionController {
                     res.json(session);
                 }
                 catch (error) {
-                    console.error('Failed to get session:', error);
                     res.status(500).json({ error: 'Failed to get session' });
                 }
             }
@@ -81,7 +79,6 @@ class SessionController {
                     res.json(session);
                 }
                 catch (error) {
-                    console.error('Failed to join session:', error);
                     res.status(500).json({ error: 'Failed to join session' });
                 }
             }
