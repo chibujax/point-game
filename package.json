@@ -2,7 +2,7 @@
   "name": "pointing-game-react",
   "version": "1.0.0",
   "scripts": {
-      "start": "npm install && NODE_ENV=production node server/index.js"
+      "start": "NODE_ENV=production node server/index.js"
   },
   "dependencies": {
       "body-parser": "1.20.3",
@@ -51,7 +51,7 @@
                 "engine.io": "~6.6.0",
                 "socket.io-adapter": "~2.5.2",
                 "socket.io-parser": "~4.2.4",
-    "object-assign": "^4",
+    "object-assign": "^4"
   },
   "engines": {
       "node": "16.x"

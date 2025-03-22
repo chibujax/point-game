@@ -1,0 +1,21 @@
+{
+  "session_1742664114765": {
+    "id": "session_1742664114765",
+    "name": "Show And Tell",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "3d2265a7-93bc-4fa7-8daf-ccdb3c882eff": "Chibu",
+      "4eb51c54-b98a-400f-9973-ec01bdb748ed": "www"
+    },
+    "votes": {},
+    "owner": "3d2265a7-93bc-4fa7-8daf-ccdb3c882eff",
+    "storedResult": null
+  }
+}
