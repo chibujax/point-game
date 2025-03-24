@@ -15,5 +15,25 @@
     "owner": "3d2265a7-93bc-4fa7-8daf-ccdb3c882eff",
     "storedResult": null,
     "voteTitle": "UAP Pointing"
+  },
+  "session_1742825389966": {
+    "id": "session_1742825389966",
+    "name": "BRATS",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Livvy",
+      "d8d7f025-054c-4638-8cda-c34a76c1932b": "Britt",
+      "14e3c817-baad-4bc3-a26c-16140be588e8": "Yash"
+    },
+    "votes": {},
+    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
+    "storedResult": null
   }
 }
