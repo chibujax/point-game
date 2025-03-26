@@ -43,17 +43,11 @@
       8,
       13
     ],
-    "users": {
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah"
-    },
-    "votes": {
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2
-    },
+    "users": {},
+    "votes": {},
     "owner": "3d682782-ea55-4b3f-b15e-e80538a2cbc2",
     "storedResult": {
-      "votes": {
-        "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2
-      },
+      "votes": {},
       "average": 2.83,
       "highestVotes": {
         "value": [
