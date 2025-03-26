@@ -46,65 +46,56 @@
     "users": {
       "3d682782-ea55-4b3f-b15e-e80538a2cbc2": "Dom",
       "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
-      "c6888260-6f34-4e5d-993c-c6a44127bf09": "Louise",
-      "519c4159-21ed-4aa1-b848-da28009ab21b": "Kamara",
-      "14e3c817-baad-4bc3-a26c-16140be588e8": "Yash",
-      "5bae5278-e6db-4794-8e00-145976a113e4": "Leenah",
-      "d8d7f025-054c-4638-8cda-c34a76c1932b": "Britt"
+      "5bae5278-e6db-4794-8e00-145976a113e4": "Leenah"
     },
     "votes": {
-      "14e3c817-baad-4bc3-a26c-16140be588e8": 2,
-      "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 5,
-      "5bae5278-e6db-4794-8e00-145976a113e4": 3,
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
-      "519c4159-21ed-4aa1-b848-da28009ab21b": 5,
-      "d8d7f025-054c-4638-8cda-c34a76c1932b": 3
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2,
+      "5bae5278-e6db-4794-8e00-145976a113e4": 5,
+      "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 3
     },
     "owner": "3d682782-ea55-4b3f-b15e-e80538a2cbc2",
     "storedResult": {
       "votes": {
-        "14e3c817-baad-4bc3-a26c-16140be588e8": 2,
-        "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 5,
-        "5bae5278-e6db-4794-8e00-145976a113e4": 3,
-        "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
-        "519c4159-21ed-4aa1-b848-da28009ab21b": 5,
-        "d8d7f025-054c-4638-8cda-c34a76c1932b": 3
+        "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2,
+        "5bae5278-e6db-4794-8e00-145976a113e4": 5,
+        "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 3
       },
-      "average": 3.83,
+      "average": 2.83,
       "highestVotes": {
         "value": [
-          5
+          3
         ],
         "voters": [
           {
-            "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 5
+            "14e3c817-baad-4bc3-a26c-16140be588e8": 3
           },
           {
-            "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5
+            "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 3
           },
           {
-            "519c4159-21ed-4aa1-b848-da28009ab21b": 5
+            "519c4159-21ed-4aa1-b848-da28009ab21b": 3
           }
         ]
       },
       "lowestVotes": {
         "value": [
-          2
+          1,
+          2,
+          5
         ],
         "voters": [
           {
-            "14e3c817-baad-4bc3-a26c-16140be588e8": 2
+            "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2
+          },
+          {
+            "d8d7f025-054c-4638-8cda-c34a76c1932b": 1
+          },
+          {
+            "5bae5278-e6db-4794-8e00-145976a113e4": 5
           }
         ]
       },
-      "otherVotes": [
-        {
-          "5bae5278-e6db-4794-8e00-145976a113e4": 3
-        },
-        {
-          "d8d7f025-054c-4638-8cda-c34a76c1932b": 3
-        }
-      ],
+      "otherVotes": [],
       "totalVoters": 6
     }
   }
