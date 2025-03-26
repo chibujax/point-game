@@ -53,63 +53,87 @@
       "d8d7f025-054c-4638-8cda-c34a76c1932b": "Britt"
     },
     "votes": {
-      "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 8,
-      "14e3c817-baad-4bc3-a26c-16140be588e8": 5,
-      "519c4159-21ed-4aa1-b848-da28009ab21b": 8,
-      "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": 8,
       "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
-      "d8d7f025-054c-4638-8cda-c34a76c1932b": 5,
-      "5bae5278-e6db-4794-8e00-145976a113e4": 5
+      "5bae5278-e6db-4794-8e00-145976a113e4": 3,
+      "14e3c817-baad-4bc3-a26c-16140be588e8": 3,
+      "d8d7f025-054c-4638-8cda-c34a76c1932b": 3,
+      "519c4159-21ed-4aa1-b848-da28009ab21b": 3,
+      "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 3,
+      "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": 5
     },
     "owner": "90436cd4-b4e3-47c0-9b24-3e815fd4ddee",
     "storedResult": {
       "votes": {
-        "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 8,
-        "14e3c817-baad-4bc3-a26c-16140be588e8": 5,
-        "519c4159-21ed-4aa1-b848-da28009ab21b": 8,
-        "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": 8,
         "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
-        "d8d7f025-054c-4638-8cda-c34a76c1932b": 5,
-        "5bae5278-e6db-4794-8e00-145976a113e4": 5
+        "5bae5278-e6db-4794-8e00-145976a113e4": 3,
+        "14e3c817-baad-4bc3-a26c-16140be588e8": 3,
+        "d8d7f025-054c-4638-8cda-c34a76c1932b": 3,
+        "519c4159-21ed-4aa1-b848-da28009ab21b": 3,
+        "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 3,
+        "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": 5
       },
-      "average": 6.29,
+      "average": 3.57,
       "highestVotes": {
         "value": [
-          5
+          3
         ],
         "voters": [
           {
-            "14e3c817-baad-4bc3-a26c-16140be588e8": 5
+            "5bae5278-e6db-4794-8e00-145976a113e4": 3
           },
           {
-            "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5
+            "14e3c817-baad-4bc3-a26c-16140be588e8": 3
           },
           {
-            "d8d7f025-054c-4638-8cda-c34a76c1932b": 5
+            "d8d7f025-054c-4638-8cda-c34a76c1932b": 3
           },
           {
-            "5bae5278-e6db-4794-8e00-145976a113e4": 5
+            "519c4159-21ed-4aa1-b848-da28009ab21b": 3
+          },
+          {
+            "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 3
           }
         ]
       },
       "lowestVotes": {
         "value": [
-          8
+          5
         ],
         "voters": [
           {
-            "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 8
+            "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5
           },
           {
-            "519c4159-21ed-4aa1-b848-da28009ab21b": 8
-          },
-          {
-            "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": 8
+            "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": 5
           }
         ]
       },
       "otherVotes": [],
       "totalVoters": 7
     }
+  },
+  "session_1742985539078": {
+    "id": "session_1742985539078",
+    "name": "Backlog Refinement",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "users": {
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
+      "c94ec966-60a9-4f10-afe5-a09bb403cfe1": "Adam",
+      "3d2265a7-93bc-4fa7-8daf-ccdb3c882eff": "Chibu",
+      "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
+      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav",
+      "03f6149a-8064-4ff3-8c7f-8aab2cba88a7": "Maz",
+      "137a31ef-9980-4878-bc8f-4041cd2a607c": "Gail",
+      "985b1289-3338-4512-9d07-ce2f9b1029b6": "James"
+    },
+    "votes": {},
+    "owner": "fdee1276-c542-4531-bb5d-bdbe0fbd778f",
+    "storedResult": null
   }
 }
