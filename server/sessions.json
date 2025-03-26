@@ -31,29 +31,5 @@
     "votes": {},
     "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
     "storedResult": null
-  },
-  "session_1742985539078": {
-    "id": "session_1742985539078",
-    "name": "Backlog Refinement",
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8
-    ],
-    "users": {
-      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
-      "c94ec966-60a9-4f10-afe5-a09bb403cfe1": "Adam",
-      "3d2265a7-93bc-4fa7-8daf-ccdb3c882eff": "Chibu",
-      "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
-      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav",
-      "03f6149a-8064-4ff3-8c7f-8aab2cba88a7": "Maz",
-      "137a31ef-9980-4878-bc8f-4041cd2a607c": "Gail",
-      "985b1289-3338-4512-9d07-ce2f9b1029b6": "James"
-    },
-    "votes": {},
-    "owner": "fdee1276-c542-4531-bb5d-bdbe0fbd778f",
-    "storedResult": null
   }
 }
