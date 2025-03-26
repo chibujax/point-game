@@ -31,5 +31,85 @@
     "votes": {},
     "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
     "storedResult": null
+  },
+  "session_1742984857093": {
+    "id": "session_1742984857093",
+    "name": "brats 260325",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      12
+    ],
+    "users": {
+      "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": "tdb",
+      "3d682782-ea55-4b3f-b15e-e80538a2cbc2": "Dom",
+      "14e3c817-baad-4bc3-a26c-16140be588e8": "Yash",
+      "5bae5278-e6db-4794-8e00-145976a113e4": "Leenah",
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
+      "519c4159-21ed-4aa1-b848-da28009ab21b": "Kamara",
+      "d8d7f025-054c-4638-8cda-c34a76c1932b": "Britt"
+    },
+    "votes": {
+      "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 8,
+      "14e3c817-baad-4bc3-a26c-16140be588e8": 5,
+      "519c4159-21ed-4aa1-b848-da28009ab21b": 8,
+      "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": 8,
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
+      "d8d7f025-054c-4638-8cda-c34a76c1932b": 5,
+      "5bae5278-e6db-4794-8e00-145976a113e4": 5
+    },
+    "owner": "90436cd4-b4e3-47c0-9b24-3e815fd4ddee",
+    "storedResult": {
+      "votes": {
+        "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 8,
+        "14e3c817-baad-4bc3-a26c-16140be588e8": 5,
+        "519c4159-21ed-4aa1-b848-da28009ab21b": 8,
+        "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": 8,
+        "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
+        "d8d7f025-054c-4638-8cda-c34a76c1932b": 5,
+        "5bae5278-e6db-4794-8e00-145976a113e4": 5
+      },
+      "average": 6.29,
+      "highestVotes": {
+        "value": [
+          5
+        ],
+        "voters": [
+          {
+            "14e3c817-baad-4bc3-a26c-16140be588e8": 5
+          },
+          {
+            "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5
+          },
+          {
+            "d8d7f025-054c-4638-8cda-c34a76c1932b": 5
+          },
+          {
+            "5bae5278-e6db-4794-8e00-145976a113e4": 5
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          8
+        ],
+        "voters": [
+          {
+            "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 8
+          },
+          {
+            "519c4159-21ed-4aa1-b848-da28009ab21b": 8
+          },
+          {
+            "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": 8
+          }
+        ]
+      },
+      "otherVotes": [],
+      "totalVoters": 7
+    }
   }
 }
