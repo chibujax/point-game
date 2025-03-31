@@ -86,5 +86,18 @@
       "otherVotes": [],
       "totalVoters": 6
     }
+  },
+  "session_1743424662061": {
+    "id": "session_1743424662061",
+    "name": "Qwerty",
+    "points": [
+      1,
+      2,
+      3
+    ],
+    "users": {},
+    "votes": {},
+    "owner": "08051164-b31a-4e90-aeaf-995af869e81d",
+    "storedResult": null
   }
 }
