@@ -291,29 +291,12 @@
       13
     ],
     "users": {
-      "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Jax",
-      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
-      "985b1289-3338-4512-9d07-ce2f9b1029b6": "James",
-      "03f6149a-8064-4ff3-8c7f-8aab2cba88a7": "Maz",
-      "137a31ef-9980-4878-bc8f-4041cd2a607c": "gail",
-      "8ea87f07-8b5c-451e-a380-828d0649bf51": "Alexa"
+      "137a31ef-9980-4878-bc8f-4041cd2a607c": "gail"
     },
-    "votes": {
-      "8ea87f07-8b5c-451e-a380-828d0649bf51": 3,
-      "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3,
-      "985b1289-3338-4512-9d07-ce2f9b1029b6": 2,
-      "03f6149a-8064-4ff3-8c7f-8aab2cba88a7": 2,
-      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 2
-    },
+    "votes": {},
     "owner": "c94ec966-60a9-4f10-afe5-a09bb403cfe1",
     "storedResult": {
-      "votes": {
-        "8ea87f07-8b5c-451e-a380-828d0649bf51": 3,
-        "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3,
-        "985b1289-3338-4512-9d07-ce2f9b1029b6": 2,
-        "03f6149a-8064-4ff3-8c7f-8aab2cba88a7": 2,
-        "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 2
-      },
+      "votes": {},
       "average": 2.5,
       "highestVotes": {
         "value": [
