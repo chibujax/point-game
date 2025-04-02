@@ -268,7 +268,9 @@
       5,
       8
     ],
-    "users": {},
+    "users": {
+      "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": "tdb"
+    },
     "votes": {},
     "owner": "90436cd4-b4e3-47c0-9b24-3e815fd4ddee",
     "storedResult": null
