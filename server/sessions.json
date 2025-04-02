@@ -277,21 +277,13 @@
     "users": {
       "90436cd4-b4e3-47c0-9b24-3e815fd4ddee": "tdb",
       "3d682782-ea55-4b3f-b15e-e80538a2cbc2": "Dom",
-      "d8d7f025-054c-4638-8cda-c34a76c1932b": "Britt",
       "519c4159-21ed-4aa1-b848-da28009ab21b": "Kamara",
-      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "joe",
-      "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan",
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
-      "5bae5278-e6db-4794-8e00-145976a113e4": "Leenah"
+      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "joe"
     },
     "votes": {
       "3d682782-ea55-4b3f-b15e-e80538a2cbc2": 3,
-      "d8d7f025-054c-4638-8cda-c34a76c1932b": 3,
       "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 3,
-      "519c4159-21ed-4aa1-b848-da28009ab21b": 3,
-      "b200d634-3f92-4beb-83cf-97315a083a54": 2,
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2,
-      "5bae5278-e6db-4794-8e00-145976a113e4": 8
+      "519c4159-21ed-4aa1-b848-da28009ab21b": 3
     },
     "owner": "90436cd4-b4e3-47c0-9b24-3e815fd4ddee",
     "storedResult": null
