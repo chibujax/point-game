@@ -268,12 +268,8 @@
       5,
       8
     ],
-    "users": {
-      "519c4159-21ed-4aa1-b848-da28009ab21b": "Kamara"
-    },
-    "votes": {
-      "519c4159-21ed-4aa1-b848-da28009ab21b": 3
-    },
+    "users": {},
+    "votes": {},
     "owner": "90436cd4-b4e3-47c0-9b24-3e815fd4ddee",
     "storedResult": null
   },
