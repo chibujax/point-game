@@ -344,17 +344,11 @@
       8,
       13
     ],
-    "users": {
-      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom"
-    },
-    "votes": {
-      "015e5663-52ee-4a9f-b355-5bff3a45329b": 3
-    },
+    "users": {},
+    "votes": {},
     "owner": "015e5663-52ee-4a9f-b355-5bff3a45329b",
     "storedResult": {
-      "votes": {
-        "015e5663-52ee-4a9f-b355-5bff3a45329b": 3
-      },
+      "votes": {},
       "average": 3.17,
       "highestVotes": {
         "value": [
