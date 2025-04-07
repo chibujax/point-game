@@ -332,5 +332,70 @@
       "otherVotes": [],
       "totalVoters": 8
     }
+  },
+  "session_1744031487583": {
+    "id": "session_1744031487583",
+    "name": "CFW sprint planning",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv",
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin",
+      "23ff6ddd-cd75-48e3-92af-24772a694922": "Andy",
+      "805c2ea4-6732-4b40-968b-76f74335373c": "James",
+      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": "Justin",
+      "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": "Shadi"
+    },
+    "votes": {
+      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 13,
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 3,
+      "805c2ea4-6732-4b40-968b-76f74335373c": 5,
+      "23ff6ddd-cd75-48e3-92af-24772a694922": 13
+    },
+    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
+    "storedResult": {
+      "votes": {
+        "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 13,
+        "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 3,
+        "805c2ea4-6732-4b40-968b-76f74335373c": 5,
+        "23ff6ddd-cd75-48e3-92af-24772a694922": 13
+      },
+      "average": 8.5,
+      "highestVotes": {
+        "value": [
+          13
+        ],
+        "voters": [
+          {
+            "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 13
+          },
+          {
+            "23ff6ddd-cd75-48e3-92af-24772a694922": 13
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          3,
+          5
+        ],
+        "voters": [
+          {
+            "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 3
+          },
+          {
+            "805c2ea4-6732-4b40-968b-76f74335373c": 5
+          }
+        ]
+      },
+      "otherVotes": [],
+      "totalVoters": 4
+    }
   }
 }
