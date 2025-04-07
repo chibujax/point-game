@@ -353,13 +353,59 @@
       "23ff6ddd-cd75-48e3-92af-24772a694922": "Andy"
     },
     "votes": {
-      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 8,
-      "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": 8,
-      "bca58561-362e-4f71-ab63-1ad3cdb844fa": 3,
-      "805c2ea4-6732-4b40-968b-76f74335373c": 5
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": 5,
+      "805c2ea4-6732-4b40-968b-76f74335373c": 5,
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 5,
+      "23ff6ddd-cd75-48e3-92af-24772a694922": 5,
+      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 3,
+      "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": 5
     },
     "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
-    "storedResult": null
+    "storedResult": {
+      "votes": {
+        "bca58561-362e-4f71-ab63-1ad3cdb844fa": 5,
+        "805c2ea4-6732-4b40-968b-76f74335373c": 5,
+        "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 5,
+        "23ff6ddd-cd75-48e3-92af-24772a694922": 5,
+        "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 3,
+        "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": 5
+      },
+      "average": 4.67,
+      "highestVotes": {
+        "value": [
+          5
+        ],
+        "voters": [
+          {
+            "bca58561-362e-4f71-ab63-1ad3cdb844fa": 5
+          },
+          {
+            "805c2ea4-6732-4b40-968b-76f74335373c": 5
+          },
+          {
+            "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 5
+          },
+          {
+            "23ff6ddd-cd75-48e3-92af-24772a694922": 5
+          },
+          {
+            "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": 5
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          3
+        ],
+        "voters": [
+          {
+            "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 3
+          }
+        ]
+      },
+      "otherVotes": [],
+      "totalVoters": 6
+    }
   },
   "session_1744032426089": {
     "id": "session_1744032426089",
