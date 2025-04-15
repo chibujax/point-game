@@ -386,5 +386,26 @@
       "otherVotes": [],
       "totalVoters": 6
     }
+  },
+  "session_1744720553520": {
+    "id": "session_1744720553520",
+    "name": "CFW Refinement",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv",
+      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": "Justin",
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin",
+      "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": "Shadi"
+    },
+    "votes": {},
+    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
+    "storedResult": null
   }
 }
