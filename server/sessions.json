@@ -415,59 +415,12 @@
     "users": {
       "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin",
       "805c2ea4-6732-4b40-968b-76f74335373c": "James",
-      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": "Justin",
       "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": "Shadi",
-      "23ff6ddd-cd75-48e3-92af-24772a694922": "Andy"
+      "23ff6ddd-cd75-48e3-92af-24772a694922": "Andy",
+      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": "Justin"
     },
-    "votes": {
-      "bca58561-362e-4f71-ab63-1ad3cdb844fa": 5,
-      "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": 5,
-      "805c2ea4-6732-4b40-968b-76f74335373c": 3,
-      "23ff6ddd-cd75-48e3-92af-24772a694922": 2,
-      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 3
-    },
+    "votes": {},
     "owner": "bca58561-362e-4f71-ab63-1ad3cdb844fa",
-    "storedResult": {
-      "votes": {
-        "bca58561-362e-4f71-ab63-1ad3cdb844fa": 5,
-        "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": 5,
-        "805c2ea4-6732-4b40-968b-76f74335373c": 3,
-        "23ff6ddd-cd75-48e3-92af-24772a694922": 2,
-        "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 3
-      },
-      "average": 3.6,
-      "highestVotes": {
-        "value": [
-          3,
-          5
-        ],
-        "voters": [
-          {
-            "bca58561-362e-4f71-ab63-1ad3cdb844fa": 5
-          },
-          {
-            "efbb3974-b7a2-42f4-ab38-462c5bc89c3d": 5
-          },
-          {
-            "805c2ea4-6732-4b40-968b-76f74335373c": 3
-          },
-          {
-            "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 3
-          }
-        ]
-      },
-      "lowestVotes": {
-        "value": [
-          2
-        ],
-        "voters": [
-          {
-            "23ff6ddd-cd75-48e3-92af-24772a694922": 2
-          }
-        ]
-      },
-      "otherVotes": [],
-      "totalVoters": 5
-    }
+    "storedResult": null
   }
 }
