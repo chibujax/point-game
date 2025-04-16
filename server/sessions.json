@@ -416,23 +416,5 @@
     "votes": {},
     "owner": "bca58561-362e-4f71-ab63-1ad3cdb844fa",
     "storedResult": null
-  },
-  "session_1744794990204": {
-    "id": "session_1744794990204",
-    "name": "BRATS",
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "users": {
-      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom"
-    },
-    "votes": {},
-    "owner": "015e5663-52ee-4a9f-b355-5bff3a45329b",
-    "storedResult": null
   }
 }
