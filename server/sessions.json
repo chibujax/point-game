@@ -436,11 +436,69 @@
       "8ea87f07-8b5c-451e-a380-828d0649bf51": "Alexa",
       "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
       "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
-      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma"
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
+      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav"
     },
-    "votes": {},
+    "votes": {
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": 2,
+      "84800fd4-2bb0-4582-b06c-64eef3bea63b": 1,
+      "78c0645f-75f7-447e-a541-2fc653b162ce": 2,
+      "a7dceb65-f912-412e-8237-7f292300d3fb": 3,
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 2,
+      "985b1289-3338-4512-9d07-ce2f9b1029b6": 3,
+      "8ea87f07-8b5c-451e-a380-828d0649bf51": 2
+    },
     "owner": "cfe16139-ebf7-4113-8591-0095ecd5f18b",
-    "storedResult": null
+    "storedResult": {
+      "votes": {
+        "cfe16139-ebf7-4113-8591-0095ecd5f18b": 2,
+        "84800fd4-2bb0-4582-b06c-64eef3bea63b": 1,
+        "78c0645f-75f7-447e-a541-2fc653b162ce": 2,
+        "a7dceb65-f912-412e-8237-7f292300d3fb": 3,
+        "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 2,
+        "985b1289-3338-4512-9d07-ce2f9b1029b6": 3,
+        "8ea87f07-8b5c-451e-a380-828d0649bf51": 2
+      },
+      "average": 2.14,
+      "highestVotes": {
+        "value": [
+          2
+        ],
+        "voters": [
+          {
+            "cfe16139-ebf7-4113-8591-0095ecd5f18b": 2
+          },
+          {
+            "78c0645f-75f7-447e-a541-2fc653b162ce": 2
+          },
+          {
+            "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 2
+          },
+          {
+            "8ea87f07-8b5c-451e-a380-828d0649bf51": 2
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          1
+        ],
+        "voters": [
+          {
+            "84800fd4-2bb0-4582-b06c-64eef3bea63b": 1
+          }
+        ]
+      },
+      "otherVotes": [
+        {
+          "a7dceb65-f912-412e-8237-7f292300d3fb": 3
+        },
+        {
+          "985b1289-3338-4512-9d07-ce2f9b1029b6": 3
+        }
+      ],
+      "totalVoters": 7
+    }
   },
   "session_1744794990204": {
     "id": "session_1744794990204",
