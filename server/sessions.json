@@ -429,18 +429,15 @@
       13
     ],
     "users": {
-      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin",
-      "80704edd-fd08-44bc-91f8-24928e5964da": "Jane"
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin"
     },
     "votes": {
-      "bca58561-362e-4f71-ab63-1ad3cdb844fa": 8,
-      "80704edd-fd08-44bc-91f8-24928e5964da": 13
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": 8
     },
     "owner": "bca58561-362e-4f71-ab63-1ad3cdb844fa",
     "storedResult": {
       "votes": {
-        "bca58561-362e-4f71-ab63-1ad3cdb844fa": 8,
-        "80704edd-fd08-44bc-91f8-24928e5964da": 13
+        "bca58561-362e-4f71-ab63-1ad3cdb844fa": 8
       },
       "average": 7.33,
       "highestVotes": {
