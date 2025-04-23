@@ -428,12 +428,8 @@
       8,
       13
     ],
-    "users": {
-      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin"
-    },
-    "votes": {
-      "bca58561-362e-4f71-ab63-1ad3cdb844fa": 8
-    },
+    "users": {},
+    "votes": {},
     "owner": "bca58561-362e-4f71-ab63-1ad3cdb844fa",
     "storedResult": {
       "votes": {
