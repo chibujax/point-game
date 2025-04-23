@@ -472,5 +472,28 @@
       ],
       "totalVoters": 6
     }
+  },
+  "session_1745399282022": {
+    "id": "session_1745399282022",
+    "name": "bratssssss 230425",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Livvy",
+      "3d1708e0-0984-441c-b00d-fedcfe9674d9": "Yash",
+      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt",
+      "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan",
+      "5bae5278-e6db-4794-8e00-145976a113e4": "Leenah",
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom"
+    },
+    "votes": {},
+    "owner": "dfed0582-b553-4bb4-948c-0c1b4b6b1ece",
+    "storedResult": null
   }
 }
