@@ -553,66 +553,9 @@
       "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav",
       "985b1289-3338-4512-9d07-ce2f9b1029b6": "James"
     },
-    "votes": {
-      "78c0645f-75f7-447e-a541-2fc653b162ce": 2,
-      "cfe16139-ebf7-4113-8591-0095ecd5f18b": 2,
-      "985b1289-3338-4512-9d07-ce2f9b1029b6": 3,
-      "a7dceb65-f912-412e-8237-7f292300d3fb": 2,
-      "84800fd4-2bb0-4582-b06c-64eef3bea63b": 2,
-      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 5,
-      "1fc52aa2-978a-445a-99f4-310989fd01ac": 2
-    },
+    "votes": {},
     "owner": "84800fd4-2bb0-4582-b06c-64eef3bea63b",
-    "storedResult": {
-      "votes": {
-        "78c0645f-75f7-447e-a541-2fc653b162ce": 2,
-        "cfe16139-ebf7-4113-8591-0095ecd5f18b": 2,
-        "985b1289-3338-4512-9d07-ce2f9b1029b6": 3,
-        "a7dceb65-f912-412e-8237-7f292300d3fb": 2,
-        "84800fd4-2bb0-4582-b06c-64eef3bea63b": 2,
-        "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 5,
-        "1fc52aa2-978a-445a-99f4-310989fd01ac": 2
-      },
-      "average": 2.57,
-      "highestVotes": {
-        "value": [
-          2
-        ],
-        "voters": [
-          {
-            "78c0645f-75f7-447e-a541-2fc653b162ce": 2
-          },
-          {
-            "cfe16139-ebf7-4113-8591-0095ecd5f18b": 2
-          },
-          {
-            "a7dceb65-f912-412e-8237-7f292300d3fb": 2
-          },
-          {
-            "84800fd4-2bb0-4582-b06c-64eef3bea63b": 2
-          },
-          {
-            "1fc52aa2-978a-445a-99f4-310989fd01ac": 2
-          }
-        ]
-      },
-      "lowestVotes": {
-        "value": [
-          3,
-          5
-        ],
-        "voters": [
-          {
-            "985b1289-3338-4512-9d07-ce2f9b1029b6": 3
-          },
-          {
-            "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 5
-          }
-        ]
-      },
-      "otherVotes": [],
-      "totalVoters": 7
-    },
+    "storedResult": null,
     "voteTitle": "Just refinement"
   }
 }
