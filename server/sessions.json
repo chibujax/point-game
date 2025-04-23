@@ -484,16 +484,75 @@
       8
     ],
     "users": {
-      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Livvy",
       "3d1708e0-0984-441c-b00d-fedcfe9674d9": "Yash",
       "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt",
       "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan",
       "5bae5278-e6db-4794-8e00-145976a113e4": "Leenah",
       "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
-      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom"
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom",
+      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": "tdb"
     },
-    "votes": {},
+    "votes": {
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": 2,
+      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 2,
+      "b200d634-3f92-4beb-83cf-97315a083a54": 1,
+      "3d1708e0-0984-441c-b00d-fedcfe9674d9": 2,
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2,
+      "5bae5278-e6db-4794-8e00-145976a113e4": 1,
+      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": 2
+    },
     "owner": "dfed0582-b553-4bb4-948c-0c1b4b6b1ece",
-    "storedResult": null
+    "storedResult": {
+      "votes": {
+        "015e5663-52ee-4a9f-b355-5bff3a45329b": 2,
+        "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 2,
+        "b200d634-3f92-4beb-83cf-97315a083a54": 1,
+        "3d1708e0-0984-441c-b00d-fedcfe9674d9": 2,
+        "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2,
+        "5bae5278-e6db-4794-8e00-145976a113e4": 1,
+        "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": 2
+      },
+      "average": 1.75,
+      "highestVotes": {
+        "value": [
+          2
+        ],
+        "voters": [
+          {
+            "015e5663-52ee-4a9f-b355-5bff3a45329b": 2
+          },
+          {
+            "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 2
+          },
+          {
+            "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 2
+          },
+          {
+            "3d1708e0-0984-441c-b00d-fedcfe9674d9": 2
+          },
+          {
+            "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2
+          },
+          {
+            "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": 2
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          1
+        ],
+        "voters": [
+          {
+            "b200d634-3f92-4beb-83cf-97315a083a54": 1
+          },
+          {
+            "5bae5278-e6db-4794-8e00-145976a113e4": 1
+          }
+        ]
+      },
+      "otherVotes": [],
+      "totalVoters": 8
+    }
   }
 }
