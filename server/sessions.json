@@ -485,23 +485,17 @@
     ],
     "users": {
       "5bae5278-e6db-4794-8e00-145976a113e4": "Leenah",
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
-      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom",
-      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": "tdb"
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom"
     },
     "votes": {
       "015e5663-52ee-4a9f-b355-5bff3a45329b": 2,
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2,
-      "5bae5278-e6db-4794-8e00-145976a113e4": 1,
-      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": 2
+      "5bae5278-e6db-4794-8e00-145976a113e4": 1
     },
     "owner": "dfed0582-b553-4bb4-948c-0c1b4b6b1ece",
     "storedResult": {
       "votes": {
         "015e5663-52ee-4a9f-b355-5bff3a45329b": 2,
-        "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 2,
-        "5bae5278-e6db-4794-8e00-145976a113e4": 1,
-        "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": 2
+        "5bae5278-e6db-4794-8e00-145976a113e4": 1
       },
       "average": 1.75,
       "highestVotes": {
