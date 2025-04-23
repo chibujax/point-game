@@ -530,5 +530,33 @@
       "otherVotes": [],
       "totalVoters": 8
     }
+  },
+  "session_1745413733595": {
+    "id": "session_1745413733595",
+    "name": "Refinement Session",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
+      "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
+      "1fc52aa2-978a-445a-99f4-310989fd01ac": "Adam",
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
+      "137a31ef-9980-4878-bc8f-4041cd2a607c": "gail",
+      "78c0645f-75f7-447e-a541-2fc653b162ce": "Vedant",
+      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav"
+    },
+    "votes": {
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": 1
+    },
+    "owner": "84800fd4-2bb0-4582-b06c-64eef3bea63b",
+    "storedResult": null,
+    "voteTitle": "Just refinement"
   }
 }
