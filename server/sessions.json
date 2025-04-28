@@ -548,9 +548,22 @@
       "3d1708e0-0984-441c-b00d-fedcfe9674d9": "Yash",
       "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt",
       "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": "leenah",
-      "519c4159-21ed-4aa1-b848-da28009ab21b": "Kamara"
+      "519c4159-21ed-4aa1-b848-da28009ab21b": "Kamara",
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom",
+      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": "tdb",
+      "c6888260-6f34-4e5d-993c-c6a44127bf09": "Louise",
+      "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan"
     },
-    "votes": {},
+    "votes": {
+      "3d1708e0-0984-441c-b00d-fedcfe9674d9": 3,
+      "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": 5,
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
+      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 3,
+      "519c4159-21ed-4aa1-b848-da28009ab21b": 3,
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": 5,
+      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": 5,
+      "b200d634-3f92-4beb-83cf-97315a083a54": 3
+    },
     "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
     "storedResult": null
   }
