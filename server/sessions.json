@@ -530,5 +530,28 @@
       "otherVotes": [],
       "totalVoters": 8
     }
+  },
+  "session_1745845674448": {
+    "id": "session_1745845674448",
+    "name": "BRATS",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv",
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
+      "3d1708e0-0984-441c-b00d-fedcfe9674d9": "Yash",
+      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt",
+      "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": "leenah",
+      "519c4159-21ed-4aa1-b848-da28009ab21b": "Kamara"
+    },
+    "votes": {},
+    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
+    "storedResult": null
   }
 }
