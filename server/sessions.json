@@ -544,7 +544,6 @@
     ],
     "users": {
       "1fc52aa2-978a-445a-99f4-310989fd01ac": "Adam",
-      "137a31ef-9980-4878-bc8f-4041cd2a607c": "gail",
       "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
       "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
       "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
@@ -552,8 +551,7 @@
       "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav",
       "985b1289-3338-4512-9d07-ce2f9b1029b6": "James",
       "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
-      "8ea87f07-8b5c-451e-a380-828d0649bf51": "Alexa",
-      "d3bd62b7-1b2f-4502-b227-9cb3e9b0f9fc": "Richard"
+      "8ea87f07-8b5c-451e-a380-828d0649bf51": "Alexa"
     },
     "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
