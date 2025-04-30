@@ -542,10 +542,7 @@
       8,
       13
     ],
-    "users": {
-      "1fc52aa2-978a-445a-99f4-310989fd01ac": "Adam",
-      "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu"
-    },
+    "users": {},
     "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
