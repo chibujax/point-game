@@ -559,16 +559,32 @@
       13
     ],
     "users": {
-      "985b1289-3338-4512-9d07-ce2f9b1029b6": "James",
       "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
       "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
-      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
-      "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
-      "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": "Maz",
       "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav"
     },
     "votes": {},
     "owner": "985b1289-3338-4512-9d07-ce2f9b1029b6",
+    "storedResult": null
+  },
+  "session_1746626922910": {
+    "id": "session_1746626922910",
+    "name": "F2F PLANNING IN GLASGOW WOOOO",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "LIVVY",
+      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "joe",
+      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt"
+    },
+    "votes": {},
+    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
     "storedResult": null
   }
 }
