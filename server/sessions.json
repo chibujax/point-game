@@ -546,5 +546,81 @@
     "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
+  },
+  "session_1746623515881": {
+    "id": "session_1746623515881",
+    "name": "REFINEMENT IS FUN",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "985b1289-3338-4512-9d07-ce2f9b1029b6": "James",
+      "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
+      "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
+      "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": "Maz",
+      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav"
+    },
+    "votes": {
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": 5,
+      "985b1289-3338-4512-9d07-ce2f9b1029b6": 3,
+      "a7dceb65-f912-412e-8237-7f292300d3fb": 5,
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 3,
+      "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": 5,
+      "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3
+    },
+    "owner": "985b1289-3338-4512-9d07-ce2f9b1029b6",
+    "storedResult": {
+      "votes": {
+        "cfe16139-ebf7-4113-8591-0095ecd5f18b": 5,
+        "985b1289-3338-4512-9d07-ce2f9b1029b6": 3,
+        "a7dceb65-f912-412e-8237-7f292300d3fb": 5,
+        "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 3,
+        "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": 5,
+        "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3
+      },
+      "average": 4,
+      "highestVotes": {
+        "value": [
+          3,
+          5
+        ],
+        "voters": [
+          {
+            "cfe16139-ebf7-4113-8591-0095ecd5f18b": 5
+          },
+          {
+            "985b1289-3338-4512-9d07-ce2f9b1029b6": 3
+          },
+          {
+            "a7dceb65-f912-412e-8237-7f292300d3fb": 5
+          },
+          {
+            "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 3
+          },
+          {
+            "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": 5
+          },
+          {
+            "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          3,
+          5
+        ],
+        "voters": []
+      },
+      "otherVotes": [],
+      "totalVoters": 6
+    }
   }
 }
