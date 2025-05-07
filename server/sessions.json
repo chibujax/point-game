@@ -566,74 +566,10 @@
       "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
       "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": "Maz",
       "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav",
-      "8ea87f07-8b5c-451e-a380-828d0649bf51": "Alexa",
-      "d3bd62b7-1b2f-4502-b227-9cb3e9b0f9fc": "Richard"
+      "8ea87f07-8b5c-451e-a380-828d0649bf51": "Alexa"
     },
-    "votes": {
-      "985b1289-3338-4512-9d07-ce2f9b1029b6": 2,
-      "cfe16139-ebf7-4113-8591-0095ecd5f18b": 3,
-      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 3,
-      "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3,
-      "a7dceb65-f912-412e-8237-7f292300d3fb": 2,
-      "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": 3,
-      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": 5,
-      "8ea87f07-8b5c-451e-a380-828d0649bf51": 8
-    },
+    "votes": {},
     "owner": "985b1289-3338-4512-9d07-ce2f9b1029b6",
-    "storedResult": {
-      "votes": {
-        "985b1289-3338-4512-9d07-ce2f9b1029b6": 2,
-        "cfe16139-ebf7-4113-8591-0095ecd5f18b": 3,
-        "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 3,
-        "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3,
-        "a7dceb65-f912-412e-8237-7f292300d3fb": 2,
-        "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": 3,
-        "93ca2bc5-bafa-410a-9969-9620a43a5e8b": 5,
-        "8ea87f07-8b5c-451e-a380-828d0649bf51": 8
-      },
-      "average": 3.63,
-      "highestVotes": {
-        "value": [
-          3
-        ],
-        "voters": [
-          {
-            "cfe16139-ebf7-4113-8591-0095ecd5f18b": 3
-          },
-          {
-            "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 3
-          },
-          {
-            "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3
-          },
-          {
-            "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": 3
-          }
-        ]
-      },
-      "lowestVotes": {
-        "value": [
-          5,
-          8
-        ],
-        "voters": [
-          {
-            "93ca2bc5-bafa-410a-9969-9620a43a5e8b": 5
-          },
-          {
-            "8ea87f07-8b5c-451e-a380-828d0649bf51": 8
-          }
-        ]
-      },
-      "otherVotes": [
-        {
-          "985b1289-3338-4512-9d07-ce2f9b1029b6": 2
-        },
-        {
-          "a7dceb65-f912-412e-8237-7f292300d3fb": 2
-        }
-      ],
-      "totalVoters": 8
-    }
+    "storedResult": null
   }
 }
