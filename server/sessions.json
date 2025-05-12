@@ -593,24 +593,5 @@
     "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
-  },
-  "session_1747056417448": {
-    "id": "session_1747056417448",
-    "name": "BRATS",
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "users": {
-      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv",
-      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt"
-    },
-    "votes": {},
-    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
-    "storedResult": null
   }
 }
