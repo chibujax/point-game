@@ -593,5 +593,27 @@
     "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
+  },
+  "session_1747047113986": {
+    "id": "session_1747047113986",
+    "name": "Refinement",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv",
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin",
+      "80704edd-fd08-44bc-91f8-24928e5964da": "Janie",
+      "23ff6ddd-cd75-48e3-92af-24772a694922": "Andy",
+      "805c2ea4-6732-4b40-968b-76f74335373c": "James"
+    },
+    "votes": {},
+    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
+    "storedResult": null
   }
 }
