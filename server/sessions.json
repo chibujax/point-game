@@ -593,9 +593,7 @@
       "1fc52aa2-978a-445a-99f4-310989fd01ac": "adam",
       "a05653dd-e774-4d08-9c4b-90baf84fbc73": "Craig"
     },
-    "votes": {
-      "a05653dd-e774-4d08-9c4b-90baf84fbc73": 3
-    },
+    "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
   }
