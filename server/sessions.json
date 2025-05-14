@@ -593,26 +593,5 @@
     "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
-  },
-  "session_1747214243626": {
-    "id": "session_1747214243626",
-    "name": "UAP Sprint planning",
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "users": {
-      "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
-      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
-      "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben"
-    },
-    "votes": {},
-    "owner": "84800fd4-2bb0-4582-b06c-64eef3bea63b",
-    "storedResult": null,
-    "voteTitle": "Cent 07 upgrade"
   }
 }
