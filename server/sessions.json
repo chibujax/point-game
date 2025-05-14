@@ -594,101 +594,6 @@
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
   },
-  "session_1747213864909": {
-    "id": "session_1747213864909",
-    "name": "BRATS",
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "users": {
-      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv",
-      "3d1708e0-0984-441c-b00d-fedcfe9674d9": "Yash",
-      "519c4159-21ed-4aa1-b848-da28009ab21b": "Kamara",
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
-      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt",
-      "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan",
-      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "joe",
-      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": "tdb",
-      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom",
-      "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": "Leenah",
-      "c6888260-6f34-4e5d-993c-c6a44127bf09": "Louise"
-    },
-    "votes": {
-      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": 3,
-      "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": 3,
-      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 3,
-      "015e5663-52ee-4a9f-b355-5bff3a45329b": 2,
-      "519c4159-21ed-4aa1-b848-da28009ab21b": 3,
-      "3d1708e0-0984-441c-b00d-fedcfe9674d9": 2,
-      "b200d634-3f92-4beb-83cf-97315a083a54": 3,
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
-      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 3
-    },
-    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
-    "storedResult": {
-      "votes": {
-        "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": 3,
-        "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": 3,
-        "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 3,
-        "015e5663-52ee-4a9f-b355-5bff3a45329b": 2,
-        "519c4159-21ed-4aa1-b848-da28009ab21b": 3,
-        "3d1708e0-0984-441c-b00d-fedcfe9674d9": 2,
-        "b200d634-3f92-4beb-83cf-97315a083a54": 3,
-        "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
-        "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 3
-      },
-      "average": 3,
-      "highestVotes": {
-        "value": [
-          3
-        ],
-        "voters": [
-          {
-            "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": 3
-          },
-          {
-            "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": 3
-          },
-          {
-            "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 3
-          },
-          {
-            "519c4159-21ed-4aa1-b848-da28009ab21b": 3
-          },
-          {
-            "b200d634-3f92-4beb-83cf-97315a083a54": 3
-          },
-          {
-            "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 3
-          }
-        ]
-      },
-      "lowestVotes": {
-        "value": [
-          5
-        ],
-        "voters": [
-          {
-            "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5
-          }
-        ]
-      },
-      "otherVotes": [
-        {
-          "015e5663-52ee-4a9f-b355-5bff3a45329b": 2
-        },
-        {
-          "3d1708e0-0984-441c-b00d-fedcfe9674d9": 2
-        }
-      ],
-      "totalVoters": 9
-    }
-  },
   "session_1747214243626": {
     "id": "session_1747214243626",
     "name": "UAP Sprint planning",
@@ -709,60 +614,9 @@
       "6d3a5c67-9905-41d6-8aaf-8b021ef7ef7c": "Maz",
       "8ea87f07-8b5c-451e-a380-828d0649bf51": "Alexa"
     },
-    "votes": {
-      "78c0645f-75f7-447e-a541-2fc653b162ce": 5,
-      "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3,
-      "cfe16139-ebf7-4113-8591-0095ecd5f18b": 3,
-      "a7dceb65-f912-412e-8237-7f292300d3fb": 3,
-      "6d3a5c67-9905-41d6-8aaf-8b021ef7ef7c": 3,
-      "8ea87f07-8b5c-451e-a380-828d0649bf51": 3
-    },
+    "votes": {},
     "owner": "84800fd4-2bb0-4582-b06c-64eef3bea63b",
-    "storedResult": {
-      "votes": {
-        "78c0645f-75f7-447e-a541-2fc653b162ce": 5,
-        "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3,
-        "cfe16139-ebf7-4113-8591-0095ecd5f18b": 3,
-        "a7dceb65-f912-412e-8237-7f292300d3fb": 3,
-        "6d3a5c67-9905-41d6-8aaf-8b021ef7ef7c": 3,
-        "8ea87f07-8b5c-451e-a380-828d0649bf51": 3
-      },
-      "average": 3.33,
-      "highestVotes": {
-        "value": [
-          3
-        ],
-        "voters": [
-          {
-            "84800fd4-2bb0-4582-b06c-64eef3bea63b": 3
-          },
-          {
-            "cfe16139-ebf7-4113-8591-0095ecd5f18b": 3
-          },
-          {
-            "a7dceb65-f912-412e-8237-7f292300d3fb": 3
-          },
-          {
-            "6d3a5c67-9905-41d6-8aaf-8b021ef7ef7c": 3
-          },
-          {
-            "8ea87f07-8b5c-451e-a380-828d0649bf51": 3
-          }
-        ]
-      },
-      "lowestVotes": {
-        "value": [
-          5
-        ],
-        "voters": [
-          {
-            "78c0645f-75f7-447e-a541-2fc653b162ce": 5
-          }
-        ]
-      },
-      "otherVotes": [],
-      "totalVoters": 6
-    },
+    "storedResult": null,
     "voteTitle": "Cent 07 upgrade"
   }
 }
