@@ -593,5 +593,90 @@
     "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
+  },
+  "session_1747833023702": {
+    "id": "session_1747833023702",
+    "name": "Backlog Refinement",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
+      "985b1289-3338-4512-9d07-ce2f9b1029b6": "James",
+      "8ea87f07-8b5c-451e-a380-828d0649bf51": "Alexa",
+      "78c0645f-75f7-447e-a541-2fc653b162ce": "Vedant",
+      "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
+      "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
+      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav",
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma"
+    },
+    "votes": {
+      "78c0645f-75f7-447e-a541-2fc653b162ce": 8,
+      "a7dceb65-f912-412e-8237-7f292300d3fb": 8,
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": 8,
+      "8ea87f07-8b5c-451e-a380-828d0649bf51": 8,
+      "985b1289-3338-4512-9d07-ce2f9b1029b6": 8,
+      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": 8,
+      "84800fd4-2bb0-4582-b06c-64eef3bea63b": 8,
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 8
+    },
+    "owner": "cfe16139-ebf7-4113-8591-0095ecd5f18b",
+    "storedResult": {
+      "votes": {
+        "78c0645f-75f7-447e-a541-2fc653b162ce": 8,
+        "a7dceb65-f912-412e-8237-7f292300d3fb": 8,
+        "cfe16139-ebf7-4113-8591-0095ecd5f18b": 8,
+        "8ea87f07-8b5c-451e-a380-828d0649bf51": 8,
+        "985b1289-3338-4512-9d07-ce2f9b1029b6": 8,
+        "93ca2bc5-bafa-410a-9969-9620a43a5e8b": 8,
+        "84800fd4-2bb0-4582-b06c-64eef3bea63b": 8,
+        "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 8
+      },
+      "average": 8,
+      "highestVotes": {
+        "value": [
+          8
+        ],
+        "voters": [
+          {
+            "78c0645f-75f7-447e-a541-2fc653b162ce": 8
+          },
+          {
+            "a7dceb65-f912-412e-8237-7f292300d3fb": 8
+          },
+          {
+            "cfe16139-ebf7-4113-8591-0095ecd5f18b": 8
+          },
+          {
+            "8ea87f07-8b5c-451e-a380-828d0649bf51": 8
+          },
+          {
+            "985b1289-3338-4512-9d07-ce2f9b1029b6": 8
+          },
+          {
+            "93ca2bc5-bafa-410a-9969-9620a43a5e8b": 8
+          },
+          {
+            "84800fd4-2bb0-4582-b06c-64eef3bea63b": 8
+          },
+          {
+            "fdee1276-c542-4531-bb5d-bdbe0fbd778f": 8
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          8
+        ],
+        "voters": []
+      },
+      "otherVotes": [],
+      "totalVoters": 8
+    }
   }
 }
