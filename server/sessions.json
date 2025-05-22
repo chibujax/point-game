@@ -593,5 +593,22 @@
     "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
+  },
+  "session_1747918988334": {
+    "id": "session_1747918988334",
+    "name": "planning sesh",
+    "points": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "users": {
+      "1fc52aa2-978a-445a-99f4-310989fd01ac": "Adam"
+    },
+    "votes": {},
+    "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
+    "storedResult": null
   }
 }
