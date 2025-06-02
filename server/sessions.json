@@ -608,5 +608,31 @@
     "votes": {},
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
     "storedResult": null
+  },
+  "session_1748856823603": {
+    "id": "session_1748856823603",
+    "name": "Planning",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv",
+      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": "Justin",
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin",
+      "caf14dc3-ecc1-47e4-8bc2-b03bf9359466": "Shadi",
+      "805c2ea4-6732-4b40-968b-76f74335373c": "James",
+      "23ff6ddd-cd75-48e3-92af-24772a694922": "Andy",
+      "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": "Janie"
+    },
+    "votes": {
+      "caf14dc3-ecc1-47e4-8bc2-b03bf9359466": 2
+    },
+    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
+    "storedResult": null
   }
 }
