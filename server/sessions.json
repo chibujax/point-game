@@ -636,17 +636,14 @@
       8
     ],
     "users": {
-      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "joe",
-      "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan"
+      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "joe"
     },
     "votes": {
-      "b200d634-3f92-4beb-83cf-97315a083a54": 1,
       "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 1
     },
     "owner": "bd8ae887-37fc-490c-9f5b-2a172c6f8700",
     "storedResult": {
       "votes": {
-        "b200d634-3f92-4beb-83cf-97315a083a54": 1,
         "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 1
       },
       "average": 1.75,
