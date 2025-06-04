@@ -683,5 +683,25 @@
       ],
       "totalVoters": 8
     }
+  },
+  "session_1749042678156": {
+    "id": "session_1749042678156",
+    "name": "Backlog Refinement",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "users": {
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
+      "137a31ef-9980-4878-bc8f-4041cd2a607c": "gail",
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
+      "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": "Maz"
+    },
+    "votes": {},
+    "owner": "fdee1276-c542-4531-bb5d-bdbe0fbd778f",
+    "storedResult": null
   }
 }
