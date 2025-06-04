@@ -635,17 +635,11 @@
       5,
       8
     ],
-    "users": {
-      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "joe"
-    },
-    "votes": {
-      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 1
-    },
+    "users": {},
+    "votes": {},
     "owner": "bd8ae887-37fc-490c-9f5b-2a172c6f8700",
     "storedResult": {
-      "votes": {
-        "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 1
-      },
+      "votes": {},
       "average": 1.75,
       "highestVotes": {
         "value": [
