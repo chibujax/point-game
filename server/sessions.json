@@ -742,9 +742,7 @@
       8,
       13
     ],
-    "users": {
-      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv"
-    },
+    "users": {},
     "votes": {},
     "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
     "storedResult": null
@@ -760,10 +758,37 @@
       8,
       13
     ],
-    "users": {
-      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv"
-    },
+    "users": {},
     "votes": {},
+    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
+    "storedResult": null,
+    "voteTitle": "spike"
+  },
+  "session_1749474408718": {
+    "id": "session_1749474408718",
+    "name": "Brats",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv",
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom",
+      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt",
+      "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": "Leenah",
+      "3d1708e0-0984-441c-b00d-fedcfe9674d9": "Yash",
+      "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan",
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
+      "519c4159-21ed-4aa1-b848-da28009ab21b": "Kamara",
+      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": "tdb"
+    },
+    "votes": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 8
+    },
     "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
     "storedResult": null
   }
