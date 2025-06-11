@@ -795,10 +795,14 @@
       "1fa82c4f-4de8-4351-84f6-cc39f97cd125": "Justin",
       "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": "Janie",
       "805c2ea4-6732-4b40-968b-76f74335373c": "James",
-      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin",
-      "caf14dc3-ecc1-47e4-8bc2-b03bf9359466": "Shadi"
+      "caf14dc3-ecc1-47e4-8bc2-b03bf9359466": "Shadi",
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin"
     },
-    "votes": {},
+    "votes": {
+      "caf14dc3-ecc1-47e4-8bc2-b03bf9359466": 2,
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": 5,
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 3
+    },
     "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
     "storedResult": null
   }
