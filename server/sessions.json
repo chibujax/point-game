@@ -791,9 +791,15 @@
       13
     ],
     "users": {
-      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani"
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
+      "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
+      "918e2b6e-a850-4bce-b63b-0b82b320625b": "Alexa"
     },
-    "votes": {},
+    "votes": {
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": 5,
+      "84800fd4-2bb0-4582-b06c-64eef3bea63b": 5,
+      "918e2b6e-a850-4bce-b63b-0b82b320625b": 3
+    },
     "owner": "cfe16139-ebf7-4113-8591-0095ecd5f18b",
     "storedResult": null
   }
