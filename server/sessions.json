@@ -796,9 +796,56 @@
       "a05653dd-e774-4d08-9c4b-90baf84fbc73": "Craig",
       "3a746e71-884d-4609-8566-017825507118": "Jack"
     },
-    "votes": {},
+    "votes": {
+      "1fc52aa2-978a-445a-99f4-310989fd01ac": 2,
+      "3a746e71-884d-4609-8566-017825507118": 1,
+      "fe82c5f9-df8c-4cdd-9cf4-7f4b02c94b18": 2,
+      "a05653dd-e774-4d08-9c4b-90baf84fbc73": 2,
+      "e27fb29e-783e-475c-8343-6fdab574d428": 0
+    },
     "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
-    "storedResult": null
+    "storedResult": {
+      "votes": {
+        "1fc52aa2-978a-445a-99f4-310989fd01ac": 2,
+        "3a746e71-884d-4609-8566-017825507118": 1,
+        "fe82c5f9-df8c-4cdd-9cf4-7f4b02c94b18": 2,
+        "a05653dd-e774-4d08-9c4b-90baf84fbc73": 2,
+        "e27fb29e-783e-475c-8343-6fdab574d428": 0
+      },
+      "average": 1.4,
+      "highestVotes": {
+        "value": [
+          2
+        ],
+        "voters": [
+          {
+            "1fc52aa2-978a-445a-99f4-310989fd01ac": 2
+          },
+          {
+            "fe82c5f9-df8c-4cdd-9cf4-7f4b02c94b18": 2
+          },
+          {
+            "a05653dd-e774-4d08-9c4b-90baf84fbc73": 2
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          0,
+          1
+        ],
+        "voters": [
+          {
+            "3a746e71-884d-4609-8566-017825507118": 1
+          },
+          {
+            "e27fb29e-783e-475c-8343-6fdab574d428": 0
+          }
+        ]
+      },
+      "otherVotes": [],
+      "totalVoters": 5
+    }
   },
   "session_1750252436055": {
     "id": "session_1750252436055",
@@ -812,14 +859,14 @@
     ],
     "users": {
       "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
-      "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
       "78c0645f-75f7-447e-a541-2fc653b162ce": "Vedant",
       "985b1289-3338-4512-9d07-ce2f9b1029b6": "James",
       "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav",
       "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": "Maz",
       "918e2b6e-a850-4bce-b63b-0b82b320625b": "Alexa",
       "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
-      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani"
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
+      "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben"
     },
     "votes": {},
     "owner": "fdee1276-c542-4531-bb5d-bdbe0fbd778f",
