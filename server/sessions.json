@@ -792,7 +792,6 @@
     "users": {
       "1fc52aa2-978a-445a-99f4-310989fd01ac": "Adam",
       "e27fb29e-783e-475c-8343-6fdab574d428": "Aparna",
-      "fe82c5f9-df8c-4cdd-9cf4-7f4b02c94b18": "Danny",
       "a05653dd-e774-4d08-9c4b-90baf84fbc73": "Craig",
       "3a746e71-884d-4609-8566-017825507118": "Jack"
     },
@@ -811,9 +810,7 @@
       8
     ],
     "users": {
-      "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": "Maz",
-      "985b1289-3338-4512-9d07-ce2f9b1029b6": "Jim",
-      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav"
+      "985b1289-3338-4512-9d07-ce2f9b1029b6": "Jim"
     },
     "votes": {},
     "owner": "fdee1276-c542-4531-bb5d-bdbe0fbd778f",
