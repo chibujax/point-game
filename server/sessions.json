@@ -801,8 +801,75 @@
       "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan",
       "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "Joe"
     },
-    "votes": {},
+    "votes": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 1,
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": 2,
+      "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": 2,
+      "b0bf54e9-cc1a-49d8-882d-44369b4804c0": 2,
+      "3d1708e0-0984-441c-b00d-fedcfe9674d9": 2,
+      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 3,
+      "b200d634-3f92-4beb-83cf-97315a083a54": 2,
+      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 3,
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 1
+    },
     "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
-    "storedResult": null
+    "storedResult": {
+      "votes": {
+        "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 1,
+        "015e5663-52ee-4a9f-b355-5bff3a45329b": 2,
+        "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": 2,
+        "b0bf54e9-cc1a-49d8-882d-44369b4804c0": 2,
+        "3d1708e0-0984-441c-b00d-fedcfe9674d9": 2,
+        "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 3,
+        "b200d634-3f92-4beb-83cf-97315a083a54": 2,
+        "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 3,
+        "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 1
+      },
+      "average": 2,
+      "highestVotes": {
+        "value": [
+          2
+        ],
+        "voters": [
+          {
+            "015e5663-52ee-4a9f-b355-5bff3a45329b": 2
+          },
+          {
+            "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": 2
+          },
+          {
+            "b0bf54e9-cc1a-49d8-882d-44369b4804c0": 2
+          },
+          {
+            "3d1708e0-0984-441c-b00d-fedcfe9674d9": 2
+          },
+          {
+            "b200d634-3f92-4beb-83cf-97315a083a54": 2
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          1,
+          3
+        ],
+        "voters": [
+          {
+            "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 1
+          },
+          {
+            "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 3
+          },
+          {
+            "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": 3
+          },
+          {
+            "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 1
+          }
+        ]
+      },
+      "otherVotes": [],
+      "totalVoters": 9
+    }
   }
 }
