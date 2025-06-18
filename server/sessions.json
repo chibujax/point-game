@@ -778,5 +778,26 @@
     "votes": {},
     "owner": "bd8ae887-37fc-490c-9f5b-2a172c6f8700",
     "storedResult": null
+  },
+  "session_1750251691166": {
+    "id": "session_1750251691166",
+    "name": "refinement",
+    "points": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "users": {
+      "1fc52aa2-978a-445a-99f4-310989fd01ac": "Adam",
+      "e27fb29e-783e-475c-8343-6fdab574d428": "Aparna",
+      "fe82c5f9-df8c-4cdd-9cf4-7f4b02c94b18": "Danny",
+      "a05653dd-e774-4d08-9c4b-90baf84fbc73": "Craig",
+      "3a746e71-884d-4609-8566-017825507118": "Jack"
+    },
+    "votes": {},
+    "owner": "1fc52aa2-978a-445a-99f4-310989fd01ac",
+    "storedResult": null
   }
 }
