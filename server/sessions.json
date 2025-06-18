@@ -815,5 +815,92 @@
     "votes": {},
     "owner": "fdee1276-c542-4531-bb5d-bdbe0fbd778f",
     "storedResult": null
+  },
+  "session_1750257699778": {
+    "id": "session_1750257699778",
+    "name": "Planning",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      13
+    ],
+    "users": {
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": "Liv",
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom",
+      "3d1708e0-0984-441c-b00d-fedcfe9674d9": "Yash",
+      "b0bf54e9-cc1a-49d8-882d-44369b4804c0": "Kamara",
+      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt",
+      "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan",
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
+      "6840fffe-52dd-4352-8495-9e896dd205f9": "Nicola",
+      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "Joe"
+    },
+    "votes": {
+      "015e5663-52ee-4a9f-b355-5bff3a45329b": 5,
+      "3d1708e0-0984-441c-b00d-fedcfe9674d9": 5,
+      "b0bf54e9-cc1a-49d8-882d-44369b4804c0": 5,
+      "b200d634-3f92-4beb-83cf-97315a083a54": 5,
+      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
+      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 5,
+      "6840fffe-52dd-4352-8495-9e896dd205f9": 3,
+      "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 5
+    },
+    "owner": "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5",
+    "storedResult": {
+      "votes": {
+        "015e5663-52ee-4a9f-b355-5bff3a45329b": 5,
+        "3d1708e0-0984-441c-b00d-fedcfe9674d9": 5,
+        "b0bf54e9-cc1a-49d8-882d-44369b4804c0": 5,
+        "b200d634-3f92-4beb-83cf-97315a083a54": 5,
+        "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5,
+        "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 5,
+        "6840fffe-52dd-4352-8495-9e896dd205f9": 3,
+        "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 5
+      },
+      "average": 4.75,
+      "highestVotes": {
+        "value": [
+          5
+        ],
+        "voters": [
+          {
+            "015e5663-52ee-4a9f-b355-5bff3a45329b": 5
+          },
+          {
+            "3d1708e0-0984-441c-b00d-fedcfe9674d9": 5
+          },
+          {
+            "b0bf54e9-cc1a-49d8-882d-44369b4804c0": 5
+          },
+          {
+            "b200d634-3f92-4beb-83cf-97315a083a54": 5
+          },
+          {
+            "bd8ae887-37fc-490c-9f5b-2a172c6f8700": 5
+          },
+          {
+            "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": 5
+          },
+          {
+            "f8a1a533-9e3a-4060-b72d-3ccc66d77ce5": 5
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          3
+        ],
+        "voters": [
+          {
+            "6840fffe-52dd-4352-8495-9e896dd205f9": 3
+          }
+        ]
+      },
+      "otherVotes": [],
+      "totalVoters": 8
+    }
   }
 }
