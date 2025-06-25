@@ -875,36 +875,14 @@
       "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": "Maz",
       "a7dceb65-f912-412e-8237-7f292300d3fb": "Ben",
       "78c0645f-75f7-447e-a541-2fc653b162ce": "Vedant",
-      "985b1289-3338-4512-9d07-ce2f9b1029b6": "James"
+      "985b1289-3338-4512-9d07-ce2f9b1029b6": "James",
+      "cfe16139-ebf7-4113-8591-0095ecd5f18b": "Hani",
+      "fdee1276-c542-4531-bb5d-bdbe0fbd778f": "Padma",
+      "84800fd4-2bb0-4582-b06c-64eef3bea63b": "Chibu",
+      "93ca2bc5-bafa-410a-9969-9620a43a5e8b": "Gaurav"
     },
     "votes": {},
     "owner": "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae",
-    "storedResult": null
-  },
-  "session_1750843267657": {
-    "id": "session_1750843267657",
-    "name": "BRATS",
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "users": {
-      "015e5663-52ee-4a9f-b355-5bff3a45329b": "Dom",
-      "68d9b7ad-142e-4d0d-80ae-801d5b65f5c6": "Britt",
-      "bd8ae887-37fc-490c-9f5b-2a172c6f8700": "Hannah",
-      "b200d634-3f92-4beb-83cf-97315a083a54": "Iwan",
-      "d6c7e482-3e3e-4bfa-afbd-2d6a1a09ebc3": "Leenah",
-      "3d1708e0-0984-441c-b00d-fedcfe9674d9": "Yash",
-      "b0bf54e9-cc1a-49d8-882d-44369b4804c0": "Kamara",
-      "1552ca57-5c5e-43a7-a690-21c0cc48cd6a": "joe",
-      "dfed0582-b553-4bb4-948c-0c1b4b6b1ece": "tdb"
-    },
-    "votes": {},
-    "owner": "015e5663-52ee-4a9f-b355-5bff3a45329b",
     "storedResult": null
   }
 }
