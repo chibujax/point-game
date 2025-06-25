@@ -871,17 +871,11 @@
       5,
       8
     ],
-    "users": {
-      "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": "Janie"
-    },
-    "votes": {
-      "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": 2
-    },
+    "users": {},
+    "votes": {},
     "owner": "23ff6ddd-cd75-48e3-92af-24772a694922",
     "storedResult": {
-      "votes": {
-        "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": 2
-      },
+      "votes": {},
       "average": 1.2,
       "highestVotes": {
         "value": [
