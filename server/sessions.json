@@ -873,20 +873,17 @@
     ],
     "users": {
       "23ff6ddd-cd75-48e3-92af-24772a694922": "Andy",
-      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": "Justin",
       "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": "Janie"
     },
     "votes": {
       "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": 2,
-      "23ff6ddd-cd75-48e3-92af-24772a694922": 1,
-      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 1
+      "23ff6ddd-cd75-48e3-92af-24772a694922": 1
     },
     "owner": "23ff6ddd-cd75-48e3-92af-24772a694922",
     "storedResult": {
       "votes": {
         "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": 2,
-        "23ff6ddd-cd75-48e3-92af-24772a694922": 1,
-        "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 1
+        "23ff6ddd-cd75-48e3-92af-24772a694922": 1
       },
       "average": 1.2,
       "highestVotes": {
