@@ -860,5 +860,22 @@
       "otherVotes": [],
       "totalVoters": 6
     }
+  },
+  "session_1750841884482": {
+    "id": "session_1750841884482",
+    "name": "Sprint Planning 25th June",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "users": {
+      "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae": "Maz"
+    },
+    "votes": {},
+    "owner": "7f6a81db-3846-4403-ab9d-a7d6fcaee2ae",
+    "storedResult": null
   }
 }
