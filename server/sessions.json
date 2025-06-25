@@ -860,5 +860,72 @@
       "otherVotes": [],
       "totalVoters": 6
     }
+  },
+  "session_1750857436509": {
+    "id": "session_1750857436509",
+    "name": "Dangermouse planning",
+    "points": [
+      1,
+      2,
+      3,
+      5,
+      8
+    ],
+    "users": {
+      "23ff6ddd-cd75-48e3-92af-24772a694922": "Andy",
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": "Erin",
+      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": "Justin",
+      "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": "Janie",
+      "805c2ea4-6732-4b40-968b-76f74335373c": "James"
+    },
+    "votes": {
+      "bca58561-362e-4f71-ab63-1ad3cdb844fa": 2,
+      "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": 2,
+      "23ff6ddd-cd75-48e3-92af-24772a694922": 2,
+      "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 3,
+      "805c2ea4-6732-4b40-968b-76f74335373c": 2
+    },
+    "owner": "23ff6ddd-cd75-48e3-92af-24772a694922",
+    "storedResult": {
+      "votes": {
+        "bca58561-362e-4f71-ab63-1ad3cdb844fa": 2,
+        "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": 2,
+        "23ff6ddd-cd75-48e3-92af-24772a694922": 2,
+        "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 3,
+        "805c2ea4-6732-4b40-968b-76f74335373c": 2
+      },
+      "average": 2.2,
+      "highestVotes": {
+        "value": [
+          2
+        ],
+        "voters": [
+          {
+            "bca58561-362e-4f71-ab63-1ad3cdb844fa": 2
+          },
+          {
+            "0c945a2f-57a7-45f6-ae6d-8bcf2c6fee0c": 2
+          },
+          {
+            "23ff6ddd-cd75-48e3-92af-24772a694922": 2
+          },
+          {
+            "805c2ea4-6732-4b40-968b-76f74335373c": 2
+          }
+        ]
+      },
+      "lowestVotes": {
+        "value": [
+          3
+        ],
+        "voters": [
+          {
+            "1fa82c4f-4de8-4351-84f6-cc39f97cd125": 3
+          }
+        ]
+      },
+      "otherVotes": [],
+      "totalVoters": 5
+    }
   }
 }
