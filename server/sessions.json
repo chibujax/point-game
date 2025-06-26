@@ -871,17 +871,11 @@
       5,
       8
     ],
-    "users": {
-      "805c2ea4-6732-4b40-968b-76f74335373c": "James"
-    },
-    "votes": {
-      "805c2ea4-6732-4b40-968b-76f74335373c": 5
-    },
+    "users": {},
+    "votes": {},
     "owner": "23ff6ddd-cd75-48e3-92af-24772a694922",
     "storedResult": {
-      "votes": {
-        "805c2ea4-6732-4b40-968b-76f74335373c": 5
-      },
+      "votes": {},
       "average": 3.17,
       "highestVotes": {
         "value": [
