@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: pointing-game
+    env: node
+    buildCommand: npm run build:prod
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        fromService:
+          type: web
+          name: pointing-game
+          property: port
+    healthCheckPath: /
+    plan: starter
