@@ -5,6 +5,7 @@ import { PageLayout } from '@/components/layout/PageLayout';
 import { HomeHeader } from '@/components/layout/Header';
 import { useUserStore } from '@/stores/userStore';
 import { useSessionStore } from '@/stores/sessionStore';
+import { VotingType } from '@/types';
 import mediacity from '@/assets/images/mediacity.jpg';
 
 type ValidationType = string | undefined;
@@ -22,30 +23,70 @@ const validateDisplayName = (value: string): ValidationType => {
 	return undefined;
 };
 
-const validatePoints = (value: string): ValidationType => {
+const validatePoints = (value: string, votingType: VotingType): ValidationType => {
 	if (!value) return 'Points are required';
-	if (!/^\d+(?:,\d+)*$/.test(value)) {
-		return 'Points must be numbers separated by commas (e.g., 1,2,3)';
+	
+	const points = value.split(',').map(p => p.trim()).filter(p => p);
+	if (points.length === 0) return 'At least one point is required';
+	
+	const isValid = points.every(p => {
+		switch (votingType) {
+			case VotingType.NUMERICAL:
+				return /^[0-9]+$/.test(p);
+			case VotingType.DECIMAL:
+				return /^[0-9]+(\.[0-9]+)?$/.test(p);
+			case VotingType.ALPHABETICAL:
+				return /^[a-zA-Z]+$/.test(p);
+			case VotingType.ALPHANUMERICAL:
+				return /^[a-zA-Z0-9]+$/.test(p);
+			default:
+				return false;
+		}
+	});
+	
+	if (!isValid) {
+		switch (votingType) {
+			case VotingType.NUMERICAL:
+				return 'Points must be whole numbers (e.g., 1,2,3)';
+			case VotingType.DECIMAL:
+				return 'Points must be decimal numbers (e.g., 1.0,2.5,3.0)';
+			case VotingType.ALPHABETICAL:
+				return 'Points must be letters only (e.g., A,B,C)';
+			case VotingType.ALPHANUMERICAL:
+				return 'Points must be letters and numbers (e.g., A1,B2,C3)';
+		}
 	}
-	const points = value.split(',').map((p) => p.trim());
-	const isValid = points.every((p) => /^\d+$/.test(p));
-	if (!isValid) return 'Points must be single letters separated by commas';
+	
 	return undefined;
 };
 
-const inputValidator: Record<FormField, (value: string) => ValidationType> = {
+const inputValidator: Record<FormField, (value: string, votingType?: VotingType) => ValidationType> = {
 	sessionName: validateSessionName,
 	displayName: validateDisplayName,
-	points: validatePoints,
+	points: (value: string, votingType: VotingType = VotingType.NUMERICAL) => validatePoints(value, votingType),
 };
 
 interface FormData {
 	sessionName: string;
 	displayName: string;
 	points: string;
+	votingType: VotingType;
 }
 
 type FormErrors = Partial<Record<FormField, string>>;
+
+const getPlaceholderText = (votingType: VotingType): string => {
+	switch (votingType) {
+		case VotingType.NUMERICAL:
+			return 'Enter voting points (e.g., 1,2,3,5,8)';
+		case VotingType.DECIMAL:
+			return 'Enter voting points (e.g., 1.0,2.5,3.0,5.5)';
+		case VotingType.ALPHABETICAL:
+			return 'Enter voting points (e.g., A,B,C,D)';
+		case VotingType.ALPHANUMERICAL:
+			return 'Enter voting points (4,S,M,L,XL)';
+	}
+};
 
 const HomePage = (): JSX.Element => {
 	const navigate = useNavigate();
@@ -53,6 +94,7 @@ const HomePage = (): JSX.Element => {
 		sessionName: '',
 		displayName: '',
 		points: '',
+		votingType: VotingType.NUMERICAL,
 	});
 	const [errors, setErrors] = useState<FormErrors>({});
 	const [submitError, setSubmitError] = useState('');
@@ -63,7 +105,7 @@ const HomePage = (): JSX.Element => {
 		const newErrors: FormErrors = {
 			sessionName: validateSessionName(formData.sessionName),
 			displayName: validateDisplayName(formData.displayName),
-			points: validatePoints(formData.points),
+			points: validatePoints(formData.points, formData.votingType),
 		};
 
 		setErrors(newErrors);
@@ -80,7 +122,7 @@ const HomePage = (): JSX.Element => {
 		}
 
 		try {
-			const pointsArray = formData.points.split(',').map((p) => parseInt(p.trim()));
+			const pointsArray = formData.points.split(',').map((p) => p.trim());
 			sessionStore.reset();
 			setUser(formData.displayName);
 			const response = await fetch('/api/create-session', {
@@ -105,6 +147,7 @@ const HomePage = (): JSX.Element => {
 				userId || '',
 				formData.displayName,
 				true,
+				formData.votingType,
 			);
 			navigate(`/${data.sessionId}`);
 		} catch (error) {
@@ -116,11 +159,16 @@ const HomePage = (): JSX.Element => {
 		const { id, value } = e.target;
 		if (isFormField(id)) {
 			setFormData((prev) => ({ ...prev, [id]: value }));
-			setErrors((prev) => ({ ...prev, [id]: inputValidator[id](value) }));
+			setErrors((prev) => ({ ...prev, [id]: inputValidator[id](value, formData.votingType) }));
 		}
 	};
 
-	// Type guard to ensure id is a valid form field
+	const handleVotingTypeChange = (e: React.ChangeEvent<HTMLSelectElement>): void => {
+		const newVotingType = e.target.value as VotingType;
+		setFormData((prev) => ({ ...prev, votingType: newVotingType, points: '' }));
+		setErrors((prev) => ({ ...prev, points: undefined }));
+	};
+
 	const isFormField = (id: string): id is FormField => {
 		return id in inputValidator;
 	};
@@ -151,10 +199,22 @@ const HomePage = (): JSX.Element => {
 									inputClassName={`form-control ${errors.displayName ? 'is-invalid' : ''}`}
 									wrapperClassName={`mb-3 ${errors.displayName ? 'has-danger' : ''}`}
 								/>
+								<div className="mb-3">
+									<select
+										className="form-control"
+										value={formData.votingType}
+										onChange={handleVotingTypeChange}
+									>
+										<option value={VotingType.NUMERICAL}>Numerical (1,2,3)</option>
+										<option value={VotingType.DECIMAL}>Decimal (1.0,2.5,3.0)</option>
+										<option value={VotingType.ALPHABETICAL}>Alphabetical (A,B,C)</option>
+										<option value={VotingType.ALPHANUMERICAL}>Alphanumerical (4,S,M,L)</option>
+									</select>
+								</div>
 								<FormInput
 									type="text"
 									id="points"
-									placeholder="Enter voting points (comma separated)"
+									placeholder={getPlaceholderText(formData.votingType)}
 									value={formData.points}
 									onChange={handleChange}
 									inputClassName={`form-control ${errors.points ? 'is-invalid' : ''}`}

@@ -51,7 +51,7 @@ export class SocketHandler {
 			}
 		});
 
-		socket.on('submitVote', requireSessionMembership(this.sessionService, socket, (data: { vote: number }) => {
+		socket.on('submitVote', requireSessionMembership(this.sessionService, socket, (data: { vote: string }) => {
 			const userId = socket.data.userId;
 			const session = this.findUserSession(userId);
 			if (!session) return;
@@ -95,7 +95,7 @@ export class SocketHandler {
 			const session = this.findUserSession(userId);
 			if (!session) return;
 			
-			const results = this.voteService.processVotes(session.votes);
+			const results = this.voteService.processVotes(session.votes, session.votingType);
 			this.sessionService.updateSession(session.id, { storedResult: results });
 			this.io.to(session.id).emit('voteResults', results);
 		}));

@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { Session } from '../../src/types';
+import { Session, VotingType } from '../../src/types';
 
 export class FileSessionService {
 	public sessions: Map<string, Session>;
@@ -17,6 +17,16 @@ export class FileSessionService {
 			if (fs.existsSync(this.filePath)) {
 				const data = fs.readFileSync(this.filePath, 'utf8');
 				const sessionsObj = JSON.parse(data);
+				
+				Object.entries(sessionsObj).forEach(([sessionId, session]) => {
+					const sessionData = session as Session;
+					if (!sessionData.votingType) {
+						sessionData.votingType = VotingType.NUMERICAL;
+						if (sessionData.points && typeof sessionData.points[0] === 'number') {
+							sessionData.points = (sessionData.points as unknown as number[]).map(p => p.toString());
+						}
+					}
+				});
 				
 				this.sessions = new Map(Object.entries(sessionsObj));
 				console.log(`Loaded ${this.sessions.size} sessions from file`);
@@ -39,11 +49,11 @@ export class FileSessionService {
 		}
 	}
 
-
 	createSession(sessionData: Partial<Session>): Session {
 		const sessionId = `session_${Date.now()}`;
 		const session: Session = {
 			id: sessionId,
+			votingType: VotingType.NUMERICAL,
 			...sessionData,
 		} as Session;
 		

@@ -4,7 +4,7 @@ import { User, VoteResults } from '@/types';
 
 interface ResultStatsProps {
 	title: string;
-	value: number;
+	value: string | number;
 	color?: string;
 }
 
@@ -15,12 +15,13 @@ interface ResultControlProps extends AdminControlProps {
 }
 
 interface VoterDisplayProps {
-	voters: Array<{ [key: string]: number }>;
+	voters: Array<{ [key: string]: string }>;
 	users: Record<string, string>;
 	title: string;
 	score: string;
 	color: string;
 }
+
 const ResultStats = ({ title, value, color = 'bg-dark' }: ResultStatsProps): JSX.Element => {
 	return (
 		<div className="col-lg-6 col-12">
@@ -107,7 +108,6 @@ export const ScoreBoard = memo(
 									className="bg-gray-100"
 								>
 									<div className="row">
-										{' '}
 										<VoterDisplay
 											voters={voteResult.highestVotes.voters}
 											users={sanitizedUsers}
@@ -131,7 +131,10 @@ export const ScoreBoard = memo(
 										/>
 									</div>
 									<div className="row">
-										<ResultStats title={'Average'} value={voteResult.average} />
+										<ResultStats 
+											title={'Average'} 
+											value={voteResult.averageDisplay} 
+										/>
 										<ResultStats
 											title={'Total'}
 											value={voteResult.totalVoters}

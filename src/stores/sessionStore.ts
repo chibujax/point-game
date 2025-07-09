@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
+import { VotingType } from '@/types';
 
 interface User {
 	id: string;
@@ -11,23 +12,25 @@ interface SessionState {
 	name: string | null;
 	users: User[];
 	isOwner: boolean;
-	points: number[];
-	votes: Record<string, number>;
+	points: string[];
+	votingType: VotingType;
+	votes: Record<string, string>;
 	voteTitle: string | null;
 	errorMessage: string | null;
 	setSession: (
 		id: string,
 		name: string,
-		points: number[],
+		points: string[],
 		userId: string,
 		displayName: string,
 		isOwner?: boolean,
+		votingType?: VotingType,
 	) => void;
 	setOwner: (isOwner: boolean) => void;
 	addUser: (user: User) => void;
 	setUsers: (users: User[]) => void;
 	removeUser: (userId: string) => void;
-	setVote: (userId: string, vote: number) => void;
+	setVote: (userId: string, vote: string) => void;
 	setVoteTitle: (title: string) => void;
 	setErrorMessage: (message: string | null) => void;
 	clearVotes: () => void;
@@ -40,6 +43,7 @@ const initialState = {
 	users: [],
 	isOwner: false,
 	points: [],
+	votingType: VotingType.NUMERICAL,
 	votes: {},
 	voteTitle: null,
 	errorMessage: null,
@@ -50,11 +54,12 @@ export const useSessionStore = create<SessionState>()(
 		persist(
 			(set) => ({
 				...initialState,
-				setSession: (id, displayName, points, userId, sessionName, isOwner = false) =>
+				setSession: (id, displayName, points, userId, sessionName, isOwner = false, votingType = VotingType.NUMERICAL) =>
 					set(() => ({
 						id,
 						name: sessionName,
 						points,
+						votingType,
 						users: [{ id: userId, name: displayName }],
 						votes: {},
 						isOwner: isOwner,

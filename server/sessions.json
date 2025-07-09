@@ -3,37 +3,19 @@
     "id": "session_1742665095861",
     "name": "Show And Tell",
     "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
+      "1",
+      "2",
+      "3",
+      "5",
+      "8",
+      "13"
     ],
     "users": {
       "e8ec2a87-44d3-4486-89aa-2ddd440daf95": "Chibu"
     },
     "votes": {},
     "owner": "e8ec2a87-44d3-4486-89aa-2ddd440daf95",
-    "storedResult": null
-  },
-  "session_1752059539322": {
-    "id": "session_1752059539322",
-    "name": "Cbeebies",
-    "points": [
-      1,
-      2,
-      3,
-      5,
-      8,
-      13
-    ],
-    "users": {
-      "a8f6eddf-1bb4-4d47-a92c-0cc0d66547a9": "Chibu",
-      "067a3846-7739-4d5d-95d8-d0f544a0c336": "baba"
-    },
-    "votes": {},
-    "owner": "a8f6eddf-1bb4-4d47-a92c-0cc0d66547a9",
-    "storedResult": null
+    "storedResult": null,
+    "votingType": "numerical"
   }
 }

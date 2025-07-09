@@ -1,15 +1,15 @@
 import { Request, Response } from 'express';
 import { FileSessionService } from '../services/fileSessionService';
-import { Session } from '../../src/types';
+import { Session, VotingType } from '../../src/types';
 
 export class SessionController {
 	constructor(private sessionService: FileSessionService) {}
 
 	createSession = async (req: Request, res: Response): Promise<void> => {
 		try {
-			const { sessionName, displayName, points, userId } = req.body;
+			const { sessionName, displayName, points, userId, votingType } = req.body;
 
-			if (!sessionName || !displayName || !points || !userId) {
+			if (!sessionName || !displayName || !points || !userId || !votingType) {
 				res.status(400).json({ error: 'Missing required fields' });
 				return;
 			}
@@ -17,6 +17,7 @@ export class SessionController {
 			const sessionData: Partial<Session> = {
 				name: sessionName,
 				points: points,
+				votingType: votingType,
 				users: { [userId]: displayName },
 				votes: {},
 				owner: userId,
