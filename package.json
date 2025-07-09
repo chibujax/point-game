@@ -16,7 +16,7 @@
         "server:dev": "ts-node -r tsconfig-paths/register --project tsconfig.server.dev.json server/index.ts",
         "server:build": "tsc --project tsconfig.build.json",
         "server": "ts-node --project tsconfig.server.json --transpile-only server/index.ts",
-        "start": "NODE_ENV=production node dist/server/index.js",
+        "start": "npm run build:all && NODE_ENV=production node dist/server/index.js",
         "test": "vitest",
         "prod": "npm run build:all && npm run start",
         "test:coverage": "vitest run --coverage",
