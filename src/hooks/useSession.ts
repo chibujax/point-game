@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useSocket } from '../context/SocketContext';
 import { useSessionStore } from '../stores/sessionStore';
-import { User } from '@/types';
+import { User, VotingType } from '@/types';
 
 interface SessionValue {
 	session: {
@@ -9,15 +9,17 @@ interface SessionValue {
 		name: string | null;
 		users: User[];
 		isOwner: boolean;
-		points: number[];
+		points: string[];
+		votingType: VotingType;
 	};
 	start: (
 		sessionId: string,
 		displayName: string,
-		points: number[],
+		points: string[],
 		userId: string,
 		sessionName: string,
 		isOwner?: boolean,
+		votingType?: VotingType,
 	) => void;
 	leave: () => void;
 	end: () => void;
@@ -33,12 +35,13 @@ export const useSession = (): SessionValue => {
 		(
 			sessionId: string,
 			displayName: string,
-			points: number[],
+			points: string[],
 			userId: string,
 			sessionName: string,
 			isOwner?: boolean,
+			votingType?: VotingType,
 		) => {
-			sessionStore.setSession(sessionId, displayName, points, userId, sessionName, isOwner);
+			sessionStore.setSession(sessionId, displayName, points, userId, sessionName, isOwner, votingType);
 			joinSession(sessionId, displayName);
 		},
 		[joinSession, sessionStore],
@@ -78,6 +81,7 @@ export const useSession = (): SessionValue => {
 			users: sessionStore.users,
 			isOwner: sessionStore.isOwner,
 			points: sessionStore.points,
+			votingType: sessionStore.votingType,
 		},
 		start,
 		leave,

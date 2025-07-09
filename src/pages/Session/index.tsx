@@ -41,7 +41,7 @@ const SessionPage = (): JSX.Element => {
 		showJoin: boolean = false,
 	): void => {
 		const isSessionOwner = sessionData.owner === id;
-		start(sessionData.id, userName, sessionData.points, id, sessionData.name, isSessionOwner);
+		start(sessionData.id, userName, sessionData.points, id, sessionData.name, isSessionOwner, sessionData.votingType);
 		setSession(sessionId, isSessionOwner);
 		if (sessionData.voteTitle) {
 			sessionStore.setVoteTitle(sessionData.voteTitle);
@@ -85,7 +85,7 @@ const SessionPage = (): JSX.Element => {
 
 	const handleJoin = async (name: string): Promise<void> => {
 		setUser(name);
-		start(sessionId, displayName || '', session.points, userId || '', sessionName, false);
+		start(sessionId, displayName || '', session.points, userId || '', sessionName, false, session.votingType);
 		setShowJoin(false);
 	};
 

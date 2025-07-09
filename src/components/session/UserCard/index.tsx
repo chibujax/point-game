@@ -4,13 +4,13 @@ import { Button } from '../../ui/Button';
 import { User, Vote } from '@/types';
 
 interface UserBoardProps {
-	points: number[];
+	points: string[];
 	users: User[];
 	votes?: Vote;
 	isRevealed: boolean;
 	currentUserId: string;
-	selectedVote: number | null;
-	onVote: (point: number) => void;
+	selectedVote: string | null;
+	onVote: (point: string) => void;
 	votedUsers: string[];
 }
 

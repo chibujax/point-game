@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { FileSessionService } from '../services/fileSessionService';
-import { Session, VotingType } from '../../src/types';
+import { Session } from '../../src/types';
 
 export class SessionController {
 	constructor(private sessionService: FileSessionService) {}

@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { useSocket } from '../context/SocketContext';
 
 interface UseVoting {
-	handleVote: (vote: number) => void;
+	handleVote: (vote: string) => void;
 	handleReveal: () => void;
 	resetVoting: () => void;
 }
@@ -10,7 +10,7 @@ interface UseVoting {
 export const useVoting = (): UseVoting => {
 	const { submitVote, revealVotes, restartSession } = useSocket();
 	const handleVote = useCallback(
-		(vote: number) => {
+		(vote: string) => {
 			submitVote(vote);
 		},
 		[submitVote],

@@ -18,7 +18,7 @@ export class FileSessionService {
 				const data = fs.readFileSync(this.filePath, 'utf8');
 				const sessionsObj = JSON.parse(data);
 				
-				Object.entries(sessionsObj).forEach(([sessionId, session]) => {
+				Object.entries(sessionsObj).forEach(([, session]) => {
 					const sessionData = session as Session;
 					if (!sessionData.votingType) {
 						sessionData.votingType = VotingType.NUMERICAL;

@@ -10,7 +10,7 @@ interface SocketContextValue {
 	isConnected: boolean;
 	joinSession: (sessionId: string, name: string) => void;
 	leaveSession: () => void;
-	submitVote: (vote: number) => void;
+	submitVote: (vote: string) => void;
 	revealVotes: () => void;
 	restartSession: () => void;
 	endSession: () => void;
@@ -109,7 +109,7 @@ export const SocketProvider = ({
 		socketRef.current?.emit('leaveSession');
 	}, []);
 
-	const submitVote = useCallback((vote: number): void => {
+	const submitVote = useCallback((vote: string): void => {
 		socketRef.current?.emit('submitVote', { vote });
 	}, []);
 
