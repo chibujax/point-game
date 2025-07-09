@@ -18,7 +18,7 @@
         "server": "ts-node --project tsconfig.server.json --transpile-only server/index.ts",
         "start": "npm run build:all && NODE_ENV=production node dist/server/index.js",
         "test": "vitest",
-        "prod": "npm run build:all && npm run start",
+        "prod": "npm install && npm run build:all && npm run start",
         "test:coverage": "vitest run --coverage",
         "postinstall": "npm run build:prod"
     },
